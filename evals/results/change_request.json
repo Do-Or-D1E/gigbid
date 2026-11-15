@@ -1,0 +1,113 @@
+{
+ "quotes": [
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-004",
+   "proposals_count": 30,
+   "connects": 6
+  },
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-009",
+   "proposals_count": 16,
+   "connects": 6
+  },
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-010",
+   "proposals_count": 15,
+   "connects": 6
+  },
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-013",
+   "proposals_count": 31,
+   "connects": 6
+  },
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-025",
+   "proposals_count": 19,
+   "connects": 8
+  },
+  {
+   "policy": 1,
+   "job_id": "dev-ai_ml-030",
+   "proposals_count": 22,
+   "connects": 6
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-004",
+   "proposals_count": 30,
+   "connects": 9
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-009",
+   "proposals_count": 16,
+   "connects": 9
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-010",
+   "proposals_count": 15,
+   "connects": 9
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-013",
+   "proposals_count": 31,
+   "connects": 9
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-025",
+   "proposals_count": 19,
+   "connects": 12
+  },
+  {
+   "policy": 2,
+   "job_id": "dev-ai_ml-030",
+   "proposals_count": 22,
+   "connects": 9
+  }
+ ],
+ "compliance": {
+  "v1": [],
+  "v2": [
+   {
+    "rule_id": "link_restriction",
+    "excerpt": "https://example-portfolio.dev/churn.",
+    "severity": "block"
+   }
+  ]
+ },
+ "gigsim_submit": {
+  "v1_raw_letter": {
+   "status": 200,
+   "error": null,
+   "rule": null,
+   "connects_spent": 8
+  },
+  "v1_after_guard": {
+   "status": 200,
+   "error": null,
+   "rule": null,
+   "connects_spent": 6
+  },
+  "v2_raw_letter": {
+   "status": 422,
+   "error": "policy_violation",
+   "rule": "link_restriction"
+  },
+  "v2_after_guard": {
+   "status": 200,
+   "error": null,
+   "rule": null,
+   "connects_spent": 4
+  }
+ },
+ "mean_connects_on_busy_jobs_v1": 6.33,
+ "mean_connects_on_busy_jobs_v2": 9.5
+}
