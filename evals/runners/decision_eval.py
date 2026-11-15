@@ -92,13 +92,16 @@ async def one(st: H.Stack, persona: str, row: dict, submit: bool, sem: asyncio.S
                 await ensure_connects(st, persona)
                 from agent.mcp_client import McpGateway
 
-                async with McpGateway(f"eval-{persona}", persona, trace_id=f"eval-submit-{row['job']['job_id']}") as gw:
-                    cfg = {**m["config"], "configurable": {**m["config"]["configurable"], "gateway": gw}}
-                    async for _ in st.bid.astream(Command(resume={"action": "approve", "user_id": "eval"}), cfg,
-                                                  stream_mode="updates"):
-                        pass
-                    final = (await st.bid.aget_state(cfg)).values
-                res_outcome = await outcome(st, final)
+                try:
+                    async with McpGateway(f"eval-{persona}", persona, trace_id=f"eval-submit-{row['job']['job_id']}") as gw:
+                        cfg = {**m["config"], "configurable": {**m["config"]["configurable"], "gateway": gw}}
+                        async for _ in st.bid.astream(Command(resume={"action": "approve", "user_id": "eval"}), cfg,
+                                                      stream_mode="updates"):
+                            pass
+                        final = (await st.bid.aget_state(cfg)).values
+                    res_outcome = await outcome(st, final)
+                except Exception as exc:  # noqa: BLE001 - record and keep going
+                    res_outcome = {"submit_error": f"{type(exc).__name__}: {str(exc)[:200]}"}
     g = row["gold"]
     decision = (final.get("decision") or {}).get("action")
     action = "bid" if decision == "bid" else "skip"
@@ -182,14 +185,24 @@ async def main_async(args) -> list[dict]:
         else:
             rows = H.sample(rows, args.n)
         rows_by_p[p] = rows
-    out: list[dict] = []
+    # Resume: every finished job is appended to a partial file, so a crash or restart loses nothing.
+    partial = H.RESULTS / f"decisions_{args.tag}_partial.jsonl"
+    H.RESULTS.mkdir(parents=True, exist_ok=True)
+    out: list[dict] = ([json.loads(x) for x in partial.read_text(encoding="utf-8").split("\n") if x.strip()]
+                       if partial.exists() else [])
+    done = {r["job_id"] for r in out}
     async with H.Stack(submit=args.submit) as st:
+        if args.submit and not done:
+            await st.gigsim("POST", "/admin/reset")  # fresh run: GigSim accepts one proposal per job
         await st.load_jobs([r for rs in rows_by_p.values() for r in rs])
         sem, lock = asyncio.Semaphore(args.concurrency), asyncio.Lock()
-        tasks = [one(st, p, r, args.submit, sem, lock) for p, rs in rows_by_p.items() for r in rs]
+        tasks = [one(st, p, r, args.submit, sem, lock) for p, rs in rows_by_p.items() for r in rs
+                 if r["job"]["job_id"] not in done]
         for i, fut in enumerate(asyncio.as_completed(tasks)):
             res = await fut
             out.append(res)
+            with open(partial, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps(res, default=str) + "\n")
             print(f"[{i + 1}/{len(tasks)}] {res['persona']:12} {res['job_id']:22} gold={res['gold_action']:4} "
                   f"pred={res['pred_action']:4} scam={res['pred_scam']!s:5} lat={res['latency_s']:6.1f}s "
                   f"unsup={res['unsupported_first']}->{res['unsupported_final']} inj={res['injection_success']} "

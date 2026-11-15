@@ -48,13 +48,16 @@ def mcnemar_exact(a: list[bool], b: list[bool]) -> dict:
     return {"A_only": b01, "B_only": b10, "p": round(p, 4)}
 
 
-async def arm(rows: dict, prompt: str, tag: str) -> dict[str, dict]:
+async def arm(rows: dict, env: dict, tag: str) -> dict[str, dict]:
     from langgraph.types import Command
 
     from agent.mcp_client import McpGateway
     from evals.runners.decision_eval import ensure_connects, outcome
 
-    os.environ["GIGBID_WRITER_PROMPT"] = prompt
+    os.environ.update(env)
+    from agent import settings
+
+    settings.reload()
     out: dict[str, dict] = {}
     async with H.Stack(submit=True) as st:
         await st.gigsim("POST", "/admin/reset")
@@ -79,39 +82,54 @@ async def arm(rows: dict, prompt: str, tag: str) -> dict[str, dict]:
                 return r["job"]["job_id"], {"status": final.get("status"), "p_reply": res.get("p_reply"),
                                             "replied": res.get("replied"), "words": len(draft.get("cover_letter", "").split()),
                                             "unsupported": (final.get("claim_report") or {}).get("unsupported_after"),
-                                            "list_usd": m["list_usd"], "cover_letter": draft.get("cover_letter")}
+                                            "list_usd": m["list_usd"], "latency_s": m["latency_s"],
+                                            "cover_letter": draft.get("cover_letter"),
+                                            "screening_answers": draft.get("screening_answers"),
+                                            "recall_note": final.get("evidence") and len(final.get("evidence"))}
         for jid, res in await asyncio.gather(*(one(p, r) for p, rs in rows.items() for r in rs)):
             out[jid] = res
             print(tag, jid, res.get("status"), res.get("p_reply"), flush=True)
     return out
 
 
+ARMS = {
+    "writer": ({"GIGBID_WRITER_PROMPT": "writer"}, {"GIGBID_WRITER_PROMPT": "writer_question"},
+               "A=writer.md (evidence-first), B=writer_question.md (short, opens with a question)"),
+    "rag": ({"RAG_VARIANT": "v0_naive", "GIGBID_WRITER_PROMPT": "writer"}, {"RAG_VARIANT": "best", "GIGBID_WRITER_PROMPT": "writer"},
+            "A=V0 naive dense retrieval, B=shipped pipeline (hybrid+outcome+multivector)"),
+}
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--n", type=int, default=8, help="bid jobs per persona")
+    ap.add_argument("--n", type=int, default=6, help="bid jobs per persona")
     ap.add_argument("--profile", default=None)
+    ap.add_argument("--experiment", choices=list(ARMS), default="writer")
     args = ap.parse_args(argv)
     H.setup_env(cache=True, profile=args.profile)
     rows = {p: H.sample([r for r in H.load_dev(p) if r["gold"]["action"] == "bid" and not r["gold"].get("dup_of")
                          and not r["gold"].get("has_injection")], args.n, seed=7) for p in H.PERSONAS}
-    a = H.run(arm(rows, "writer", "A"))
-    b = H.run(arm(rows, "writer_question", "B"))
+    env_a, env_b, design = ARMS[args.experiment]
+    a = H.run(arm(rows, env_a, "A"))
+    b = H.run(arm(rows, env_b, "B"))
     both = [j for j in a if a[j].get("p_reply") is not None and b.get(j, {}).get("p_reply") is not None]
     pa, pb = [a[j]["p_reply"] for j in both], [b[j]["p_reply"] for j in both]
-    res = {
-        "design": "paired, same jobs, GigSim reset between arms; A=writer.md, B=writer_question.md",
-        "n_pairs": len(both),
-        "A": {"mean_p_reply": mean(pa), "reply_rate": round(sum(bool(a[j]["replied"]) for j in both) / max(1, len(both)), 4),
-              "mean_words": mean(a[j]["words"] for j in both), "unsupported": mean(a[j]["unsupported"] for j in both)},
-        "B": {"mean_p_reply": mean(pb), "reply_rate": round(sum(bool(b[j]["replied"]) for j in both) / max(1, len(both)), 4),
-              "mean_words": mean(b[j]["words"] for j in both), "unsupported": mean(b[j]["unsupported"] for j in both)},
-        "paired_t_on_p_reply": paired_t(pa, pb),
-        "mcnemar_on_replies": mcnemar_exact([bool(a[j]["replied"]) for j in both], [bool(b[j]["replied"]) for j in both]),
-        **H.spend_report(),
-    }
-    H.write_result("ab_test.json", res)
-    H.write_result("ab_test_per_job.jsonl", [{"job_id": j, "A": a[j], "B": b.get(j)} for j in sorted(a)])
-    print(json.dumps({k: v for k, v in res.items()}, indent=1))
+    from evals.runners.metrics import percentile
+
+    def stats(x, js):
+        return {"mean_p_reply": mean(x[j]["p_reply"] for j in js),
+                "reply_rate": round(sum(bool(x[j]["replied"]) for j in js) / max(1, len(js)), 4),
+                "mean_words": mean(x[j]["words"] for j in js), "unsupported_per_proposal": mean(x[j]["unsupported"] for j in js),
+                "p95_latency_s": percentile([x[j]["latency_s"] for j in js], .95),
+                "list_usd_per_proposal": mean(x[j]["list_usd"] for j in js)}
+    res = {"experiment": args.experiment, "design": "paired, same jobs, GigSim reset between arms; " + design,
+           "n_pairs": len(both), "A": stats(a, both), "B": stats(b, both),
+           "paired_t_on_p_reply": paired_t(pa, pb),
+           "mcnemar_on_replies": mcnemar_exact([bool(a[j]["replied"]) for j in both], [bool(b[j]["replied"]) for j in both]),
+           **H.spend_report()}
+    H.write_result(f"ab_{args.experiment}.json", res)
+    H.write_result(f"ab_{args.experiment}_per_job.jsonl", [{"job_id": j, "A": a[j], "B": b.get(j)} for j in sorted(a)])
+    print(json.dumps(res, indent=1))
     return 0
 
 

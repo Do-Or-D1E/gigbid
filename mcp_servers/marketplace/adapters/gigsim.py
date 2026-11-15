@@ -108,7 +108,10 @@ class GigSimAdapter:
         return {"events": data.get("events", []), "next": data.get("next_cursor", data.get("next"))}
 
     async def create_proposal_draft(self, payload, idempotency_key):
-        return await self._req("POST", "/proposals", json=payload, idem=idempotency_key)
+        # GigSim takes screening answers as plain strings; the port carries {question, answer}.
+        body = {**payload, "screening_answers": [a["answer"] if isinstance(a, dict) else str(a)
+                                                 for a in payload.get("screening_answers", [])]}
+        return await self._req("POST", "/proposals", json=body, idem=idempotency_key)
 
     async def submit_proposal(self, draft_id, idempotency_key):
         return await self._req("POST", f"/proposals/{draft_id}/submit", json={}, idem=idempotency_key)

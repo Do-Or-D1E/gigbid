@@ -149,7 +149,7 @@ async def submit_and_read(st: H.Stack, gw, persona: str, job: dict, letter: str,
 async def main_async(args) -> list[dict]:
     from agent.mcp_client import McpGateway
 
-    rows = {p: H.sample([r for r in H.load_dev(p) if not r["gold"].get("dup_of")], args.n) for p in H.PERSONAS}
+    rows = {p: H.sample([r for r in H.load_dev(p) if not r["gold"].get("dup_of")], args.n, seed=11) for p in H.PERSONAS}
     out: list[dict] = []
     async with H.Stack() as st:
         await st.load_jobs([r for rs in rows.values() for r in rs])
@@ -182,13 +182,23 @@ async def main_async(args) -> list[dict]:
                     "gold_action": g["action"], "pred_action": ans.action if ans else None, "gold_scam": g["is_scam"],
                     "pred_scam": ans.is_scam if ans else None, "unsupported": s.get("unsupported"),
                     "violations_in_output": s.get("violations", []), "violations_caught": caught, "p_reply": p_reply,
+                    "cover_letter": ans.cover_letter if ans and ans.action == "bid" else None,
+                    "price": ans.price if ans else None, "bid_type": ans.bid_type if ans else None,
                     "tokens": m.get("input_tokens", 0) + m.get("output_tokens", 0), "list_usd": m.get("list_usd"),
                     "latency_s": m.get("latency_s"), "error": m.get("error")}
 
-        tasks = [one(p, r, s) for p, rs in rows.items() for r in rs for s in args.systems]
+        partial = H.RESULTS / "multiagent_partial.jsonl"
+        H.RESULTS.mkdir(parents=True, exist_ok=True)
+        if partial.exists():
+            out += [json.loads(x) for x in partial.read_text(encoding="utf-8").split("\n") if x.strip()]
+        done = {(r["system"], r["job_id"]) for r in out}
+        tasks = [one(p, r, s) for p, rs in rows.items() for r in rs for s in args.systems
+                 if (s, r["job"]["job_id"]) not in done]
         for i, fut in enumerate(asyncio.as_completed(tasks)):
             r = await fut
             out.append(r)
+            with open(partial, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps(r, default=str) + "\n")
             print(f"[{i + 1}/{len(tasks)}] {r['system']:10} {r['job_id']:22} gold={r['gold_action']} pred={r['pred_action']} "
                   f"unsup={r['unsupported']} p={r['p_reply']} tok={r['tokens']} lat={r['latency_s']} err={(r['error'] or '')[:50]}",
                   flush=True)
