@@ -4,7 +4,7 @@ A freelancer copilot built from LangGraph agents. It finds jobs, judges whether 
 
 AI-4016 R&D assignment, individual work by Abdul Majeed (23P-3038).
 
-- Live app: see `docs/DEPLOYMENT.md` (reviewer login is in the private submission comment)
+- Live app: https://gigbid-dun.vercel.app (reviewer login is in the private submission comment)
 - Repo: https://github.com/Do-Or-D1E/gigbid
 - Portfolio MCP server: `docker run -i --rm ghcr.io/do-or-d1e/gigbid-portfolio-mcp:latest --owner ai_ml` (see `mcp_servers/portfolio/README.md`)
 
