@@ -1068,7 +1068,8 @@ fieldset {
   text-align: left;
   text-decoration: none;
 }
-.evh__pop > span {
+.evh__pop > span,
+.evh__item > span {
   display: block;
 }
 .evh__status {

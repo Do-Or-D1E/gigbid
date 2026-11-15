@@ -30,10 +30,16 @@ def load(version: int | None = None) -> dict[str, Any]:
     return {**(data if isinstance(data, dict) else {}), "version": version, "rules": rules}
 
 
+def draft_rules(version: int | None = None) -> list[dict]:
+    """Rules that apply to text GigBid sends. Input-handling and process rules (untrusted input, human
+    approval) are enforced by the system design, not by scanning the draft."""
+    skip = set(settings.get("policy.not_for_drafts", ["untrusted_input", "fair_automation"]))
+    return [r for r in load(version)["rules"] if r.get("id") not in skip]
+
+
 def rules_text(version: int | None = None) -> str:
-    pol = load(version)
     return "\n".join(f"- [{r.get('id')}] ({r.get('severity', 'fix')}) {r.get('title', '')}: {r.get('description', '')}"
-                     for r in pol["rules"])
+                     for r in draft_rules(version))
 
 
 def _hint_patterns(rule: dict) -> list[re.Pattern]:
@@ -64,7 +70,7 @@ def check(text: str, version: int | None = None) -> list[dict[str, str]]:
         for u in guardrails.urls(text):
             if "github.com" not in u.lower():
                 add(link_rule["id"], u, link_rule.get("severity", "block"))
-    for rule in pol["rules"]:
+    for rule in draft_rules(version):
         if rule.get("id") in {f["rule_id"] for f in found}:
             continue
         if "link" in str(rule.get("id", "")):

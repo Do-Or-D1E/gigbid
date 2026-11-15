@@ -7,7 +7,7 @@ from __future__ import annotations
 import asyncio
 import json
 
-from agent import llm
+from agent import llm, settings
 from agent.handoffs import FitReport
 from agent.nodes._base import gateway, job_block, node
 from agent.prompts import load_prompt
@@ -25,10 +25,13 @@ async def fit_matcher(state: dict, config: dict) -> dict:
     gw = gateway(config)
     reqs = requirements_for(job) or [job.get("title", "the job")]
     hidden = (state.get("profile") or {}).get("hidden_items") or None
-    filters = {"exclude_items": hidden} if hidden else None
+    # Proof of experience comes from case studies, repos, reviews, the CV and uploads. Past proposals are
+    # bids, not proof, so they are not used to ground claims.
+    filters = {"types": settings.get("rag.proof_types", ["case_study", "repo", "review", "cv", "upload"])}
+    if hidden:
+        filters["exclude_items"] = hidden
     results = await asyncio.gather(*(
-        gw.call("search_evidence", {"requirement": f"{r}. {job.get('title', '')}"[:290], "k": 4,
-                                    **({"filters": filters} if filters else {})})
+        gw.call("search_evidence", {"requirement": f"{r}. {job.get('title', '')}"[:290], "k": 4, "filters": filters})
         for r in reqs))
     evidence: dict[str, dict] = {}
     rows = []

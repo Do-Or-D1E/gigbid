@@ -79,7 +79,8 @@ class GigSimAdapter:
         return await self._req("GET", "/me/connects")
 
     async def quote_connects(self, job_id):
-        return await self._req("GET", "/connects/quote", params={"job_id": job_id})
+        q = await self._req("GET", "/connects/quote", params={"job_id": job_id})
+        return {**q, "connects_cost": q.get("cost", q.get("connects_cost", 0))}
 
     async def get_pricing_stats(self, category, skills):
         return await self._req("GET", "/stats/pricing", params={"category": category,
@@ -90,7 +91,9 @@ class GigSimAdapter:
 
     async def list_threads(self):
         data = await self._req("GET", "/threads")
-        return data.get("threads", data) if isinstance(data, dict) else data
+        rows = data.get("threads", data) if isinstance(data, dict) else data
+        return [{**t, "last_message": {"text": t.get("last_message_preview", ""), "sender": t.get("last_sender")},
+                 "updated_at": t.get("last_message_at")} for t in rows]
 
     async def list_messages(self, thread_id):
         data = await self._req("GET", f"/threads/{thread_id}/messages")
@@ -101,7 +104,8 @@ class GigSimAdapter:
         return data.get("proposals", data) if isinstance(data, dict) else data
 
     async def get_events(self, since):
-        return await self._req("GET", "/events", params={"since": since})
+        data = await self._req("GET", "/events", params={"since": since})
+        return {"events": data.get("events", []), "next": data.get("next_cursor", data.get("next"))}
 
     async def create_proposal_draft(self, payload, idempotency_key):
         return await self._req("POST", "/proposals", json=payload, idem=idempotency_key)

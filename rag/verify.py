@@ -15,6 +15,9 @@ from agent import llm
 from agent.handoffs import Claim, ClaimReport, EvidenceItem
 from agent.prompts import load_prompt
 
+PLAN = re.compile(r"^\s*(?:i|we)\s*(?:will|'ll|would|'d|can|could|plan|intend|am ready|am available|propose|"
+                  r"suggest|aim|want|look forward|am happy|am keen|shall|'m ready|'m available|'m happy)\b|"
+                  r"^\s*(?:my|our) (?:plan|approach|proposal|next step)", re.I)
 _NUM = re.compile(r"(?<![\w.])\d+(?:[.,]\d+)?\s?(?:%|x|k|ms|s|hours?|days?|weeks?|years?|\+)?", re.I)
 
 
@@ -38,6 +41,8 @@ def lexical_guard(claims: list[Claim], evidence: list[EvidenceItem]) -> list[Cla
     known = {e.item_id for e in evidence}
     out = []
     for c in claims:
+        if PLAN.search(c.text):
+            continue  # a commitment about this job, not a claim about past experience
         c = c.model_copy()
         c.evidence_ids = [i for i in c.evidence_ids if i in known]
         nums = {n for n in _numbers(c.text) if not re.fullmatch(r"\d", n)}  # single digits are too noisy

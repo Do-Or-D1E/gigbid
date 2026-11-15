@@ -49,8 +49,9 @@ export default function EvidenceHover({ children, evidence = [], status, note, v
         setOpen(false);
       }}
     >
-      <button
-        type="button"
+      <span
+        role="button"
+        tabIndex={0}
         className={cls}
         aria-describedby={open ? id : undefined}
         aria-expanded={open}
@@ -58,10 +59,16 @@ export default function EvidenceHover({ children, evidence = [], status, note, v
         onFocus={() => setOpen(true)}
         onBlur={() => !hovering.current && setOpen(false)}
         onClick={() => setOpen(true)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setOpen(true);
+          }
+        }}
       >
         {children}
         {status && status !== "supported" && <span className="sr-only"> ({STATUS_LABEL[status]})</span>}
-      </button>
+      </span>
       {open && (
         <span role="tooltip" id={id} className="evh__pop">
           {status && <span className={`evh__status evh__status--${status}`}>{STATUS_LABEL[status]}</span>}

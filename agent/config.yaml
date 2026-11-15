@@ -90,6 +90,7 @@ rag:
   chunk_tokens: 180
   chunk_overlap: 30
   rrf_k: 60
+  proof_types: [case_study, repo, review, cv, upload]   # what may ground a claim (not past proposals)
   outcome_boost: {won: 0.25, replied: 0.12, ignored: -0.05}
   corrective:
     min_grade: 0.45
@@ -126,6 +127,7 @@ mcp:
 policy:
   pack_dir: data/policy_pack
   version: 1                # the 2 Nov change request bumps this to 2
+  not_for_drafts: [untrusted_input, fair_automation]   # enforced by design, not by scanning drafts
 
 decision:
   min_fit_bid: 0.55
@@ -164,3 +166,4 @@ memory:
     window: 5
   outcome:
     min_outcomes: 3
+

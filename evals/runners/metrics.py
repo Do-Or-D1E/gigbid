@@ -11,6 +11,13 @@ def recall_at_k(ranked: list[str], relevant: dict[str, int], k: int) -> float | 
     return len(set(ranked[:k]) & set(relevant)) / len(relevant)
 
 
+def capped_recall_at_k(ranked: list[str], relevant: dict[str, int], k: int) -> float | None:
+    """Hits in the top k divided by min(k, |relevant|): reaches 1.0 when the top k is all relevant."""
+    if not relevant:
+        return None
+    return len(set(ranked[:k]) & set(relevant)) / min(k, len(relevant))
+
+
 def mrr(ranked: list[str], relevant: dict[str, int]) -> float | None:
     if not relevant:
         return None

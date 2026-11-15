@@ -7,6 +7,7 @@ import json
 import time
 from typing import Any, Awaitable, Callable
 
+from langchain_core.runnables import RunnableConfig
 from langgraph.config import get_stream_writer
 
 from agent import llm, settings, tracing
@@ -39,7 +40,7 @@ def _over_budget(state: dict) -> str | None:
 def node(name: str) -> Callable[[Callable[..., Awaitable[dict]]], Callable[..., Awaitable[dict]]]:
     def deco(fn: Callable[..., Awaitable[dict]]) -> Callable[..., Awaitable[dict]]:
         @functools.wraps(fn)
-        async def wrapped(state: dict, config: dict) -> dict:
+        async def wrapped(state: dict, config: RunnableConfig) -> dict:
             if state.get("status") in HALT:
                 return {}
             reason = _over_budget(state)
@@ -47,6 +48,7 @@ def node(name: str) -> Callable[[Callable[..., Awaitable[dict]]], Callable[..., 
                 emit({"node": name, "event": "needs_attention", "reason": reason})
                 return {"status": "needs_attention", "attention": reason}
             sink: list[llm.Usage] = []
+            outer = llm.usage_sink.get()
             tok_u = llm.usage_sink.set(sink)
             tok_n = tracing.current_node.set(name)
             emit({"node": name, "event": "start"})
@@ -63,6 +65,8 @@ def node(name: str) -> Callable[[Callable[..., Awaitable[dict]]], Callable[..., 
             finally:
                 llm.usage_sink.reset(tok_u)
                 tracing.current_node.reset(tok_n)
+                if outer is not None:
+                    outer.extend(sink)  # run-level totals (executor / eval harness) see node usage too
             s = llm.summarize(sink)
             elapsed = time.perf_counter() - t0
             out["steps"] = 1
@@ -74,6 +78,10 @@ def node(name: str) -> Callable[[Callable[..., Awaitable[dict]]], Callable[..., 
                   "summary": _summary(name, out)})
             return out
         wrapped.__gigbid_node__ = name  # type: ignore[attr-defined]
+        # LangGraph injects `config` only for parameters typed RunnableConfig; make it read the
+        # wrapper's own signature instead of following __wrapped__ to the node function.
+        del wrapped.__wrapped__
+        wrapped.__annotations__ = {"state": dict, "config": RunnableConfig, "return": dict}
         return wrapped
     return deco
 

@@ -34,10 +34,15 @@ def scrub(text: str) -> tuple[str, list[Violation]]:
     return text.strip(), found
 
 
-async def check_text(text: str, context: str) -> ComplianceVerdict:
+async def check_text(text: str, context: str, claims: list[dict] | None = None) -> ComplianceVerdict:
     cleaned, det = scrub(text)
     rules = policy.rules_text()
-    user = f"<draft>\n{cleaned}\n</draft>\n\nContext: {context}\n\nActive policy rules:\n{rules}"
+    verified = ""
+    if claims is not None:
+        verified = ("\n\nClaim verifier results (claims already checked against the freelancer's portfolio; "
+                    "'supported' means verified, so not fabricated):\n" +
+                    "\n".join(f"- [{c.get('status')}] {c.get('text', '')[:160]}" for c in claims))
+    user = f"<draft>\n{cleaned}\n</draft>\n\nContext: {context}{verified}\n\nActive policy rules:\n{rules}"
     verdict, _ = await llm.call("compliance", load_prompt("compliance"), user, ComplianceVerdict, temperature=0)
     if verdict.verdict == "fixed" and verdict.cleaned_cover_letter:
         cleaned2, det2 = scrub(verdict.cleaned_cover_letter)
@@ -59,7 +64,7 @@ async def compliance(state: dict, config: dict) -> dict:
     risk = state.get("risk") or {}
     context = json.dumps({"job_title": state["job"].get("title"), "risk_flags": [f.get("kind") for f in
                                                                                  risk.get("flags", [])]})
-    verdict = await check_text(draft["cover_letter"], context)
+    verdict = await check_text(draft["cover_letter"], context, (state.get("claim_report") or {}).get("claims", []))
     answers = []
     for a in draft.get("screening_answers", []):
         cleaned, _ = scrub(a["answer"])

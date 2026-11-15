@@ -1,0 +1,476 @@
+{
+ "results": {
+  "v0_naive": {
+   "all": {
+    "n": 514,
+    "recall@5": 0.1181,
+    "mrr": 0.569,
+    "ndcg@10": 0.2199,
+    "p95_latency_s": 0.0014,
+    "errors": 0
+   },
+   "by_persona": {
+    "ai_ml": {
+     "n": 170,
+     "recall@5": 0.1275,
+     "mrr": 0.6007,
+     "ndcg@10": 0.2377,
+     "p95_latency_s": 0.0012,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 172,
+     "recall@5": 0.116,
+     "mrr": 0.5618,
+     "ndcg@10": 0.23,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 172,
+     "recall@5": 0.111,
+     "mrr": 0.5449,
+     "ndcg@10": 0.1921,
+     "p95_latency_s": 0.0012,
+     "errors": 0
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "n": 82,
+     "recall@5": 0.1327,
+     "mrr": 0.608,
+     "ndcg@10": 0.1883,
+     "p95_latency_s": 0.0013,
+     "errors": 0
+    },
+    "injection": {
+     "n": 54,
+     "recall@5": 0.1029,
+     "mrr": 0.5971,
+     "ndcg@10": 0.1806,
+     "p95_latency_s": 0.0013,
+     "errors": 0
+    },
+    "multi_req": {
+     "n": 161,
+     "recall@5": 0.085,
+     "mrr": 0.5708,
+     "ndcg@10": 0.1698,
+     "p95_latency_s": 0.0013,
+     "errors": 0
+    },
+    "scam": {
+     "n": 72,
+     "recall@5": 0.1267,
+     "mrr": 0.5053,
+     "ndcg@10": 0.2311,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "should_skip": {
+     "n": 100,
+     "recall@5": 0.0777,
+     "mrr": 0.4139,
+     "ndcg@10": 0.1649,
+     "p95_latency_s": 0.0013,
+     "errors": 0
+    },
+    "standard": {
+     "n": 141,
+     "recall@5": 0.1246,
+     "mrr": 0.5656,
+     "ndcg@10": 0.2351,
+     "p95_latency_s": 0.0013,
+     "errors": 0
+    },
+    "vague": {
+     "n": 56,
+     "recall@5": 0.1516,
+     "mrr": 0.6535,
+     "ndcg@10": 0.3243,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    }
+   }
+  },
+  "v1_decompose": {
+   "all": {
+    "n": 514,
+    "recall@5": 0.0921,
+    "mrr": 0.4391,
+    "ndcg@10": 0.1617,
+    "p95_latency_s": 0.0024,
+    "errors": 0
+   },
+   "by_persona": {
+    "ai_ml": {
+     "n": 170,
+     "recall@5": 0.0827,
+     "mrr": 0.4488,
+     "ndcg@10": 0.1424,
+     "p95_latency_s": 0.002,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 172,
+     "recall@5": 0.0932,
+     "mrr": 0.395,
+     "ndcg@10": 0.1596,
+     "p95_latency_s": 0.0024,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 172,
+     "recall@5": 0.1004,
+     "mrr": 0.4736,
+     "ndcg@10": 0.1828,
+     "p95_latency_s": 0.0028,
+     "errors": 0
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "n": 82,
+     "recall@5": 0.1021,
+     "mrr": 0.4785,
+     "ndcg@10": 0.1401,
+     "p95_latency_s": 0.0025,
+     "errors": 0
+    },
+    "injection": {
+     "n": 54,
+     "recall@5": 0.0836,
+     "mrr": 0.472,
+     "ndcg@10": 0.1421,
+     "p95_latency_s": 0.0024,
+     "errors": 0
+    },
+    "multi_req": {
+     "n": 161,
+     "recall@5": 0.0671,
+     "mrr": 0.4201,
+     "ndcg@10": 0.125,
+     "p95_latency_s": 0.0027,
+     "errors": 0
+    },
+    "scam": {
+     "n": 72,
+     "recall@5": 0.1146,
+     "mrr": 0.4368,
+     "ndcg@10": 0.1968,
+     "p95_latency_s": 0.0024,
+     "errors": 0
+    },
+    "should_skip": {
+     "n": 100,
+     "recall@5": 0.079,
+     "mrr": 0.3206,
+     "ndcg@10": 0.1355,
+     "p95_latency_s": 0.0026,
+     "errors": 0
+    },
+    "standard": {
+     "n": 141,
+     "recall@5": 0.0986,
+     "mrr": 0.4822,
+     "ndcg@10": 0.1848,
+     "p95_latency_s": 0.0023,
+     "errors": 0
+    },
+    "vague": {
+     "n": 56,
+     "recall@5": 0.0828,
+     "mrr": 0.3641,
+     "ndcg@10": 0.168,
+     "p95_latency_s": 0.0009,
+     "errors": 0
+    }
+   }
+  },
+  "v2_hybrid": {
+   "all": {
+    "n": 514,
+    "recall@5": 0.124,
+    "mrr": 0.6047,
+    "ndcg@10": 0.2362,
+    "p95_latency_s": 0.0101,
+    "errors": 0
+   },
+   "by_persona": {
+    "ai_ml": {
+     "n": 170,
+     "recall@5": 0.119,
+     "mrr": 0.5793,
+     "ndcg@10": 0.2222,
+     "p95_latency_s": 0.0094,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 172,
+     "recall@5": 0.1267,
+     "mrr": 0.6138,
+     "ndcg@10": 0.2512,
+     "p95_latency_s": 0.0102,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 172,
+     "recall@5": 0.1263,
+     "mrr": 0.6206,
+     "ndcg@10": 0.235,
+     "p95_latency_s": 0.0105,
+     "errors": 0
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "n": 82,
+     "recall@5": 0.1433,
+     "mrr": 0.6556,
+     "ndcg@10": 0.198,
+     "p95_latency_s": 0.01,
+     "errors": 0
+    },
+    "injection": {
+     "n": 54,
+     "recall@5": 0.1145,
+     "mrr": 0.5856,
+     "ndcg@10": 0.2079,
+     "p95_latency_s": 0.0087,
+     "errors": 0
+    },
+    "multi_req": {
+     "n": 161,
+     "recall@5": 0.0878,
+     "mrr": 0.5846,
+     "ndcg@10": 0.1745,
+     "p95_latency_s": 0.0105,
+     "errors": 0
+    },
+    "scam": {
+     "n": 72,
+     "recall@5": 0.129,
+     "mrr": 0.6159,
+     "ndcg@10": 0.2642,
+     "p95_latency_s": 0.0107,
+     "errors": 0
+    },
+    "should_skip": {
+     "n": 100,
+     "recall@5": 0.0837,
+     "mrr": 0.3985,
+     "ndcg@10": 0.1691,
+     "p95_latency_s": 0.0099,
+     "errors": 0
+    },
+    "standard": {
+     "n": 141,
+     "recall@5": 0.1286,
+     "mrr": 0.5914,
+     "ndcg@10": 0.2509,
+     "p95_latency_s": 0.0093,
+     "errors": 0
+    },
+    "vague": {
+     "n": 56,
+     "recall@5": 0.1684,
+     "mrr": 0.6651,
+     "ndcg@10": 0.3609,
+     "p95_latency_s": 0.0094,
+     "errors": 0
+    }
+   }
+  },
+  "v4_outcome": {
+   "all": {
+    "n": 514,
+    "recall@5": 0.1345,
+    "mrr": 0.6769,
+    "ndcg@10": 0.2348,
+    "p95_latency_s": 0.0016,
+    "errors": 0
+   },
+   "by_persona": {
+    "ai_ml": {
+     "n": 170,
+     "recall@5": 0.1439,
+     "mrr": 0.6774,
+     "ndcg@10": 0.2452,
+     "p95_latency_s": 0.0019,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 172,
+     "recall@5": 0.142,
+     "mrr": 0.7027,
+     "ndcg@10": 0.2583,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 172,
+     "recall@5": 0.1179,
+     "mrr": 0.6507,
+     "ndcg@10": 0.2011,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "n": 82,
+     "recall@5": 0.1535,
+     "mrr": 0.6875,
+     "ndcg@10": 0.1984,
+     "p95_latency_s": 0.0017,
+     "errors": 0
+    },
+    "injection": {
+     "n": 54,
+     "recall@5": 0.1302,
+     "mrr": 0.7049,
+     "ndcg@10": 0.2103,
+     "p95_latency_s": 0.0014,
+     "errors": 0
+    },
+    "multi_req": {
+     "n": 161,
+     "recall@5": 0.0977,
+     "mrr": 0.6703,
+     "ndcg@10": 0.1825,
+     "p95_latency_s": 0.0017,
+     "errors": 0
+    },
+    "scam": {
+     "n": 72,
+     "recall@5": 0.1425,
+     "mrr": 0.6417,
+     "ndcg@10": 0.2464,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    },
+    "should_skip": {
+     "n": 100,
+     "recall@5": 0.0926,
+     "mrr": 0.4635,
+     "ndcg@10": 0.1737,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "standard": {
+     "n": 141,
+     "recall@5": 0.1471,
+     "mrr": 0.7177,
+     "ndcg@10": 0.2617,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "vague": {
+     "n": 56,
+     "recall@5": 0.1575,
+     "mrr": 0.7308,
+     "ndcg@10": 0.3323,
+     "p95_latency_s": 0.0014,
+     "errors": 0
+    }
+   }
+  },
+  "v5_multivector": {
+   "all": {
+    "n": 514,
+    "recall@5": 0.1631,
+    "mrr": 0.6295,
+    "ndcg@10": 0.4,
+    "p95_latency_s": 0.0016,
+    "errors": 0
+   },
+   "by_persona": {
+    "ai_ml": {
+     "n": 170,
+     "recall@5": 0.1764,
+     "mrr": 0.6622,
+     "ndcg@10": 0.4221,
+     "p95_latency_s": 0.0018,
+     "errors": 0
+    },
+    "data_analyst": {
+     "n": 172,
+     "recall@5": 0.1776,
+     "mrr": 0.6203,
+     "ndcg@10": 0.419,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    },
+    "fullstack": {
+     "n": 172,
+     "recall@5": 0.1354,
+     "mrr": 0.6064,
+     "ndcg@10": 0.3593,
+     "p95_latency_s": 0.0014,
+     "errors": 0
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "n": 82,
+     "recall@5": 0.1852,
+     "mrr": 0.6952,
+     "ndcg@10": 0.4233,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "injection": {
+     "n": 54,
+     "recall@5": 0.1804,
+     "mrr": 0.6806,
+     "ndcg@10": 0.4082,
+     "p95_latency_s": 0.0017,
+     "errors": 0
+    },
+    "multi_req": {
+     "n": 161,
+     "recall@5": 0.1332,
+     "mrr": 0.6476,
+     "ndcg@10": 0.3888,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    },
+    "scam": {
+     "n": 72,
+     "recall@5": 0.1513,
+     "mrr": 0.5572,
+     "ndcg@10": 0.3744,
+     "p95_latency_s": 0.0016,
+     "errors": 0
+    },
+    "should_skip": {
+     "n": 100,
+     "recall@5": 0.1332,
+     "mrr": 0.5123,
+     "ndcg@10": 0.32,
+     "p95_latency_s": 0.0017,
+     "errors": 0
+    },
+    "standard": {
+     "n": 141,
+     "recall@5": 0.1722,
+     "mrr": 0.6084,
+     "ndcg@10": 0.3983,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    },
+    "vague": {
+     "n": 56,
+     "recall@5": 0.1975,
+     "mrr": 0.6877,
+     "ndcg@10": 0.4617,
+     "p95_latency_s": 0.0015,
+     "errors": 0
+    }
+   }
+  }
+ },
+ "note": "relevance from gold relevant_items; queries as in fit_matcher",
+ "limit_per_persona": "all"
+}
