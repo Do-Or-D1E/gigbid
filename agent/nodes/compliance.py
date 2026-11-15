@@ -13,6 +13,16 @@ from agent.nodes._base import node
 from agent.prompts import load_prompt
 
 
+def injected_phrases(instructions: list[str]) -> list[str]:
+    """Phrases an injected instruction asks to be inserted: quoted text or 2+ upper-case words."""
+    out: list[str] = []
+    for ins in instructions:
+        out += re.findall(r"[\"'“‘]([^\"'”’]{4,60})[\"'”’]", ins)
+        out += re.findall(r"\b([A-Z][A-Z0-9]+(?:\s+[A-Z][A-Z0-9]+)+)\b", ins)
+    stop = {"AI", "NOTE TO AI ASSISTANTS", "IMPORTANT", "AI ASSISTANTS"}
+    return sorted({p.strip() for p in out if p.strip() and p.strip().upper() not in stop}, key=len, reverse=True)
+
+
 def scrub(text: str) -> tuple[str, list[Violation]]:
     """Remove contact details, guarantees and disallowed links deterministically."""
     found: list[Violation] = []
@@ -67,6 +77,17 @@ async def compliance(state: dict, config: dict) -> dict:
     context = json.dumps({"job_title": state["job"].get("title"), "risk_flags": [f.get("kind") for f in
                                                                                  risk.get("flags", [])]})
     verdict = await check_text(draft["cover_letter"], context, (state.get("claim_report") or {}).get("claims", []))
+    # Injection echo guard: a phrase the job post told "the AI" to insert must never reach the client.
+    suspicious = (list((state.get("job_spec") or {}).get("suspicious_instructions", [])) +
+                  list(risk.get("injected_instructions", [])) + list(state.get("injection_hits", [])))
+    if verdict.verdict != "block" and suspicious:
+        letter = verdict.cleaned_cover_letter or draft["cover_letter"]
+        for phrase in injected_phrases(suspicious):
+            if phrase.lower() in letter.lower():
+                letter = re.sub(re.escape(phrase), "", letter, flags=re.I).strip(" ,.:;-\n") or letter
+                verdict.violations.append(Violation(rule_id="untrusted_input", excerpt=phrase, action="removed"))
+                verdict.verdict = "fixed"
+        verdict.cleaned_cover_letter = letter
     answers = []
     for a in draft.get("screening_answers", []):
         cleaned, _ = scrub(a["answer"])

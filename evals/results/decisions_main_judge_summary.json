@@ -1,0 +1,12 @@
+{
+ "file": "decisions_main_per_job.jsonl",
+ "n": 29,
+ "judge_overall_mean": 3.931,
+ "criteria_means": {
+  "specificity": 3.7931,
+  "relevance": 4.7931,
+  "personalisation": 3.4138,
+  "clarity": 4.0345,
+  "honesty": 4.8276
+ }
+}

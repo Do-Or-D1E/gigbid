@@ -177,7 +177,8 @@ def summary(rows: list[dict]) -> dict:
 async def main_async(args) -> list[dict]:
     rows_by_p = {}
     for p in args.personas:
-        rows = [r for r in H.load_dev(p) if not r["gold"].get("dup_of")]
+        src = H.ROOT / "evals" / "holdout" / f"dev_{p}.jsonl" if args.dataset == "holdout" else None
+        rows = [r for r in H.load_dev(p, path=src) if not r["gold"].get("dup_of")]
         if args.only == "injection":
             rows = [r for r in rows if r["gold"].get("has_injection")][: args.n]
         elif args.only == "bid":
@@ -220,6 +221,8 @@ def main(argv=None) -> int:
     ap.add_argument("--submit", action="store_true", help="approve in GigSim to measure simulated replies")
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--tag", default="main")
+    ap.add_argument("--dataset", choices=["dev", "holdout"], default="dev",
+                    help="holdout = hidden-test stand-in generated with an unseen seed (never tuned on)")
     args = ap.parse_args(argv)
     if args.variant:
         os.environ["RAG_VARIANT"] = args.variant

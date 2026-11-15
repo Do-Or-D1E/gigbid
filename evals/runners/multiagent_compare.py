@@ -94,6 +94,13 @@ async def run_agent(kind: str, persona: str, row: dict, gw) -> tuple[FinalAnswer
         answer = out.get("structured_response")
         if isinstance(answer, dict):
             answer = FinalAnswer(**answer)
+        if answer is None:
+            # Some prebuilt agents end without the structured response; extract it from the final
+            # messages with one extra call (counted in this system's tokens), same for every system.
+            transcript = "\n\n".join(f"{getattr(msg, 'name', None) or msg.type}: {str(msg.content)[:3000]}"
+                                     for msg in out.get("messages", [])[-8:])
+            answer, _ = await llm.call("baseline_agent", load_prompt("final_answer_extractor"), transcript, FinalAnswer,
+                                       temperature=0)
     except Exception as exc:  # noqa: BLE001
         err = f"{type(exc).__name__}: {str(exc)[:300]}"
     finally:

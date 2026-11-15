@@ -1,5 +1,69 @@
 {
- "shipped": {"name": "hybrid+outcome+multivector", "flags": {"hybrid": true, "outcome": true, "flavour": "multivector", "project_group": true}},
- "status": "provisional from ablation phase 1; evals/runners/ablation.py rewrites this file when phase 2 (rerank) ends",
- "metric": "nDCG@10 on all dev jobs with gold evidence (graded relevance), tie-break p95 latency"
+ "shipped": {
+  "name": "hybrid+outcome+multivector",
+  "flags": {
+   "hybrid": true,
+   "outcome": true,
+   "flavour": "multivector",
+   "project_group": true
+  }
+ },
+ "metric": "nDCG@10 on all dev jobs with gold evidence (graded relevance), tie-break p95 latency",
+ "v0": {
+  "ndcg@10": 0.2199,
+  "capped_recall@5": 0.3545,
+  "recall@5": 0.1181,
+  "mrr": 0.569
+ },
+ "best": {
+  "ndcg@10": 0.4403,
+  "capped_recall@5": 0.5551,
+  "recall@5": 0.186,
+  "mrr": 0.7725,
+  "p95_latency_s": 0.0154
+ },
+ "ablation": {
+  "without hybrid": {
+   "ndcg@10": 0.4307,
+   "capped_recall@5": 0.5375,
+   "mrr": 0.7142
+  },
+  "without outcome": {
+   "ndcg@10": 0.4066,
+   "capped_recall@5": 0.5078,
+   "mrr": 0.6491
+  },
+  "without multivector": {
+   "ndcg@10": 0.2671,
+   "capped_recall@5": 0.463,
+   "mrr": 0.766
+  }
+ },
+ "rerank_on_subset": {
+  "v0": {
+   "ndcg@10": 0.2541,
+   "capped_recall@5": 0.3714,
+   "mrr": 0.5496,
+   "p95_latency_s": 0.0012
+  },
+  "hybrid+outcome+multivector": {
+   "ndcg@10": 0.4622,
+   "capped_recall@5": 0.55,
+   "mrr": 0.8451,
+   "p95_latency_s": 0.0139
+  },
+  "rerank": {
+   "ndcg@10": 0.241,
+   "capped_recall@5": 0.35,
+   "mrr": 0.505,
+   "p95_latency_s": 2.1176
+  },
+  "hybrid+outcome+multivector+rerank": {
+   "ndcg@10": 0.451,
+   "capped_recall@5": 0.5214,
+   "mrr": 0.7476,
+   "p95_latency_s": 2.0197
+  }
+ },
+ "decision_note": "Ship the best cheap combination. The cross-encoder is judged on the subset: it is shipped only if it adds nDCG@10 worth its CPU latency and package size in a serverless function."
 }

@@ -1,0 +1,88 @@
+{
+ "args": {
+  "n": 5,
+  "systems": [
+   "react",
+   "supervisor",
+   "graph"
+  ],
+  "submit": false,
+  "concurrency": 5,
+  "profile": "paid"
+ },
+ "systems": {
+  "react": {
+   "n": 15,
+   "errors": 0,
+   "bid_skip_accuracy": 0.7333,
+   "bid_skip_f1": 0.8,
+   "scam_recall": 1.0,
+   "unsupported_per_proposal": 2.7273,
+   "proposals_with_violations": 2,
+   "violations_caught": 0,
+   "gigsim_mean_p_reply": null,
+   "tokens_per_job": 11007.6667,
+   "p50_latency_s": 83.44,
+   "p95_latency_s": 143.338,
+   "list_usd_per_job": 0.0019,
+   "accuracy_by_job_type": {
+    "exact_tool": 1.0,
+    "injection": 1.0,
+    "multi_req": 0.714,
+    "scam": 0.5,
+    "should_skip": 0.5,
+    "standard": 1.0,
+    "vague": 0.667
+   }
+  },
+  "supervisor": {
+   "n": 15,
+   "errors": 0,
+   "bid_skip_accuracy": 0.6667,
+   "bid_skip_f1": 0.7619,
+   "scam_recall": 0.5,
+   "unsupported_per_proposal": 3.3333,
+   "proposals_with_violations": 0,
+   "violations_caught": 0,
+   "gigsim_mean_p_reply": null,
+   "tokens_per_job": 8398.6,
+   "p50_latency_s": 76.53,
+   "p95_latency_s": 150.545,
+   "list_usd_per_job": 0.0018,
+   "accuracy_by_job_type": {
+    "exact_tool": 1.0,
+    "injection": 1.0,
+    "multi_req": 0.571,
+    "scam": 0.5,
+    "should_skip": 0.25,
+    "standard": 1.0,
+    "vague": 0.667
+   }
+  },
+  "graph": {
+   "n": 15,
+   "errors": 0,
+   "bid_skip_accuracy": 0.8,
+   "bid_skip_f1": 0.8,
+   "scam_recall": 1.0,
+   "unsupported_per_proposal": 1.0,
+   "proposals_with_violations": 0,
+   "violations_caught": 1,
+   "gigsim_mean_p_reply": null,
+   "tokens_per_job": 12813.0,
+   "p50_latency_s": 33.468,
+   "p95_latency_s": 368.036,
+   "list_usd_per_job": 0.0029,
+   "accuracy_by_job_type": {
+    "exact_tool": 1.0,
+    "injection": 0.0,
+    "multi_req": 0.857,
+    "scam": 1.0,
+    "should_skip": 1.0,
+    "standard": 0.667,
+    "vague": 0.667
+   }
+  }
+ },
+ "billed_usd_total_ledger": 0.51352
+}

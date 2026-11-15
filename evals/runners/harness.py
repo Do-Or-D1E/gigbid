@@ -48,6 +48,8 @@ def setup_env(*, cache: bool = True, profile: str | None = None) -> None:
     from agent import settings
 
     settings.reload()
+    # Keep the simulator's platform policy in step with the policy GigBid enforces.
+    os.environ.setdefault("GIGSIM_POLICY_VERSION", str(settings.get("policy.version", 1)))
 
 
 def load_dev(persona: str, n: int | None = None, *, path: Path | None = None) -> list[dict]:

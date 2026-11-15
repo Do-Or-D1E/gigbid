@@ -151,6 +151,7 @@ decision:
   max_risk_bid: 0.55
   block_risk: 0.80
   require_coverage: 0.5
+  injection_only_risk_cap: 0.3   # injected text alone is handled downstream, not a reason to skip
 
 pricing:
   floor_multiplier: 1.0     # never bid under the user's floor

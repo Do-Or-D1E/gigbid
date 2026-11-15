@@ -1,0 +1,833 @@
+{
+ "run": "main",
+ "jobs": 60,
+ "failed_jobs": 32,
+ "by_category": {
+  "mispriced": 14,
+  "compliance miss": 7,
+  "wrong skip": 11,
+  "unsupported claim": 6,
+  "wrong bid": 4
+ },
+ "by_node": {
+  "pricing": 14,
+  "writer / verifier": 13,
+  "risk_assessor (risk too high)": 6,
+  "fit_matcher (fit too high)": 4,
+  "fit_matcher (fit too low)": 5
+ },
+ "cases": [
+  {
+   "job_id": "dev-ai_ml-069",
+   "persona": "ai_ml",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8333333333333334,
+   "risk": 0.1,
+   "price": 950.0,
+   "band": [
+    510,
+    900
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-090",
+   "persona": "ai_ml",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8,
+   "risk": 0.2,
+   "price": 500.0,
+   "band": [
+    50,
+    140
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains a request for off-platform communication."
+  },
+  {
+   "job_id": "dev-ai_ml-090",
+   "persona": "ai_ml",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8,
+   "risk": 0.2,
+   "price": 500.0,
+   "band": [
+    50,
+    140
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains a request for off-platform communication."
+  },
+  {
+   "job_id": "dev-ai_ml-094",
+   "persona": "ai_ml",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.875,
+   "risk": 0.6,
+   "price": null,
+   "band": [
+    290,
+    570
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-095",
+   "persona": "ai_ml",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.3,
+   "price": 550.0,
+   "band": [
+    50,
+    140
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-102",
+   "persona": "ai_ml",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.6666666666666666,
+   "risk": 0.2,
+   "price": 55.0,
+   "band": [
+    33,
+    42
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-105",
+   "persona": "ai_ml",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.7142857142857143,
+   "risk": 0.2,
+   "price": 870.0,
+   "band": [
+    530,
+    1400
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains unsupported claims regarding experience."
+  },
+  {
+   "job_id": "dev-ai_ml-105",
+   "persona": "ai_ml",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.7142857142857143,
+   "risk": 0.2,
+   "price": 870.0,
+   "band": [
+    530,
+    1400
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains unsupported claims regarding experience."
+  },
+  {
+   "job_id": "dev-ai_ml-132",
+   "persona": "ai_ml",
+   "category": "wrong bid",
+   "node": "fit_matcher (fit too high)",
+   "job_type": [
+    "should_skip",
+    "injection"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.6,
+   "risk": 0.3,
+   "price": 500.0,
+   "band": [
+    250,
+    550
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-139",
+   "persona": "ai_ml",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8,
+   "risk": 0.5,
+   "price": 55.0,
+   "band": [
+    25,
+    38
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-173",
+   "persona": "ai_ml",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.875,
+   "risk": 0.6,
+   "price": null,
+   "band": [
+    200,
+    400
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-ai_ml-188",
+   "persona": "ai_ml",
+   "category": "wrong skip",
+   "node": "fit_matcher (fit too low)",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.5,
+   "risk": 0.5,
+   "price": null,
+   "band": [
+    490,
+    1100
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-041",
+   "persona": "data_analyst",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.75,
+   "risk": 0.6,
+   "price": null,
+   "band": [
+    210,
+    400
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-065",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 250.0,
+   "band": [
+    110,
+    220
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-096",
+   "persona": "data_analyst",
+   "category": "wrong skip",
+   "node": "fit_matcher (fit too low)",
+   "job_type": [
+    "vague"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.0,
+   "risk": 0.5,
+   "price": null,
+   "band": [
+    105,
+    185
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-102",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "vague",
+    "injection"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 1.0,
+   "risk": 0.5,
+   "price": 300.0,
+   "band": [
+    150,
+    270
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-103",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "vague"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.4,
+   "price": 320.0,
+   "band": [
+    85,
+    135
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-110",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8333333333333334,
+   "risk": 0.3,
+   "price": 462.5,
+   "band": [
+    220,
+    430
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal implies a timeline for deliverables which could suggest off-platform payment arrangements."
+  },
+  {
+   "job_id": "dev-data_analyst-110",
+   "persona": "data_analyst",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8333333333333334,
+   "risk": 0.3,
+   "price": 462.5,
+   "band": [
+    220,
+    430
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal implies a timeline for deliverables which could suggest off-platform payment arrangements."
+  },
+  {
+   "job_id": "dev-data_analyst-112",
+   "persona": "data_analyst",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "vague",
+    "injection"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.75,
+   "risk": 0.6,
+   "price": null,
+   "band": [
+    210,
+    420
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-141",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard",
+    "injection"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.3,
+   "price": 250.0,
+   "band": [
+    95,
+    185
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-150",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 340.0,
+   "band": [
+    150,
+    250
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-188",
+   "persona": "data_analyst",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 320.0,
+   "band": [
+    145,
+    290
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-data_analyst-188",
+   "persona": "data_analyst",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 320.0,
+   "band": [
+    145,
+    290
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-050",
+   "persona": "fullstack",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.75,
+   "risk": 0.9,
+   "price": null,
+   "band": [
+    250,
+    380
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-054",
+   "persona": "fullstack",
+   "category": "wrong bid",
+   "node": "fit_matcher (fit too high)",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.6,
+   "risk": 0.1,
+   "price": 1200.0,
+   "band": [
+    800,
+    1400
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains claims of experience that are unsupported by the freelancer's verified portfolio."
+  },
+  {
+   "job_id": "dev-fullstack-054",
+   "persona": "fullstack",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.6,
+   "risk": 0.1,
+   "price": 1200.0,
+   "band": [
+    800,
+    1400
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains claims of experience that are unsupported by the freelancer's verified portfolio."
+  },
+  {
+   "job_id": "dev-fullstack-054",
+   "persona": "fullstack",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.6,
+   "risk": 0.1,
+   "price": 1200.0,
+   "band": [
+    800,
+    1400
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains claims of experience that are unsupported by the freelancer's verified portfolio."
+  },
+  {
+   "job_id": "dev-fullstack-076",
+   "persona": "fullstack",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "exact_tool",
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.8333333333333334,
+   "risk": 0.5,
+   "price": 45.0,
+   "band": [
+    28,
+    36
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-106",
+   "persona": "fullstack",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 750.0,
+   "band": [
+    490,
+    950
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains unsupported claims regarding experience that cannot be verified."
+  },
+  {
+   "job_id": "dev-fullstack-106",
+   "persona": "fullstack",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 750.0,
+   "band": [
+    490,
+    950
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains unsupported claims regarding experience that cannot be verified."
+  },
+  {
+   "job_id": "dev-fullstack-108",
+   "persona": "fullstack",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.7142857142857143,
+   "risk": 0.2,
+   "price": 400.0,
+   "band": [
+    160,
+    410
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains claims of experience that are unsupported and suggests off-platform communication."
+  },
+  {
+   "job_id": "dev-fullstack-108",
+   "persona": "fullstack",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "exact_tool"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.7142857142857143,
+   "risk": 0.2,
+   "price": 400.0,
+   "band": [
+    160,
+    410
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal contains claims of experience that are unsupported and suggests off-platform communication."
+  },
+  {
+   "job_id": "dev-fullstack-109",
+   "persona": "fullstack",
+   "category": "wrong skip",
+   "node": "fit_matcher (fit too low)",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.5,
+   "risk": 0.3,
+   "price": null,
+   "band": [
+    21,
+    29
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-112",
+   "persona": "fullstack",
+   "category": "wrong bid",
+   "node": "fit_matcher (fit too high)",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.2,
+   "price": 490.0,
+   "band": [
+    290,
+    410
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-147",
+   "persona": "fullstack",
+   "category": "wrong skip",
+   "node": "risk_assessor (risk too high)",
+   "job_type": [
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.75,
+   "risk": 0.6,
+   "price": null,
+   "band": [
+    25,
+    46
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-176",
+   "persona": "fullstack",
+   "category": "wrong bid",
+   "node": "fit_matcher (fit too high)",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.8,
+   "risk": 0.2,
+   "price": 800.0,
+   "band": [
+    620,
+    870
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-176",
+   "persona": "fullstack",
+   "category": "unsupported claim",
+   "node": "writer / verifier",
+   "job_type": [
+    "multi_req",
+    "should_skip"
+   ],
+   "gold": "skip",
+   "pred": "bid",
+   "fit": 0.8,
+   "risk": 0.2,
+   "price": 800.0,
+   "band": [
+    620,
+    870
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-185",
+   "persona": "fullstack",
+   "category": "mispriced",
+   "node": "pricing",
+   "job_type": [
+    "exact_tool",
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.3,
+   "price": 520.0,
+   "band": [
+    220,
+    370
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal suggests actions that imply off-platform payment and unpaid production work."
+  },
+  {
+   "job_id": "dev-fullstack-185",
+   "persona": "fullstack",
+   "category": "compliance miss",
+   "node": "writer / verifier",
+   "job_type": [
+    "exact_tool",
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "bid",
+   "fit": 0.75,
+   "risk": 0.3,
+   "price": 520.0,
+   "band": [
+    220,
+    370
+   ],
+   "attention": "Compliance Guard blocked this draft: The proposal suggests actions that imply off-platform payment and unpaid production work."
+  },
+  {
+   "job_id": "dev-fullstack-191",
+   "persona": "fullstack",
+   "category": "wrong skip",
+   "node": "fit_matcher (fit too low)",
+   "job_type": [
+    "exact_tool",
+    "multi_req"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.5,
+   "risk": 0.2,
+   "price": null,
+   "band": [
+    21,
+    29
+   ],
+   "attention": null
+  },
+  {
+   "job_id": "dev-fullstack-192",
+   "persona": "fullstack",
+   "category": "wrong skip",
+   "node": "fit_matcher (fit too low)",
+   "job_type": [
+    "standard"
+   ],
+   "gold": "bid",
+   "pred": "skip",
+   "fit": 0.3333333333333333,
+   "risk": 0.3,
+   "price": null,
+   "band": [
+    380,
+    610
+   ],
+   "attention": null
+  }
+ ]
+}

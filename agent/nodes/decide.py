@@ -26,6 +26,11 @@ def decide_action(state: dict) -> BidDecision:
     profile = state.get("profile") or {}
     fit_score, coverage = float(fit.get("fit_score", 0)), float(fit.get("coverage", 0))
     risk_score = float(risk.get("risk_score", 0))
+    # Injected text is neutralised downstream (delimiting, echo guard, compliance), so on its own it
+    # must not push an otherwise good job to skip. Scam and other flags still count in full.
+    other_flags = [f for f in risk.get("flags", []) if f.get("kind") != "injection"]
+    if not risk.get("is_scam") and risk.get("flags") and not other_flags:
+        risk_score = min(risk_score, float(d.get("injection_only_risk_cap", 0.3)))
     reasons: list[str] = []
     if risk.get("is_scam") or risk_score >= d["block_risk"]:
         flags = ", ".join(sorted({f.get("kind") for f in risk.get("flags", [])})) or "high risk"

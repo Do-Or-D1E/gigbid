@@ -51,11 +51,24 @@ def build_chunks(owner: str, flavour: str = "plain", docs: list[Document] | None
         return [c for d in docs for c in multivector_chunks(d, size, overlap)]
     chunks = [c for d in docs for c in fixed_chunks(d, size, overlap)]
     if flavour == "contextual":
-        lines = asyncio.run(context_lines(owner, docs)) if docs else {}
+        lines = _run_sync(context_lines(owner, docs)) if docs else {}
         for c in chunks:
             c.context = lines.get(c.chunk_id, "")
             c.view = "context" if c.context else c.view
     return chunks
+
+
+def _run_sync(coro):
+    """Run a coroutine to completion even when called from inside a running event loop
+    (index builds are triggered lazily from async retrieval code)."""
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        return asyncio.run(coro)
+    import concurrent.futures
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+        return pool.submit(asyncio.run, coro).result()
 
 
 async def context_lines(owner: str, docs: list[Document]) -> dict[str, str]:
