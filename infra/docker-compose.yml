@@ -22,6 +22,7 @@ x-env: &env
   REVIEWER_EMAIL: ${REVIEWER_EMAIL:-reviewer@gigbid.dev}
   REVIEWER_PASSWORD: ${REVIEWER_PASSWORD:-}
   GIGSIM_CLIENT_MODE: ${GIGSIM_CLIENT_MODE:-heuristic}
+  GIGSIM_POLICY_VERSION: "2"
 x-py: &py
   restart: unless-stopped
   environment: *env
