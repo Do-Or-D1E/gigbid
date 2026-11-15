@@ -1,0 +1,33 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	liaison_read(liaison_read)
+	intent(intent)
+	liaison_gather(liaison_gather)
+	liaison(liaison)
+	message_compliance(message_compliance)
+	message_approval(message_approval)
+	send(send)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> liaison_read;
+	intent -.-> __end__;
+	intent -.-> liaison_gather;
+	liaison -.-> __end__;
+	liaison -.-> message_compliance;
+	liaison_gather -.-> __end__;
+	liaison_gather -.-> liaison;
+	liaison_read -.-> __end__;
+	liaison_read -.-> intent;
+	message_approval -. &nbsp;end&nbsp; .-> __end__;
+	message_approval -.-> message_compliance;
+	message_approval -.-> send;
+	message_compliance -.-> __end__;
+	message_compliance -.-> message_approval;
+	send --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

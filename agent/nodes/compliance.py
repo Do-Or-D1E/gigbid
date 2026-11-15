@@ -61,6 +61,8 @@ async def check_text(text: str, context: str, claims: list[dict] | None = None) 
 @node("compliance")
 async def compliance(state: dict, config: dict) -> dict:
     draft = dict(state["draft"])
+    if not guardrails.defences_on():  # undefended baseline for the injection study only
+        return {"compliance": {"verdict": "pass", "violations": [], "reason": "defences off"}, "status": "compliant"}
     risk = state.get("risk") or {}
     context = json.dumps({"job_title": state["job"].get("title"), "risk_flags": [f.get("kind") for f in
                                                                                  risk.get("flags", [])]})

@@ -1,0 +1,14 @@
+.venv
+.pgdata
+cache
+apps/web/node_modules
+apps/web/test-results
+apps/web/playwright-report
+apps/web/tests
+evals/holdout
+evals/results/*_per_job.jsonl
+tests
+docs
+infra
+**/__pycache__
+.env

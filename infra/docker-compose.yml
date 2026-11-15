@@ -1,0 +1,75 @@
+# docker compose -f infra/docker-compose.yml up --build
+# Starts web, API, worker, the three MCP servers, GigSim, Postgres (+pgvector, also the vector
+# store), Redis and Ollama for the open profile run locally (GIGBID_PROFILE=local).
+name: gigbid
+x-env: &env
+  DATABASE_URL: postgresql://gigbid:gigbid@postgres:5432/gigbid
+  GIGSIM_DATABASE_URL: postgresql://gigbid:gigbid@postgres:5432/gigbid
+  REDIS_URL: redis://redis:6379/0
+  GIGSIM_BASE_URL: http://gigsim:8081
+  MCP_TRANSPORT: http
+  MCP_PORTFOLIO_URL: http://mcp-portfolio:8101/mcp
+  MCP_MARKETPLACE_URL: http://mcp-marketplace:8102/mcp
+  MCP_WORKSPACE_URL: http://mcp-workspace:8103/mcp
+  OLLAMA_BASE_URL: http://ollama:11434/v1
+  GIGBID_PROFILE: ${GIGBID_PROFILE:-open}
+  APP_SECRET: ${APP_SECRET:?set APP_SECRET in .env}
+  TOKEN_ENC_KEY: ${TOKEN_ENC_KEY:?set TOKEN_ENC_KEY in .env}
+  GROQ_API_KEY: ${GROQ_API_KEY:-}
+  OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+  LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+  LANGSMITH_PROJECT: ${LANGSMITH_PROJECT:-gigbid}
+  REVIEWER_EMAIL: ${REVIEWER_EMAIL:-reviewer@gigbid.dev}
+  REVIEWER_PASSWORD: ${REVIEWER_PASSWORD:-}
+  GIGSIM_CLIENT_MODE: ${GIGSIM_CLIENT_MODE:-heuristic}
+x-py: &py
+  restart: unless-stopped
+  environment: *env
+  depends_on:
+    postgres: {condition: service_healthy}
+    redis: {condition: service_started}
+
+services:
+  base:
+    build: {context: .., dockerfile: infra/docker/python-base.Dockerfile}
+    image: gigbid-python-base:latest
+    entrypoint: ["true"]
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment: {POSTGRES_USER: gigbid, POSTGRES_PASSWORD: gigbid, POSTGRES_DB: gigbid}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: {test: ["CMD-SHELL", "pg_isready -U gigbid"], interval: 3s, retries: 20}
+  redis:
+    image: redis:7-alpine
+  ollama:
+    image: ollama/ollama:0.12.6
+    volumes: [ollama:/root/.ollama]
+    profiles: [local-models]
+  gigsim:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/gigsim.Dockerfile}
+    ports: ["8081:8081"]
+  mcp-portfolio:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/mcp-portfolio.Dockerfile}
+  mcp-marketplace:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/mcp-marketplace.Dockerfile}
+    depends_on: {gigsim: {condition: service_started}, postgres: {condition: service_healthy}}
+  mcp-workspace:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/mcp-workspace.Dockerfile}
+  api:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    ports: ["8000:8000"]
+    depends_on: [postgres, redis, gigsim, mcp-portfolio, mcp-marketplace, mcp-workspace]
+  worker:
+    <<: *py
+    build: {context: .., dockerfile: infra/docker/worker.Dockerfile}
+    depends_on: [api]
+  web:
+    build: {context: .., dockerfile: infra/docker/web.Dockerfile}
+    ports: ["3000:80"]
+    depends_on: [api]
+volumes: {pgdata: {}, ollama: {}}

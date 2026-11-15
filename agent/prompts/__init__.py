@@ -23,7 +23,10 @@ def _read(name: str) -> tuple[str, str]:
             if line.startswith("version:"):
                 version = line.split(":", 1)[1].strip()
         text = text[end + 4:]
-    return text.strip().replace("{{UNTRUSTED_RULE}}", _untrusted_rule()), version
+    import os
+
+    rule = _untrusted_rule() if os.environ.get("GIGBID_DEFENCES", "on") != "off" else ""
+    return text.strip().replace("{{UNTRUSTED_RULE}}", rule), version
 
 
 def load_prompt(name: str, **fmt: object) -> str:

@@ -9,6 +9,12 @@ providers:
     api_key_env: GROQ_API_KEY
     billed: false          # free tier, list prices below are used for cost estimates only
     structured_method: json_schema
+  ollama:                  # docker compose `local-models` profile (CPU or small GPU)
+    base_url: http://localhost:11434/v1
+    base_url_env: OLLAMA_BASE_URL
+    api_key_env: OLLAMA_API_KEY
+    billed: false
+    structured_method: json_schema
   openai:
     base_url: https://api.openai.com/v1
     api_key_env: OPENAI_API_KEY
@@ -21,6 +27,8 @@ prices:
   openai/gpt-oss-20b: [0.10, 0.50]
   openai/gpt-oss-120b: [0.15, 0.75]
   qwen/qwen3.8-27b: [0.29, 0.59]
+  qwen3:4b: [0, 0]
+  qwen3:1.7b: [0, 0]
   gpt-4o-mini: [0.15, 0.60]
   gpt-4.1-mini: [0.40, 1.60]
   gpt-5-nano: [0.05, 0.40]
@@ -42,6 +50,14 @@ profiles:
     fallback:
       small: {provider: groq, model: openai/gpt-oss-20b}
       strong: {provider: groq, model: qwen/qwen3.8-27b}
+  local:
+    description: Open-weight models on the user's own machine through Ollama (no API at all).
+    tiers:
+      small: {provider: ollama, model: "qwen3:4b"}
+      strong: {provider: ollama, model: "qwen3:4b"}
+    fallback:
+      small: {provider: ollama, model: "qwen3:1.7b"}
+      strong: {provider: ollama, model: "qwen3:1.7b"}
   paid:
     description: Optional API profile, used only where it beats open enough to pay for.
     tiers:
@@ -85,7 +101,7 @@ reranker:
   model: Xenova/ms-marco-MiniLM-L-6-v2 # open cross-encoder via fastembed (ONNX)
 
 rag:
-  variant: v2_hybrid        # replaced by the evaluated winner, see evals/results/rag_decision.json
+  variant: best            # flags come from evals/results/rag_decision.json (chosen by measurement)
   k: 8
   chunk_tokens: 180
   chunk_overlap: 30
@@ -141,6 +157,7 @@ pricing:
   min_expected_value_ratio: 3.0   # expected value must be >= 3x the Connects cost in USD
 
 writer:
+  prompt: writer            # writer | writer_question (X2 A/B strategies, see docs/EXTENSION.md)
   max_words: 260
   max_revisions: 2
 

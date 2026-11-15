@@ -80,28 +80,28 @@ def _record(u: Usage) -> None:
 
 # --------------------------------------------------------------------------- ledger
 class Ledger:
-    """Persistent record of billed spend. Postgres when DATABASE_URL is set, else SQLite."""
+    """Persistent record of billed spend. Writes go to a local SQLite file, or to Postgres when
+    GIGBID_LEDGER_PG=1 (the deployment). total() sums every ledger it can see, so the hard cap
+    covers evals, local runs and the deployment together."""
 
     def __init__(self) -> None:
         self._lock = threading.Lock()
-        self._pg = settings.database_url()
+        self._pg = settings.database_url() if os.environ.get("GIGBID_LEDGER_PG") == "1" else None
+        path = settings.ROOT / "cache" / "ledger.sqlite"
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+        except OSError:
+            path = __import__("pathlib").Path("/tmp/gigbid_ledger.sqlite")
+        self._path = str(path)
+        with sqlite3.connect(self._path) as conn:
+            conn.execute("create table if not exists llm_ledger (id integer primary key, ts real, node text, model text,"
+                         " input_tokens int, output_tokens int, usd real)")
         if self._pg:
             import psycopg
 
             with psycopg.connect(self._pg, autocommit=True) as conn:
-                conn.execute(
-                    "create table if not exists llm_ledger (id bigserial primary key, ts timestamptz default now(),"
-                    " node text, model text, input_tokens int, output_tokens int, usd double precision)"
-                )
-        else:
-            path = settings.ROOT / "cache" / "ledger.sqlite"
-            path.parent.mkdir(parents=True, exist_ok=True)
-            self._path = str(path)
-            with sqlite3.connect(self._path) as conn:
-                conn.execute(
-                    "create table if not exists llm_ledger (id integer primary key, ts real, node text, model text,"
-                    " input_tokens int, output_tokens int, usd real)"
-                )
+                conn.execute("create table if not exists llm_ledger (id bigserial primary key, ts timestamptz default now(),"
+                             " node text, model text, input_tokens int, output_tokens int, usd double precision)")
 
     def add(self, u: Usage) -> None:
         with self._lock:
@@ -109,28 +109,29 @@ class Ledger:
                 import psycopg
 
                 with psycopg.connect(self._pg, autocommit=True) as conn:
-                    conn.execute(
-                        "insert into llm_ledger(node, model, input_tokens, output_tokens, usd) values (%s,%s,%s,%s,%s)",
-                        (u.node, u.model, u.input_tokens, u.output_tokens, u.billed_usd),
-                    )
+                    conn.execute("insert into llm_ledger(node, model, input_tokens, output_tokens, usd) values (%s,%s,%s,%s,%s)",
+                                 (u.node, u.model, u.input_tokens, u.output_tokens, u.billed_usd))
             else:
                 with sqlite3.connect(self._path) as conn:
-                    conn.execute(
-                        "insert into llm_ledger(ts,node,model,input_tokens,output_tokens,usd) values (?,?,?,?,?,?)",
-                        (time.time(), u.node, u.model, u.input_tokens, u.output_tokens, u.billed_usd),
-                    )
+                    conn.execute("insert into llm_ledger(ts,node,model,input_tokens,output_tokens,usd) values (?,?,?,?,?,?)",
+                                 (time.time(), u.node, u.model, u.input_tokens, u.output_tokens, u.billed_usd))
 
     def total(self) -> float:
         extra = float(os.environ.get("GIGBID_EXTERNAL_SPEND_USD", "0") or 0)
-        if self._pg:
-            import psycopg
+        with sqlite3.connect(self._path) as conn:
+            local = float(conn.execute("select coalesce(sum(usd),0) from llm_ledger").fetchone()[0])
+        pg = 0.0
+        url = settings.database_url()
+        if url:
+            try:
+                import psycopg
 
-            with psycopg.connect(self._pg) as conn:
-                row = conn.execute("select coalesce(sum(usd),0) from llm_ledger").fetchone()
-        else:
-            with sqlite3.connect(self._path) as conn:
-                row = conn.execute("select coalesce(sum(usd),0) from llm_ledger").fetchone()
-        return float(row[0]) + extra
+                with psycopg.connect(url, connect_timeout=5) as conn:
+                    row = conn.execute("select coalesce(sum(usd),0) from llm_ledger").fetchone()
+                pg = float(row[0])
+            except Exception:  # noqa: BLE001 - no table / no server: nothing billed there
+                pg = 0.0
+        return local + pg + extra
 
 
 _ledger: Ledger | None = None
@@ -180,8 +181,8 @@ def _spec(tier_cfg: dict) -> ModelSpec:
     return ModelSpec(
         provider=tier_cfg["provider"],
         model=tier_cfg["model"],
-        base_url=prov["base_url"],
-        api_key=os.environ.get(prov["api_key_env"], ""),
+        base_url=os.environ.get(prov.get("base_url_env", ""), "") or prov["base_url"],
+        api_key=os.environ.get(prov["api_key_env"], "") or ("ollama" if tier_cfg["provider"] == "ollama" else ""),
         billed=bool(prov.get("billed", True)),
         structured_method=prov.get("structured_method", "json_schema"),
         price_in=price[0],

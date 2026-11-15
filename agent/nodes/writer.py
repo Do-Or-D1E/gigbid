@@ -45,7 +45,11 @@ async def writer(state: dict, config: dict) -> dict:
     if critique and critique.get("verdict") == "revise":
         parts.append("Critique notes to fix: " + json.dumps(critique.get("issues", [])))
     max_words = int(settings.get("writer.max_words", 260))
-    draft, _ = await llm.call("writer", load_prompt("writer", max_words=max_words), "\n\n".join(parts),
+    # The writing strategy is configuration (X2 proposal experiments): writer.prompt or GIGBID_WRITER_PROMPT.
+    import os
+
+    prompt_name = os.environ.get("GIGBID_WRITER_PROMPT") or settings.get("writer.prompt", "writer")
+    draft, _ = await llm.call("writer", load_prompt(prompt_name, max_words=max_words), "\n\n".join(parts),
                               ProposalDraft, temperature=0.4)
     draft.job_id = job["job_id"]
     draft.version = int((state.get("draft") or {}).get("version", 0)) + 1

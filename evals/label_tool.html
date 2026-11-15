@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GigBid judge labels</title>
+<style>
+  :root { --bg: #fafaf7; --fg: #1d1d1b; --muted: #6b6b66; --line: #ddd9cf; --accent: #2d5a4a; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 80px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.hint { color: var(--muted); margin: 0 0 16px; }
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin: 0 0 16px; background: #fff; }
+  .job { color: var(--muted); font-size: 13px; white-space: pre-wrap; max-height: 160px; overflow: auto; }
+  .prop { white-space: pre-wrap; margin: 12px 0; }
+  .scale { display: flex; gap: 8px; flex-wrap: wrap; }
+  .scale label { border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+  .scale input { margin-right: 6px; }
+  button { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 10px 16px; font-size: 15px; cursor: pointer; }
+  .bar { position: sticky; bottom: 0; background: var(--bg); padding: 12px 0; display: flex; gap: 12px; align-items: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Label proposals for judge calibration</h1>
+  <p class="hint">Load <code>evals/datasets/judge_calibration_items.json</code>, give each proposal an overall score
+    (1 poor, 3 acceptable, 5 excellent) as a client would, then download the CSV and save it as
+    <code>evals/datasets/judge_labels_human.csv</code>. Do not look at the judge's scores first.</p>
+  <input type="file" id="file" accept=".json">
+  <div id="items"></div>
+  <div class="bar"><button id="save" disabled>Download CSV</button><span id="count"></span></div>
+</main>
+<script>
+const labels = {};
+let items = [];
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+document.getElementById('file').addEventListener('change', async e => {
+  items = JSON.parse(await e.target.files[0].text());
+  const root = document.getElementById('items');
+  root.innerHTML = items.map(it => `
+    <section class="card">
+      <strong>${it.item}: ${esc(it.job_title)}</strong>
+      <div class="job">${esc(it.job_description)}</div>
+      <div class="prop">${esc(it.proposal)}</div>
+      <div class="scale" role="radiogroup" aria-label="Overall score for ${it.item}">
+        ${[1,2,3,4,5].map(v => `<label><input type="radio" name="${it.item}" value="${v}">${v}</label>`).join('')}
+      </div>
+    </section>`).join('');
+  root.querySelectorAll('input[type=radio]').forEach(r => r.addEventListener('change', () => {
+    labels[r.name] = r.value; update();
+  }));
+  update();
+});
+function update() {
+  const n = Object.keys(labels).length;
+  document.getElementById('count').textContent = `${n} / ${items.length} labelled`;
+  document.getElementById('save').disabled = n === 0;
+}
+document.getElementById('save').addEventListener('click', () => {
+  const rows = ['item,overall', ...Object.entries(labels).map(([k, v]) => `${k},${v}`)];
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([rows.join('\n')], {type: 'text/csv'}));
+  a.download = 'judge_labels_human.csv';
+  a.click();
+});
+</script>
+</body>
+</html>

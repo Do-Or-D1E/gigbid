@@ -1,0 +1,6 @@
+# CI (eval.yml) fails when the 30-job smoke eval drops past these. Set from the main dev-set
+# run with a margin, see evals/results/decisions_main.json and rag_decision.json.
+min_bid_skip_f1: 0.60
+max_unsupported_per_proposal: 1.0
+min_rag_ndcg10: 0.35
+min_scam_recall: 0.5

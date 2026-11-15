@@ -75,6 +75,31 @@ async def rewrite_unsupported(text: str, bad: list[Claim], evidence: list[Eviden
     return revised or text
 
 
+_WORD = re.compile(r"[a-z0-9][a-z0-9+#.-]*", re.I)
+
+
+def _content(s: str) -> set[str]:
+    return {w.lower() for w in _WORD.findall(s) if len(w) > 3}
+
+
+def drop_sentences(text: str, bad: list[Claim], threshold: float = 0.5) -> str:
+    """Deterministic last step: delete any sentence that still carries an unsupported claim."""
+    paragraphs = text.split("\n\n")
+    out = []
+    for para in paragraphs:
+        sentences = re.split(r"(?<=[.!?])\s+", para.strip())
+        keep = []
+        for s in sentences:
+            words = _content(s)
+            hit = any(words and len(words & _content(c.text)) / max(1, min(len(words), len(_content(c.text)))) >= threshold
+                      for c in bad)
+            if not hit:
+                keep.append(s)
+        if keep:
+            out.append(" ".join(keep))
+    return "\n\n".join(out).strip() or text
+
+
 async def verify_and_fix(text: str, evidence: list[EvidenceItem]) -> tuple[str, ClaimReport]:
     claims = await check_claims(text, evidence)
     unsupported = [c for c in claims if c.status == "unsupported"]
@@ -85,6 +110,10 @@ async def verify_and_fix(text: str, evidence: list[EvidenceItem]) -> tuple[str, 
         return text, report
     revised = await rewrite_unsupported(text, unsupported + partly, evidence)
     after = await check_claims(revised, evidence)
+    still = [c for c in after if c.status == "unsupported"]
+    if still:
+        revised = drop_sentences(revised, still)
+        after = await check_claims(revised, evidence)
     report.claims = after
     report.unsupported_after = len([c for c in after if c.status == "unsupported"])
     report.rewritten = True

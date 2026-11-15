@@ -36,13 +36,23 @@ INJECTION_PATTERNS = [
 _INJ = [re.compile(p, re.I) for p in INJECTION_PATTERNS]
 
 
+def defences_on() -> bool:
+    import os
+
+    return os.environ.get("GIGBID_DEFENCES", "on") != "off"
+
+
 def untrusted(tag: str, text: str) -> str:
+    if not defences_on():
+        return text or ""
     safe = re.sub(r"<\s*/?\s*(job_post|client_message|client_history|evidence|system)[^>]*>", "[tag removed]",
                   text or "", flags=re.I)
     return f"<{tag}>\n{safe}\n</{tag}>"
 
 
 def detect_injection(text: str) -> list[str]:
+    if not defences_on():
+        return []
     hits = []
     for pat in _INJ:
         for m in pat.finditer(text or ""):

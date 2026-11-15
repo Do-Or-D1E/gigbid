@@ -20,12 +20,19 @@ async def critic(state: dict, config: dict) -> dict:
     max_words = int(settings.get("writer.max_words", 260))
     words = len(draft["cover_letter"].split())
     report = state.get("claim_report") or {}
-    user = (f"{job_block(state['job'])}\n\nRequirements: "
+    no_evidence = (state.get("fit") or {}).get("missing", [])
+    user = (f"{job_block(state['job'])}\n\nRequirements with NO portfolio evidence (the draft must NOT claim them; "
+            f"never ask the writer to add them): {json.dumps(no_evidence)}\nRequirements: "
             f"{json.dumps([r.get('text') for r in (state.get('job_spec') or {}).get('requirements', [])])}\n"
             f"Cover letter ({words} words):\n{draft['cover_letter']}\n\nScreening answers: "
             f"{json.dumps(draft.get('screening_answers', []))}\n\nVerifier report: "
             f"{json.dumps([{k: c.get(k) for k in ('text', 'status')} for c in report.get('claims', [])])}")
     crit, _ = await llm.call("critic", load_prompt("critic", max_words=max_words), user, Critique, temperature=0)
+    # Never push the writer to claim what the portfolio cannot prove.
+    crit.issues = [i for i in crit.issues if not (i.kind in ("missing_requirement", "screening") and any(
+        m.lower() in i.detail.lower() for m in no_evidence))]
+    if crit.verdict == "revise" and not crit.issues:
+        crit.verdict = "pass"
     # Deterministic checks the model must not talk its way out of.
     if GENERIC.search(draft["cover_letter"]) and not any(i.kind == "generic_opening" for i in crit.issues):
         crit.issues.append(CritiqueIssue(kind="generic_opening", detail="Opens with a generic greeting.", paragraph=1))

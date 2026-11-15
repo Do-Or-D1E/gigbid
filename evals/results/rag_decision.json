@@ -1,0 +1,5 @@
+{
+ "shipped": {"name": "hybrid+outcome+multivector", "flags": {"hybrid": true, "outcome": true, "flavour": "multivector", "project_group": true}},
+ "status": "provisional from ablation phase 1; evals/runners/ablation.py rewrites this file when phase 2 (rerank) ends",
+ "metric": "nDCG@10 on all dev jobs with gold evidence (graded relevance), tie-break p95 latency"
+}

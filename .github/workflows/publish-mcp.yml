@@ -1,0 +1,24 @@
+name: publish-portfolio-mcp
+# Publishes the standalone Portfolio MCP server so anyone can run it:
+#   docker run -i --rm ghcr.io/do-or-d1e/gigbid-portfolio-mcp:latest --owner ai_ml
+on:
+  push:
+    branches: [main]
+    paths: ["mcp_servers/**", "rag/**", "agent/**", "data/personas/**", "infra/docker/portfolio-mcp.Dockerfile"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with: {registry: ghcr.io, username: "${{ github.actor }}", password: "${{ secrets.GITHUB_TOKEN }}"}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: infra/docker/portfolio-mcp.Dockerfile
+          push: true
+          tags: ghcr.io/do-or-d1e/gigbid-portfolio-mcp:latest

@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": [
+          "agent/**", "apps/api/**", "apps/__init__.py", "apps/web/dist/**", "rag/**", "mcp_servers/**",
+          "gigsim/**", "worker/**", "data/personas/**", "data/taxonomy.json", "data/policy_pack/**",
+          "data/jobs/**", "data/real/**", "evals/__init__.py", "evals/results/rag_decision.json"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "api/index.py" }
+  ]
+}

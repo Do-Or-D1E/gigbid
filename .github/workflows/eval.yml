@@ -1,0 +1,28 @@
+name: eval
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env: {POSTGRES_USER: gigbid, POSTGRES_PASSWORD: gigbid, POSTGRES_DB: gigbid}
+        ports: ["5432:5432"]
+        options: --health-cmd "pg_isready -U gigbid" --health-interval 3s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://gigbid:gigbid@localhost:5432/gigbid
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      APP_SECRET: ci-secret-0123456789-abcdefghijklmnopqrst
+      GIGBID_PROFILE: open
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - name: 30-job smoke eval with failure thresholds (evals/thresholds.yaml)
+        run: uv run python -m evals.runners.smoke_eval --n 10
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: smoke-results, path: evals/results/smoke*.json}

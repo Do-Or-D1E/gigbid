@@ -138,6 +138,7 @@ class Stack:
         t0 = time.perf_counter()
         err = None
         final: dict = {}
+        cfg_out: dict = {}
         try:
             async with McpGateway(user, persona, trace_id=f"eval-{job['job_id']}") as gw:
                 cfg = {"configurable": {"thread_id": thread or f"eval:{persona}:{job['job_id']}:{time.time_ns()}",
@@ -152,13 +153,16 @@ class Stack:
                     async for _ in self.bid.astream(inp, cfg, stream_mode="updates"):
                         pass
                 final = (await self.bid.aget_state(cfg)).values
-                self.last_config = cfg
+                self._cfg_tmp = None
+                cfg_out = {"configurable": {"thread_id": cfg["configurable"]["thread_id"]},
+                           "recursion_limit": 80}
         except Exception as exc:  # noqa: BLE001
             err = f"{type(exc).__name__}: {str(exc)[:300]}"
         finally:
             llm.usage_sink.reset(tu)
             tracing.current_trace.reset(tt)
         m = {**llm.summarize(usages), "latency_s": round(time.perf_counter() - t0, 3), "error": err,
+             "usage": llm.usage_dicts(usages), "config": cfg_out,
              "tool_calls": len([s for s in spans if s.kind == "tool"]),
              "models": sorted({u.model for u in usages if not u.error})}
         return final, m

@@ -7,8 +7,10 @@ and the agent reaches them in-process; the MCP servers are still reachable over 
 bearer auth for external clients."""
 from __future__ import annotations
 
+import asyncio
 import logging
 import os
+import sys
 import uuid
 from contextlib import AsyncExitStack, asynccontextmanager
 from pathlib import Path
@@ -35,6 +37,9 @@ class PiiFilter(logging.Filter):
 for name in ("", "uvicorn", "uvicorn.access", "uvicorn.error", "httpx"):
     logging.getLogger(name).addFilter(PiiFilter())
 
+if sys.platform == "win32":  # psycopg async needs the selector loop on Windows
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 INPROC = os.environ.get("INPROC_SERVICES") == "1"
 
 
@@ -57,24 +62,46 @@ async def seed_reviewer() -> None:
                      user["id"], "All new jobs", "", 30)
 
 
+_stack: AsyncExitStack | None = None
+_started = False
+_start_lock = None
+
+
+async def ensure_started() -> None:
+    """Idempotent startup. Runs from the lifespan, or from the first request on runtimes that
+    do not send ASGI lifespan events (serverless)."""
+    global _stack, _started, _start_lock
+    import asyncio
+
+    if _started:
+        return
+    _start_lock = _start_lock or asyncio.Lock()
+    async with _start_lock:
+        if _started:
+            return
+        _stack = AsyncExitStack()
+        db.migrate()
+        await seed_reviewer()
+        if INPROC:
+            from gigsim.app import app as gigsim_app
+            from mcp_servers.marketplace.server import mcp as mk
+            from mcp_servers.portfolio.server import mcp as pf
+            from mcp_servers.workspace.server import mcp as ws
+
+            await _stack.enter_async_context(gigsim_app.router.lifespan_context(gigsim_app))
+            for server in (pf, mk, ws):
+                await _stack.enter_async_context(server.session_manager.run())
+        _started = True
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    stack = AsyncExitStack()
-    db.migrate()
-    await seed_reviewer()
-    if INPROC:
-        from gigsim.app import app as gigsim_app
-        from mcp_servers.marketplace.server import mcp as mk
-        from mcp_servers.portfolio.server import mcp as pf
-        from mcp_servers.workspace.server import mcp as ws
-
-        await stack.enter_async_context(gigsim_app.router.lifespan_context(gigsim_app))
-        for server in (pf, mk, ws):
-            await stack.enter_async_context(server.session_manager.run())
+    await ensure_started()
     try:
         yield
     finally:
-        await stack.aclose()
+        if _stack:
+            await _stack.aclose()
 
 
 app = FastAPI(title="GigBid API", version="0.1.0", lifespan=lifespan,
@@ -85,6 +112,7 @@ app.add_middleware(CORSMiddleware, allow_origins=os.environ.get("CORS_ORIGINS", 
 
 @app.middleware("http")
 async def trace_middleware(request: Request, call_next):
+    await ensure_started()
     trace = request.headers.get("x-trace-id") or uuid.uuid4().hex
     token = tracing.request_trace.set(trace)
     try:
