@@ -1,0 +1,70 @@
+[
+  {
+    "job_id": "j-100",
+    "title": "Migrate billing dashboard to React",
+    "category": "web",
+    "budget_type": "fixed",
+    "budget_min": 1500,
+    "budget_max": 2500,
+    "posted_at": "2026-11-14T09:00:00Z",
+    "status": "approval_pending",
+    "action": "bid",
+    "fit_score": 0.86,
+    "risk_score": 12,
+    "risk_flags": [],
+    "price": {
+      "bid_type": "fixed",
+      "amount": 1800,
+      "connects_cost": 16
+    },
+    "connects_cost": 16,
+    "injection_detected": false,
+    "thread_id": "t-100"
+  },
+  {
+    "job_id": "j-101",
+    "title": "Quick scraper for 5 sites, pay in gift cards",
+    "category": "data",
+    "budget_type": "fixed",
+    "budget_min": 50,
+    "budget_max": 80,
+    "posted_at": "2026-11-14T07:00:00Z",
+    "status": "new",
+    "action": "skip",
+    "fit_score": 0.41,
+    "risk_score": 82,
+    "risk_flags": [
+      {
+        "kind": "off_platform_payment",
+        "evidence": "pay in gift cards",
+        "severity": "high"
+      }
+    ],
+    "price": null,
+    "connects_cost": 8,
+    "injection_detected": true,
+    "thread_id": null
+  },
+  {
+    "job_id": "j-102",
+    "title": "Airflow pipeline review",
+    "category": "data",
+    "budget_type": "hourly",
+    "budget_min": 40,
+    "budget_max": 70,
+    "posted_at": "2026-11-13T09:00:00Z",
+    "status": "new",
+    "action": "watch",
+    "fit_score": 0.62,
+    "risk_score": 35,
+    "risk_flags": [],
+    "price": {
+      "bid_type": "hourly",
+      "amount": 60,
+      "connects_cost": 12
+    },
+    "connects_cost": 12,
+    "injection_detected": false,
+    "thread_id": null
+  }
+]

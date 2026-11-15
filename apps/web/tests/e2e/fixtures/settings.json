@@ -1,0 +1,29 @@
+{
+  "autonomy": "suggest",
+  "hourly_rate_usd": 65,
+  "min_project_usd": 500,
+  "weekly_connects_budget": 80,
+  "hidden_items": [],
+  "saved_searches": [
+    {
+      "id": 1,
+      "name": "React dashboards",
+      "query": "react dashboard",
+      "category": "web",
+      "interval_minutes": 60,
+      "last_run_at": null,
+      "enabled": true
+    }
+  ],
+  "connected_accounts": [
+    {
+      "mode": "gigsim",
+      "account_id": "gs-123",
+      "connected_at": "2026-11-01T00:00:00Z"
+    }
+  ],
+  "model_profile": "dev",
+  "marketplace_mode": "gigsim",
+  "policy_version": 3,
+  "rag_variant": "hybrid"
+}

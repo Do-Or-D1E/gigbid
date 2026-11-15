@@ -1,0 +1,77 @@
+[
+ {
+  "client_id": "c_good",
+  "name": "Acme Analytics",
+  "country": "US",
+  "industry": "SaaS",
+  "member_since": "2021-03-01",
+  "payment_verified": true,
+  "total_spent_usd": 120000,
+  "hires": 40,
+  "jobs_posted": 50,
+  "avg_rating_given": 4.8,
+  "reviews_from_freelancers": [
+   {
+    "rating": 5,
+    "text": "Great client, clear specs."
+   }
+  ],
+  "hidden": {
+   "must_have_skills": [
+    "Python",
+    "PyTorch"
+   ],
+   "budget_ceiling_usd": 6000,
+   "dislikes_generic_openings": true,
+   "prefers_short": true,
+   "responsiveness": 1.0,
+   "is_scammer": false
+  }
+ },
+ {
+  "client_id": "c_scam",
+  "name": "Quick Cash Ltd",
+  "country": "XX",
+  "industry": "Unknown",
+  "member_since": "2026-10-20",
+  "payment_verified": false,
+  "total_spent_usd": 0,
+  "hires": 0,
+  "jobs_posted": 1,
+  "avg_rating_given": 0,
+  "reviews_from_freelancers": [],
+  "hidden": {
+   "must_have_skills": [
+    "Python"
+   ],
+   "budget_ceiling_usd": 500,
+   "dislikes_generic_openings": false,
+   "prefers_short": false,
+   "responsiveness": 1.0,
+   "is_scammer": true
+  }
+ },
+ {
+  "client_id": "c_low",
+  "name": "Sleepy Corp",
+  "country": "DE",
+  "industry": "Retail",
+  "member_since": "2020-01-01",
+  "payment_verified": true,
+  "total_spent_usd": 5000,
+  "hires": 2,
+  "jobs_posted": 10,
+  "avg_rating_given": 4.0,
+  "reviews_from_freelancers": [],
+  "hidden": {
+   "must_have_skills": [
+    "SQL"
+   ],
+   "budget_ceiling_usd": 2000,
+   "dislikes_generic_openings": false,
+   "prefers_short": false,
+   "responsiveness": 0.0,
+   "is_scammer": false
+  }
+ }
+]

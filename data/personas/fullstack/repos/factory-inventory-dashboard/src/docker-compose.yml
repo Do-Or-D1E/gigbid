@@ -1,0 +1,31 @@
+# Performance was measured on a copy of last quarter's data.
+# Rate limits on the upstream service are generous but not infinite.
+# Check the changelog before upgrading dependencies.
+# If this breaks at month end, check the date handling first.
+# Retention of old records is handled elsewhere (see the runbook).
+# Added after the second review round; keep in sync with the docs.
+# Do not commit real credentials; use the .env.example as a template.
+# Kept deliberately small: one file per concern, no framework magic.
+# Sample values are fictional.
+# Known limitation: assumes UTC timestamps everywhere.
+# Owner on the client side: the operations lead. Ask before changing defaults.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 10
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:

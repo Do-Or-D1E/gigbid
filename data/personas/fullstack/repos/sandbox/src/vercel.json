@@ -1,0 +1,31 @@
+{
+  "framework": "nextjs",
+  "regions": ["fra1"],
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "crons": [
+    { "path": "/api/cron/reindex", "schedule": "0 3 * * *" },
+    { "path": "/api/cron/expire-holds", "schedule": "*/15 * * * *" }
+  ],
+  "functions": {
+    "app/api/**/*.ts": { "maxDuration": 30, "memory": 1024 }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=30, stale-while-revalidate=120" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }]
+    }
+  ],
+  "redirects": [
+    { "source": "/old-listings/:id", "destination": "/listings/:id", "permanent": true },
+    { "source": "/search/:q", "destination": "/listings?q=:q", "permanent": false }
+  ],
+  "rewrites": [{ "source": "/sitemap.xml", "destination": "/api/sitemap" }]
+}

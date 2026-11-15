@@ -1,0 +1,235 @@
+{
+  "fullstack-p01": {
+    "industry": "SaaS",
+    "skills": [
+      "JWT authentication",
+      "Jest",
+      "Node.js",
+      "REST API design",
+      "React",
+      "Stripe"
+    ],
+    "title": "Subscription billing portal"
+  },
+  "fullstack-p02": {
+    "industry": "e-commerce",
+    "skills": [
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "title": "Multi-vendor marketplace MVP"
+  },
+  "fullstack-p03": {
+    "industry": "e-commerce",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "REST API design",
+      "Shopify"
+    ],
+    "title": "Custom Shopify storefront for a skincare brand"
+  },
+  "fullstack-p04": {
+    "industry": "logistics",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "React",
+      "Redis",
+      "WebSockets"
+    ],
+    "title": "Live dispatch board"
+  },
+  "fullstack-p05": {
+    "industry": "healthcare",
+    "skills": [
+      "JWT authentication",
+      "Jest",
+      "NestJS",
+      "OAuth",
+      "PostgreSQL",
+      "TypeScript"
+    ],
+    "title": "Clinic appointment booking"
+  },
+  "fullstack-p06": {
+    "industry": "edtech",
+    "skills": [
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "Python",
+      "REST API design",
+      "Redis",
+      "SQL",
+      "Stripe"
+    ],
+    "title": "Course platform for a coding bootcamp"
+  },
+  "fullstack-p07": {
+    "industry": "real estate",
+    "skills": [
+      "Elasticsearch",
+      "GraphQL",
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "title": "Property listing search"
+  },
+  "fullstack-p08": {
+    "industry": "legal",
+    "skills": [
+      "Django",
+      "OAuth",
+      "Playwright",
+      "PostgreSQL",
+      "Python",
+      "React"
+    ],
+    "title": "Back-office admin for a law firm"
+  },
+  "fullstack-p09": {
+    "industry": "media",
+    "skills": [
+      "Elasticsearch",
+      "Express",
+      "Jest",
+      "MongoDB",
+      "REST API design",
+      "Redux"
+    ],
+    "title": "Content management backend for a news site"
+  },
+  "fullstack-p10": {
+    "industry": "fintech",
+    "skills": [
+      "Docker",
+      "GraphQL",
+      "JWT authentication",
+      "NestJS",
+      "PostgreSQL"
+    ],
+    "title": "GraphQL gateway for mobile apps"
+  },
+  "fullstack-p11": {
+    "industry": "SaaS",
+    "skills": [
+      "Docker",
+      "GitHub Actions",
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "title": "End-to-end test overhaul"
+  },
+  "fullstack-p12": {
+    "industry": "e-commerce",
+    "skills": [
+      "Cypress",
+      "GitHub Actions",
+      "JWT authentication",
+      "React"
+    ],
+    "title": "Checkout regression suite"
+  },
+  "fullstack-p13": {
+    "industry": "nonprofit",
+    "skills": [
+      "Next.js",
+      "OAuth",
+      "PostgreSQL",
+      "Stripe",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "title": "Donation platform"
+  },
+  "fullstack-p14": {
+    "industry": "travel",
+    "skills": [
+      "Firebase",
+      "OAuth",
+      "React",
+      "Tailwind CSS",
+      "WebSockets"
+    ],
+    "title": "Itinerary sharing app"
+  },
+  "fullstack-p15": {
+    "industry": "manufacturing",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "PostgreSQL",
+      "REST API design",
+      "RabbitMQ",
+      "React",
+      "SQL"
+    ],
+    "title": "Factory inventory dashboard"
+  },
+  "fullstack-p16": {
+    "industry": "SaaS",
+    "skills": [
+      "Jest",
+      "Node.js",
+      "Redis",
+      "TypeScript",
+      "WebSockets"
+    ],
+    "title": "Support chat widget"
+  },
+  "fullstack-p17": {
+    "industry": "fintech",
+    "skills": [
+      "Docker",
+      "Express",
+      "JWT authentication",
+      "Jest",
+      "OAuth"
+    ],
+    "title": "Single sign-on retrofit"
+  },
+  "fullstack-p18": {
+    "industry": "media",
+    "skills": [
+      "AWS",
+      "Bash scripting",
+      "Django",
+      "Docker",
+      "GitHub Actions",
+      "PostgreSQL",
+      "Python"
+    ],
+    "title": "AWS migration of a Django monolith"
+  },
+  "fullstack-p19": {
+    "industry": "travel",
+    "skills": [
+      "HTML/CSS",
+      "Next.js",
+      "PostgreSQL",
+      "Redis",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "title": "Event ticketing site"
+  },
+  "fullstack-p20": {
+    "industry": "logistics",
+    "skills": [
+      "GraphQL",
+      "Jest",
+      "REST API design",
+      "React",
+      "Redux",
+      "TypeScript"
+    ],
+    "title": "Customer portal for a freight broker"
+  }
+}

@@ -1,0 +1,31 @@
+# Owner on the client side: the operations lead. Ask before changing defaults.
+# Added after the second review round; keep in sync with the docs.
+# Edge case: empty input returns early instead of raising.
+# TODO: move the hard-coded values below into environment config.
+# Last touched during the final week of the engagement.
+# Run the tests before changing anything in this file.
+# Check the changelog before upgrading dependencies.
+# Performance was measured on a copy of last quarter's data.
+# If this breaks at month end, check the date handling first.
+# Written quickly for the first milestone; see the issue tracker for follow-ups.
+# Logging is intentionally terse; verbose mode lives in the config.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 10
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:

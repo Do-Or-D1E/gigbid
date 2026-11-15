@@ -1,0 +1,97 @@
+{
+  "run_id": "r-1",
+  "kind": "analyze",
+  "status": "completed",
+  "thread_id": "t-100",
+  "job_id": "j-100",
+  "created_at": "2026-11-14T10:00:00Z",
+  "finished_at": "2026-11-14T10:00:09Z",
+  "metrics": {
+    "total_usd": 0.0123,
+    "latency_s": 8.7
+  },
+  "trace_url": null,
+  "error": null,
+  "events": [
+    {
+      "id": 1,
+      "ts": "2026-11-14T10:00:00Z",
+      "kind": "start",
+      "node": "scout",
+      "payload": {
+        "node": "scout",
+        "event": "start"
+      }
+    },
+    {
+      "id": 2,
+      "ts": "2026-11-14T10:00:02Z",
+      "kind": "end",
+      "node": "scout",
+      "payload": {
+        "node": "scout",
+        "event": "end",
+        "latency_s": 2.1,
+        "tokens": 540,
+        "summary": "Found 3 jobs"
+      }
+    },
+    {
+      "id": 3,
+      "ts": "2026-11-14T10:00:03Z",
+      "kind": "start",
+      "node": "risk",
+      "payload": {
+        "node": "risk",
+        "event": "start"
+      }
+    },
+    {
+      "id": 4,
+      "ts": "2026-11-14T10:00:05Z",
+      "kind": "end",
+      "node": "risk",
+      "payload": {
+        "node": "risk",
+        "event": "end",
+        "latency_s": 1.4,
+        "tokens": 320,
+        "summary": "Risk 12, no flags"
+      }
+    }
+  ],
+  "spans": [
+    {
+      "kind": "llm",
+      "name": "risk.classify",
+      "node": "risk",
+      "model": "small",
+      "input_tokens": 200,
+      "output_tokens": 120,
+      "usd": 0.0021,
+      "list_usd": 0.0042,
+      "latency_s": 1.2,
+      "error": null
+    }
+  ],
+  "per_node": [
+    {
+      "node": "scout",
+      "llm_calls": 1,
+      "tool_calls": 2,
+      "tokens": 540,
+      "usd": 0.004,
+      "list_usd": 0.008,
+      "latency_s": 2.1
+    },
+    {
+      "node": "risk",
+      "llm_calls": 1,
+      "tool_calls": 0,
+      "tokens": 320,
+      "usd": 0.0021,
+      "list_usd": 0.0042,
+      "latency_s": 1.4
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Formatting follows the team's default linter settings.
+# Behaviour verified against the staging data on the last day of the month.
+# Known limitation: assumes UTC timestamps everywhere.
+# Naming follows the client's glossary, not ours.
+# Performance was measured on a copy of last quarter's data.
+# Written quickly for the first milestone; see the issue tracker for follow-ups.
+# This module has no side effects on import.
+# TODO: move the hard-coded values below into environment config.
+# Logging is intentionally terse; verbose mode lives in the config.
+# Rate limits on the upstream service are generous but not infinite.
+# Deployed from the main branch only; feature branches are not built.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 10
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:

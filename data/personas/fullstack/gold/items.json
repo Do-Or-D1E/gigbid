@@ -1,0 +1,1751 @@
+{
+  "fullstack-cs-01": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "JWT authentication",
+      "Jest",
+      "Node.js",
+      "REST API design",
+      "React",
+      "Stripe"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-02": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-03": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "REST API design",
+      "Shopify"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-04": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "React",
+      "Redis",
+      "WebSockets"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-05": {
+    "project_id": "fullstack-p05",
+    "skills": [
+      "JWT authentication",
+      "Jest",
+      "NestJS",
+      "OAuth",
+      "PostgreSQL",
+      "TypeScript"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-06": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "Python",
+      "REST API design",
+      "Redis",
+      "SQL",
+      "Stripe"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-07": {
+    "project_id": "fullstack-p08",
+    "skills": [
+      "Django",
+      "OAuth",
+      "Playwright",
+      "PostgreSQL",
+      "Python",
+      "React"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-08": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Docker",
+      "GitHub Actions",
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-09": {
+    "project_id": "fullstack-p12",
+    "skills": [
+      "Cypress",
+      "GitHub Actions",
+      "JWT authentication",
+      "React"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-10": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Next.js",
+      "OAuth",
+      "PostgreSQL",
+      "Stripe",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-11": {
+    "project_id": "fullstack-p14",
+    "skills": [
+      "Firebase",
+      "OAuth",
+      "React",
+      "Tailwind CSS",
+      "WebSockets"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-12": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Jest",
+      "Node.js",
+      "Redis",
+      "TypeScript",
+      "WebSockets"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-13": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Docker",
+      "Express",
+      "JWT authentication",
+      "Jest",
+      "OAuth"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-14": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "AWS",
+      "Bash scripting",
+      "Django",
+      "Docker",
+      "GitHub Actions",
+      "PostgreSQL",
+      "Python"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cs-15": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "HTML/CSS",
+      "Next.js",
+      "PostgreSQL",
+      "Redis",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "case_study"
+  },
+  "fullstack-cv-01": {
+    "project_id": null,
+    "skills": [
+      "AWS",
+      "Bash scripting",
+      "Cypress",
+      "Django",
+      "Docker",
+      "Elasticsearch",
+      "Express",
+      "Firebase",
+      "GitHub Actions",
+      "GraphQL",
+      "HTML/CSS",
+      "JWT authentication",
+      "JavaScript",
+      "Jest",
+      "MongoDB",
+      "NestJS",
+      "Next.js",
+      "Node.js",
+      "OAuth",
+      "Playwright",
+      "PostgreSQL",
+      "Prisma",
+      "Python",
+      "REST API design",
+      "RabbitMQ",
+      "React",
+      "Redis",
+      "Redux",
+      "SQL",
+      "Shopify",
+      "Stripe",
+      "Tailwind CSS",
+      "TypeScript",
+      "Vercel",
+      "WebSockets"
+    ],
+    "type": "cv"
+  },
+  "fullstack-prop-001": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-002": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "Jest",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-003": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "Stripe",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-004": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Jest",
+      "Node.js",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-005": {
+    "project_id": null,
+    "skills": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-006": {
+    "project_id": "fullstack-p10",
+    "skills": [
+      "GraphQL",
+      "NestJS",
+      "PostgreSQL"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-007": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-008": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "AWS",
+      "Django",
+      "Docker",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-009": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "Python",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-010": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "HTML/CSS",
+      "Next.js",
+      "PostgreSQL",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-011": {
+    "project_id": "fullstack-p15",
+    "skills": [
+      "GraphQL",
+      "Node.js",
+      "PostgreSQL",
+      "React",
+      "Redux",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-012": {
+    "project_id": null,
+    "skills": [
+      "Express",
+      "JWT authentication",
+      "PostgreSQL"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-013": {
+    "project_id": null,
+    "skills": [
+      "JWT authentication",
+      "Jest",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-014": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-015": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-016": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Express",
+      "JWT authentication",
+      "Node.js",
+      "OAuth",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-017": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "Jest",
+      "MongoDB",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-018": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "AWS",
+      "Django",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-019": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "React",
+      "Stripe",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-020": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-021": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-022": {
+    "project_id": null,
+    "skills": [
+      "JavaScript",
+      "REST API design",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-023": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-024": {
+    "project_id": null,
+    "skills": [
+      "Cypress",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-025": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Firebase",
+      "Node.js",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-026": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-027": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-028": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "REST API design",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-029": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-030": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-031": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-032": {
+    "project_id": null,
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-033": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Next.js",
+      "Shopify",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-034": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-035": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-036": {
+    "project_id": null,
+    "skills": [
+      "Node.js",
+      "PostgreSQL",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-037": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-038": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "JWT authentication",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-039": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Cypress",
+      "Jest",
+      "Playwright",
+      "React",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-040": {
+    "project_id": "fullstack-p12",
+    "skills": [
+      "Cypress",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-041": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Docker",
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-042": {
+    "project_id": "fullstack-p10",
+    "skills": [
+      "GraphQL",
+      "JWT authentication",
+      "NestJS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-043": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-044": {
+    "project_id": null,
+    "skills": [
+      "Next.js",
+      "PostgreSQL",
+      "Prisma"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-045": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Docker",
+      "Express",
+      "MongoDB",
+      "OAuth",
+      "REST API design",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-046": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Node.js",
+      "TypeScript",
+      "WebSockets"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-047": {
+    "project_id": "fullstack-p10",
+    "skills": [
+      "Express",
+      "GraphQL",
+      "NestJS",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-048": {
+    "project_id": "fullstack-p07",
+    "skills": [
+      "Elasticsearch",
+      "Next.js",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-049": {
+    "project_id": null,
+    "skills": [
+      "GraphQL",
+      "OAuth",
+      "Prisma"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-050": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-051": {
+    "project_id": null,
+    "skills": [
+      "AWS",
+      "Docker"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-052": {
+    "project_id": "fullstack-p07",
+    "skills": [
+      "Elasticsearch",
+      "Next.js"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-053": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-054": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-055": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Node.js",
+      "TypeScript",
+      "WebSockets"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-056": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-057": {
+    "project_id": "fullstack-p15",
+    "skills": [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "REST API design",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-058": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-059": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "Stripe",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-060": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-061": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Node.js",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-062": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "MongoDB",
+      "REST API design",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-063": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-064": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "GraphQL",
+      "Jest",
+      "Next.js",
+      "Prisma",
+      "React",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-065": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-066": {
+    "project_id": null,
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-067": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-068": {
+    "project_id": null,
+    "skills": [
+      "Express",
+      "MongoDB",
+      "Node.js"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-069": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-070": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-071": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "AWS",
+      "Django",
+      "Docker",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-072": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "React",
+      "Redis",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-073": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "Jest",
+      "MongoDB",
+      "Node.js",
+      "PostgreSQL",
+      "RabbitMQ",
+      "React",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-074": {
+    "project_id": "fullstack-p10",
+    "skills": [
+      "Express",
+      "GraphQL",
+      "Jest",
+      "NestJS",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-075": {
+    "project_id": null,
+    "skills": [
+      "Next.js",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-076": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-077": {
+    "project_id": "fullstack-p20",
+    "skills": [
+      "GraphQL",
+      "React",
+      "Redux",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-078": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Jest",
+      "Node.js",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-079": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-080": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-081": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-082": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-083": {
+    "project_id": null,
+    "skills": [
+      "GitHub Actions",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-084": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-085": {
+    "project_id": null,
+    "skills": [
+      "Express",
+      "MongoDB",
+      "REST API design"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-086": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Cypress",
+      "JWT authentication",
+      "Jest",
+      "Playwright",
+      "React",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-087": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-088": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-089": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Jest",
+      "Node.js",
+      "React",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-090": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-091": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-092": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Node.js",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-093": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Next.js",
+      "Redis",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-094": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "MongoDB",
+      "REST API design",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-095": {
+    "project_id": null,
+    "skills": [
+      "Cypress",
+      "GitHub Actions",
+      "JavaScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-096": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-097": {
+    "project_id": "fullstack-p20",
+    "skills": [
+      "GraphQL",
+      "REST API design",
+      "React",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-098": {
+    "project_id": null,
+    "skills": [
+      "Next.js",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-099": {
+    "project_id": null,
+    "skills": [
+      "React",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-100": {
+    "project_id": null,
+    "skills": [
+      "Next.js",
+      "Redis",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-101": {
+    "project_id": "fullstack-p12",
+    "skills": [
+      "Cypress",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-102": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-103": {
+    "project_id": null,
+    "skills": [
+      "Express",
+      "Node.js",
+      "REST API design"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-104": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-105": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Jest",
+      "Next.js",
+      "Node.js",
+      "React",
+      "Stripe",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-106": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-107": {
+    "project_id": "fullstack-p16",
+    "skills": [
+      "Docker",
+      "Express",
+      "Jest",
+      "Node.js",
+      "OAuth",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-108": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "MongoDB",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-109": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-110": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Docker",
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-111": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-112": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-113": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-114": {
+    "project_id": null,
+    "skills": [
+      "Django",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-115": {
+    "project_id": null,
+    "skills": [
+      "Cypress",
+      "JavaScript",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-116": {
+    "project_id": null,
+    "skills": [
+      "Firebase",
+      "Node.js",
+      "Redis"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-117": {
+    "project_id": null,
+    "skills": [
+      "Express",
+      "MongoDB",
+      "RabbitMQ"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-118": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-119": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-120": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Elasticsearch",
+      "Express",
+      "MongoDB",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-121": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Node.js",
+      "React",
+      "Redis",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-122": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-123": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-124": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "AWS",
+      "Django",
+      "Docker"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-125": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-126": {
+    "project_id": null,
+    "skills": [
+      "Node.js",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-127": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-128": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-129": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-130": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-131": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-132": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "MongoDB",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-133": {
+    "project_id": null,
+    "skills": [
+      "PostgreSQL",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-134": {
+    "project_id": null,
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "REST API design"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-135": {
+    "project_id": "fullstack-p09",
+    "skills": [
+      "Express",
+      "Jest",
+      "MongoDB",
+      "OAuth",
+      "Redux"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-136": {
+    "project_id": null,
+    "skills": [
+      "React",
+      "Redux",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-137": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "fullstack-prop-138": {
+    "project_id": null,
+    "skills": [
+      "Redis",
+      "Stripe",
+      "Vercel"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-139": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "GraphQL",
+      "Next.js",
+      "Prisma",
+      "React",
+      "Redux",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-140": {
+    "project_id": null,
+    "skills": [
+      "Node.js",
+      "React",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-141": {
+    "project_id": "fullstack-p17",
+    "skills": [
+      "Docker",
+      "Express",
+      "OAuth"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-142": {
+    "project_id": null,
+    "skills": [
+      "Node.js",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-143": {
+    "project_id": null,
+    "skills": [
+      "Django",
+      "Docker",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-144": {
+    "project_id": null,
+    "skills": [
+      "Node.js",
+      "React",
+      "Redis"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-145": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Next.js",
+      "Shopify",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-146": {
+    "project_id": "fullstack-p12",
+    "skills": [
+      "Cypress",
+      "JWT authentication",
+      "React"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-147": {
+    "project_id": "fullstack-p03",
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Shopify"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-148": {
+    "project_id": null,
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "REST API design"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-149": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Cypress",
+      "GitHub Actions",
+      "Playwright",
+      "React",
+      "TypeScript"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-prop-150": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "PostgreSQL",
+      "Stripe"
+    ],
+    "type": "proposal"
+  },
+  "fullstack-repo-01": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js",
+      "Prisma",
+      "Stripe",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-02": {
+    "project_id": "fullstack-p05",
+    "skills": [
+      "Jest",
+      "NestJS",
+      "OAuth",
+      "PostgreSQL",
+      "TypeScript"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-03": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "Python",
+      "REST API design",
+      "Redis",
+      "Stripe"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-04": {
+    "project_id": "fullstack-p07",
+    "skills": [
+      "Elasticsearch",
+      "GraphQL",
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-05": {
+    "project_id": "fullstack-p08",
+    "skills": [
+      "Django",
+      "Playwright",
+      "Python",
+      "React"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-06": {
+    "project_id": "fullstack-p10",
+    "skills": [
+      "Docker",
+      "GraphQL",
+      "JWT authentication",
+      "NestJS"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-07": {
+    "project_id": "fullstack-p11",
+    "skills": [
+      "Docker",
+      "GitHub Actions",
+      "Jest",
+      "Playwright",
+      "TypeScript"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-08": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Next.js",
+      "OAuth",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-09": {
+    "project_id": "fullstack-p15",
+    "skills": [
+      "Docker",
+      "Node.js",
+      "PostgreSQL",
+      "REST API design",
+      "RabbitMQ",
+      "React",
+      "SQL"
+    ],
+    "type": "repo"
+  },
+  "fullstack-repo-10": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Next.js",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "type": "repo"
+  },
+  "fullstack-rev-01": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "Docker",
+      "Node.js"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-02": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "Stripe"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-03": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Node.js"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-04": {
+    "project_id": "fullstack-p02",
+    "skills": [
+      "Next.js"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-05": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "Python",
+      "Redis"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-06": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Next.js"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-07": {
+    "project_id": "fullstack-p18",
+    "skills": [
+      "Django"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-08": {
+    "project_id": "fullstack-p08",
+    "skills": [
+      "Django"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-09": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "HTML/CSS"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-10": {
+    "project_id": "fullstack-p06",
+    "skills": [
+      "SQL"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-11": {
+    "project_id": "fullstack-p12",
+    "skills": [
+      "Cypress",
+      "JWT authentication"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-12": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Jest"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-13": {
+    "project_id": "fullstack-p20",
+    "skills": [
+      "GraphQL"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-14": {
+    "project_id": "fullstack-p04",
+    "skills": [
+      "WebSockets"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-15": {
+    "project_id": "fullstack-p19",
+    "skills": [
+      "Stripe"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-16": {
+    "project_id": "fullstack-p14",
+    "skills": [
+      "WebSockets"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-17": {
+    "project_id": "fullstack-p13",
+    "skills": [
+      "OAuth",
+      "PostgreSQL"
+    ],
+    "type": "review"
+  },
+  "fullstack-rev-18": {
+    "project_id": "fullstack-p01",
+    "skills": [
+      "Jest",
+      "Stripe"
+    ],
+    "type": "review"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "card": {
+    "job_id": "j-100",
+    "title": "Migrate billing dashboard to React",
+    "category": "web",
+    "budget_type": "fixed",
+    "budget_min": 1500,
+    "budget_max": 2500,
+    "posted_at": "2026-11-14T09:00:00Z",
+    "status": "approval_pending",
+    "action": "bid",
+    "fit_score": 0.86,
+    "risk_score": 12,
+    "risk_flags": [],
+    "price": {
+      "bid_type": "fixed",
+      "amount": 1800,
+      "floor": 1200,
+      "market_p25": 1400,
+      "market_p50": 1900,
+      "market_p75": 2400,
+      "connects_cost": 16,
+      "connects_usd": 2.4,
+      "expected_value_usd": 310,
+      "worth_it": true,
+      "rationale": "Below the market median with a high win chance.",
+      "win_probability": 0.31
+    },
+    "connects_cost": 16,
+    "injection_detected": false,
+    "thread_id": "t-100"
+  },
+  "job": {
+    "job_id": "j-100",
+    "title": "Migrate billing dashboard to React",
+    "description": "We need our Stripe billing dashboard moved from jQuery to React."
+  },
+  "job_spec": {
+    "skills": [
+      "react",
+      "stripe"
+    ],
+    "duration": "4 weeks"
+  },
+  "risk": {
+    "risk_score": 12,
+    "client_quality": "good",
+    "is_scam": false,
+    "flags": [],
+    "injected_instructions": [],
+    "summary": "Verified client."
+  },
+  "fit": {
+    "fit_score": 0.86,
+    "coverage": 0.9,
+    "reasons": [
+      "Strong React evidence."
+    ],
+    "missing": [
+      "jQuery migration experience"
+    ]
+  },
+  "decision": {
+    "action": "bid",
+    "reasons": [
+      "Good fit and low risk."
+    ]
+  },
+  "matrix": [
+    {
+      "requirement": "React",
+      "strength": "strong",
+      "reason": "Built two dashboards.",
+      "evidence": [
+        {
+          "item_id": "e1",
+          "type": "case_study",
+          "title": "Stripe dashboard case study",
+          "snippet": "Reduced churn reporting from 5 hours to 2 hours.",
+          "source": "portfolio"
+        }
+      ]
+    },
+    {
+      "requirement": "jQuery migration",
+      "strength": "none",
+      "reason": "No evidence.",
+      "evidence": []
+    }
+  ],
+  "claim_report": {
+    "unsupported_after": 1
+  },
+  "compliance": {
+    "verdict": "pass",
+    "violations": [],
+    "reason": "ok"
+  },
+  "critiques": [
+    {
+      "verdict": "revise",
+      "score": 0.7,
+      "round": 1,
+      "issues": [
+        {
+          "kind": "tone",
+          "detail": "Generic opening.",
+          "paragraph": 0
+        }
+      ]
+    }
+  ],
+  "attention": null,
+  "runs": [
+    {
+      "run_id": "r-1",
+      "kind": "analyze",
+      "status": "completed",
+      "thread_id": "t-100",
+      "job_id": "j-100",
+      "created_at": "2026-11-14T10:00:00Z"
+    }
+  ],
+  "approval_pending": true
+}

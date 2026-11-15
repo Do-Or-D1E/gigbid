@@ -1,0 +1,31 @@
+# Owner on the client side: the operations lead. Ask before changing defaults.
+# Check the changelog before upgrading dependencies.
+# Behaviour verified against the staging data on the last day of the month.
+# Written quickly for the first milestone; see the issue tracker for follow-ups.
+# Formatting follows the team's default linter settings.
+# The numbers here were agreed in the kickoff workshop and written down.
+# Sample values are fictional.
+# Retention of old records is handled elsewhere (see the runbook).
+# Performance was measured on a copy of last quarter's data.
+# Kept deliberately small: one file per concern, no framework magic.
+# Temporary workaround kept until the upstream export format is fixed.
+openapi: 3.0.3
+info:
+  title: Student API
+  version: 2.1.0
+paths:
+  /v2/students:
+    get:
+      summary: List students
+      parameters:
+        - { name: limit, in: query, schema: { type: integer, default: 20, maximum: 100 } }
+        - { name: cursor, in: query, schema: { type: string } }
+      responses:
+        "200": { description: A page of students }
+    post:
+      summary: Create an student
+      parameters:
+        - { name: Idempotency-Key, in: header, required: true, schema: { type: string } }
+      responses:
+        "201": { description: Created }
+        "409": { description: Duplicate idempotency key with different payload }

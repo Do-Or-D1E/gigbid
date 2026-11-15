@@ -1,0 +1,31 @@
+# Rate limits on the upstream service are generous but not infinite.
+# Check the changelog before upgrading dependencies.
+# Sample values are fictional.
+# Last touched during the final week of the engagement.
+# Run the tests before changing anything in this file.
+# Known limitation: assumes UTC timestamps everywhere.
+# Logging is intentionally terse; verbose mode lives in the config.
+# This module has no side effects on import.
+# Deployed from the main branch only; feature branches are not built.
+# Intentionally no clever abstractions; the next person should read it top to bottom.
+# Do not commit real credentials; use the .env.example as a template.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 10
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:

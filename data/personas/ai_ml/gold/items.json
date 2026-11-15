@@ -1,0 +1,1709 @@
+{
+  "ai_ml-cs-01": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "OCR",
+      "Python",
+      "model deployment",
+      "named entity recognition"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-02": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "feature engineering",
+      "scikit-learn",
+      "text classification"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-03": {
+    "project_id": "ai_ml-p04",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "feature engineering",
+      "model deployment",
+      "pandas",
+      "time-series forecasting"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-04": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "computer vision",
+      "model deployment"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-05": {
+    "project_id": "ai_ml-p06",
+    "skills": [
+      "FastAPI",
+      "Redis",
+      "SQL",
+      "XGBoost",
+      "anomaly detection",
+      "feature engineering",
+      "model deployment"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-06": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "NLP",
+      "PyTorch",
+      "fine-tuning",
+      "text classification"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-07": {
+    "project_id": "ai_ml-p08",
+    "skills": [
+      "LLM evaluation",
+      "LangGraph",
+      "OpenAI API",
+      "named entity recognition",
+      "prompt engineering"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-08": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "embeddings",
+      "feature engineering",
+      "recommendation systems",
+      "scikit-learn"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-09": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "feature engineering",
+      "model deployment",
+      "scikit-learn"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-10": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "PostgreSQL",
+      "SQL",
+      "feature engineering",
+      "model deployment",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-11": {
+    "project_id": "ai_ml-p13",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers",
+      "NLP",
+      "model deployment",
+      "text classification"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-12": {
+    "project_id": "ai_ml-p14",
+    "skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "RAG",
+      "embeddings",
+      "pgvector",
+      "vector databases"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-13": {
+    "project_id": "ai_ml-p15",
+    "skills": [
+      "NumPy",
+      "PyTorch",
+      "computer vision",
+      "feature engineering",
+      "model deployment"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-14": {
+    "project_id": "ai_ml-p16",
+    "skills": [
+      "LLM evaluation",
+      "MLflow",
+      "OpenAI API",
+      "Python",
+      "prompt engineering"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cs-15": {
+    "project_id": "ai_ml-p17",
+    "skills": [
+      "Celery",
+      "Redis",
+      "anomaly detection",
+      "scikit-learn",
+      "time-series forecasting"
+    ],
+    "type": "case_study"
+  },
+  "ai_ml-cv-01": {
+    "project_id": null,
+    "skills": [
+      "AWS",
+      "AWS SageMaker",
+      "Airflow",
+      "Celery",
+      "Docker",
+      "FastAPI",
+      "Hugging Face Transformers",
+      "LLM evaluation",
+      "LangChain",
+      "LangGraph",
+      "MLflow",
+      "NLP",
+      "NumPy",
+      "OCR",
+      "OpenAI API",
+      "Pinecone",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "RAG",
+      "Redis",
+      "SQL",
+      "XGBoost",
+      "anomaly detection",
+      "computer vision",
+      "embeddings",
+      "feature engineering",
+      "fine-tuning",
+      "model deployment",
+      "named entity recognition",
+      "pandas",
+      "pgvector",
+      "prompt engineering",
+      "recommendation systems",
+      "scikit-learn",
+      "text classification",
+      "time-series forecasting",
+      "vector databases"
+    ],
+    "type": "cv"
+  },
+  "ai_ml-prop-001": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-002": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-003": {
+    "project_id": null,
+    "skills": [
+      "PyTorch",
+      "computer vision",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-004": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-005": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "embeddings",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-006": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "PyTorch",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-007": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-008": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-009": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-010": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-011": {
+    "project_id": null,
+    "skills": [
+      "feature engineering",
+      "pandas",
+      "time-series forecasting"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-012": {
+    "project_id": null,
+    "skills": [
+      "PostgreSQL",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-013": {
+    "project_id": "ai_ml-p20",
+    "skills": [
+      "AWS",
+      "Docker",
+      "Python",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-014": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-015": {
+    "project_id": null,
+    "skills": [
+      "PyTorch",
+      "computer vision"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-016": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "XGBoost",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-017": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "PyTorch",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-018": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-019": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "XGBoost",
+      "time-series forecasting"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-020": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "computer vision",
+      "feature engineering",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-021": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "AWS",
+      "Docker",
+      "Python",
+      "Redis",
+      "feature engineering",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-022": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-023": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "feature engineering",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-024": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-025": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-026": {
+    "project_id": "ai_ml-p04",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-027": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-028": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "AWS SageMaker",
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-029": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-030": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-031": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "computer vision",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-032": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-033": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-034": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-035": {
+    "project_id": null,
+    "skills": [
+      "PyTorch",
+      "computer vision"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-036": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-037": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-038": {
+    "project_id": null,
+    "skills": [
+      "XGBoost",
+      "pandas",
+      "time-series forecasting"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-039": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-040": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "Python",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-041": {
+    "project_id": "ai_ml-p13",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-042": {
+    "project_id": "ai_ml-p14",
+    "skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-043": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-044": {
+    "project_id": "ai_ml-p08",
+    "skills": [
+      "LangGraph",
+      "OpenAI API"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-045": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "PyTorch",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-046": {
+    "project_id": "ai_ml-p06",
+    "skills": [
+      "FastAPI",
+      "Redis",
+      "XGBoost",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-047": {
+    "project_id": null,
+    "skills": [
+      "PyTorch",
+      "Python",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-048": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-049": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-050": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-051": {
+    "project_id": null,
+    "skills": [
+      "NLP",
+      "PyTorch",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-052": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-053": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-054": {
+    "project_id": null,
+    "skills": [
+      "scikit-learn",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-055": {
+    "project_id": "ai_ml-p04",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-056": {
+    "project_id": "ai_ml-p04",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-057": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-058": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-059": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "Hugging Face Transformers",
+      "PostgreSQL",
+      "PyTorch",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-060": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "OCR",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-061": {
+    "project_id": null,
+    "skills": [
+      "OpenAI API",
+      "RAG"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-062": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-063": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-064": {
+    "project_id": "ai_ml-p08",
+    "skills": [
+      "LangGraph",
+      "OpenAI API",
+      "prompt engineering"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-065": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "PostgreSQL",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-066": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-067": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers",
+      "PyTorch",
+      "fine-tuning"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-068": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-069": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "NLP",
+      "PyTorch"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-070": {
+    "project_id": null,
+    "skills": [
+      "LangGraph",
+      "OpenAI API",
+      "prompt engineering"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-071": {
+    "project_id": null,
+    "skills": [
+      "PostgreSQL",
+      "RAG",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-072": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "LLM evaluation",
+      "LangGraph"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-073": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "NLP",
+      "PyTorch"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-074": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-075": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-076": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-077": {
+    "project_id": null,
+    "skills": [
+      "OpenAI API",
+      "RAG"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-078": {
+    "project_id": null,
+    "skills": [
+      "AWS"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-079": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "NLP",
+      "PyTorch"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-080": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "OCR",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-081": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "LangGraph",
+      "OpenAI API"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-082": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "Python",
+      "Redis",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-083": {
+    "project_id": null,
+    "skills": [
+      "Hugging Face Transformers",
+      "fine-tuning",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-084": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "prompt engineering"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-085": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "Redis",
+      "SQL",
+      "embeddings",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-086": {
+    "project_id": null,
+    "skills": [
+      "Redis",
+      "recommendation systems",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-087": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "PostgreSQL",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-088": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-089": {
+    "project_id": "ai_ml-p11",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "LangGraph",
+      "OpenAI API",
+      "RAG",
+      "prompt engineering"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-090": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-091": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "AWS",
+      "Python",
+      "Redis",
+      "embeddings",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-092": {
+    "project_id": null,
+    "skills": [
+      "PyTorch",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-093": {
+    "project_id": "ai_ml-p17",
+    "skills": [
+      "Celery",
+      "Python",
+      "Redis",
+      "anomaly detection",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-094": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "PostgreSQL",
+      "embeddings",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-095": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-096": {
+    "project_id": "ai_ml-p08",
+    "skills": [
+      "LangGraph",
+      "OpenAI API"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-097": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-098": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-099": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "PyTorch",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-100": {
+    "project_id": "ai_ml-p19",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-101": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-102": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-103": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "anomaly detection"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-104": {
+    "project_id": null,
+    "skills": [
+      "XGBoost"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-105": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-106": {
+    "project_id": null,
+    "skills": [
+      "OCR",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-107": {
+    "project_id": "ai_ml-p13",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-108": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-109": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "anomaly detection"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-110": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "Redis",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-111": {
+    "project_id": "ai_ml-p05",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "Python",
+      "Redis",
+      "computer vision",
+      "embeddings",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-112": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-113": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers",
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "scikit-learn",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-114": {
+    "project_id": "ai_ml-p17",
+    "skills": [
+      "Celery",
+      "Python",
+      "Redis",
+      "scikit-learn",
+      "time-series forecasting"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-115": {
+    "project_id": "ai_ml-p17",
+    "skills": [
+      "Celery",
+      "Redis",
+      "anomaly detection",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-116": {
+    "project_id": null,
+    "skills": [
+      "OpenAI API",
+      "RAG"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-117": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-118": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-119": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-120": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "NumPy",
+      "PyTorch",
+      "Python",
+      "model deployment",
+      "named entity recognition"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-121": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "RAG",
+      "embeddings"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-122": {
+    "project_id": null,
+    "skills": [
+      "Docker",
+      "OCR",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-123": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-124": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-125": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-126": {
+    "project_id": null,
+    "skills": [
+      "Hugging Face Transformers",
+      "Python",
+      "fine-tuning"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-127": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-128": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-129": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-130": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "pgvector",
+      "vector databases"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-131": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "anomaly detection",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-132": {
+    "project_id": null,
+    "skills": [
+      "PostgreSQL",
+      "pgvector",
+      "vector databases"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-133": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "Python",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-134": {
+    "project_id": null,
+    "skills": [
+      "Celery",
+      "scikit-learn",
+      "text classification"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-135": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-136": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "feature engineering",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-137": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-138": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "RAG"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-139": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-140": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "XGBoost",
+      "recommendation systems",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-141": {
+    "project_id": "ai_ml-p10",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "feature engineering"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-142": {
+    "project_id": "ai_ml-p09",
+    "skills": [
+      "Python",
+      "Redis",
+      "feature engineering",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-143": {
+    "project_id": null,
+    "skills": [
+      "FastAPI",
+      "OCR",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-144": {
+    "project_id": null,
+    "skills": [
+      "Airflow",
+      "MLflow",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-145": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "FastAPI",
+      "MLflow",
+      "Python",
+      "named entity recognition",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-146": {
+    "project_id": "ai_ml-p13",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers",
+      "model deployment"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-147": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "PostgreSQL",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-148": {
+    "project_id": null,
+    "skills": [
+      "PostgreSQL",
+      "pgvector"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-prop-149": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "ai_ml-prop-150": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "LangChain",
+      "OpenAI API",
+      "Pinecone"
+    ],
+    "type": "proposal"
+  },
+  "ai_ml-repo-01": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "FastAPI",
+      "OCR",
+      "Python",
+      "model deployment",
+      "named entity recognition"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-02": {
+    "project_id": "ai_ml-p03",
+    "skills": [
+      "LangChain",
+      "OpenAI API",
+      "embeddings"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-03": {
+    "project_id": "ai_ml-p04",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "feature engineering",
+      "pandas"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-04": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "Hugging Face Transformers",
+      "PyTorch",
+      "fine-tuning",
+      "text classification"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-05": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "PostgreSQL",
+      "SQL",
+      "feature engineering",
+      "model deployment",
+      "pandas",
+      "scikit-learn"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-06": {
+    "project_id": "ai_ml-p14",
+    "skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "RAG",
+      "embeddings",
+      "pgvector"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-07": {
+    "project_id": "ai_ml-p15",
+    "skills": [
+      "NumPy",
+      "PyTorch",
+      "model deployment"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-08": {
+    "project_id": "ai_ml-p16",
+    "skills": [
+      "LLM evaluation",
+      "MLflow",
+      "OpenAI API",
+      "Python"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-repo-09": {
+    "project_id": "ai_ml-p19",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "RAG"
+    ],
+    "type": "repo"
+  },
+  "ai_ml-rev-01": {
+    "project_id": "ai_ml-p13",
+    "skills": [
+      "Hugging Face Transformers"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-02": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "scikit-learn"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-03": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "OCR",
+      "model deployment"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-04": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "NLP"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-05": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "model deployment"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-06": {
+    "project_id": "ai_ml-p07",
+    "skills": [
+      "PyTorch"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-07": {
+    "project_id": "ai_ml-p14",
+    "skills": [
+      "FastAPI",
+      "RAG"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-08": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "PostgreSQL",
+      "scikit-learn"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-09": {
+    "project_id": "ai_ml-p02",
+    "skills": [
+      "scikit-learn",
+      "text classification"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-10": {
+    "project_id": "ai_ml-p06",
+    "skills": [
+      "FastAPI"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-11": {
+    "project_id": "ai_ml-p16",
+    "skills": [
+      "LLM evaluation",
+      "MLflow"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-12": {
+    "project_id": "ai_ml-p06",
+    "skills": [
+      "FastAPI",
+      "feature engineering"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-13": {
+    "project_id": "ai_ml-p19",
+    "skills": [
+      "LangChain"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-14": {
+    "project_id": "ai_ml-p01",
+    "skills": [
+      "OCR"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-15": {
+    "project_id": "ai_ml-p12",
+    "skills": [
+      "model deployment",
+      "scikit-learn"
+    ],
+    "type": "review"
+  },
+  "ai_ml-rev-16": {
+    "project_id": "ai_ml-p20",
+    "skills": [
+      "Docker"
+    ],
+    "type": "review"
+  }
+}

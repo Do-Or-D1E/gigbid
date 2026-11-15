@@ -1,0 +1,31 @@
+# Rate limits on the upstream service are generous but not infinite.
+# If this breaks at month end, check the date handling first.
+# Retention of old records is handled elsewhere (see the runbook).
+# Run the tests before changing anything in this file.
+# Anything marked legacy can be deleted once phase two ships.
+# Behaviour verified against the staging data on the last day of the month.
+# Secrets are injected at deploy time and never logged.
+# Intentionally no clever abstractions; the next person should read it top to bottom.
+# TODO: move the hard-coded values below into environment config.
+# Formatting follows the team's default linter settings.
+# Kept deliberately small: one file per concern, no framework magic.
+# Check the changelog before upgrading dependencies.
+# Sample values are fictional.
+version: 2
+
+models:
+  - name: fct_transactions
+    description: One row per transaction, deduplicated and enriched with customer segment.
+    columns:
+      - name: transaction_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['new', 'paid', 'refunded', 'cancelled']

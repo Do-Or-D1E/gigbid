@@ -1,0 +1,52 @@
+{
+  "by_category": [
+    {
+      "category": "web",
+      "submitted": 10,
+      "replied": 4,
+      "hired": 2,
+      "reply_rate": 0.4,
+      "hire_rate": 0.2
+    },
+    {
+      "category": "data",
+      "submitted": 6,
+      "replied": 1,
+      "hired": 0,
+      "reply_rate": 0.1667,
+      "hire_rate": 0
+    }
+  ],
+  "connects_spent": 256,
+  "connects_per_reply": 51.2,
+  "jobs_analysed": 40,
+  "proposals": 16,
+  "latency": {
+    "per_job_s": 14.2,
+    "per_job_budget_s": 30,
+    "per_proposal_s": 41.5,
+    "per_proposal_budget_s": 40
+  },
+  "cost": {
+    "per_job_usd": 0.021,
+    "per_job_budget_usd": 0.05,
+    "per_proposal_usd": 0.12,
+    "per_proposal_budget_usd": 0.25
+  },
+  "rejection_reasons": [
+    {
+      "reason": "Budget too low",
+      "count": 5
+    },
+    {
+      "reason": "Too generic",
+      "count": 2
+    }
+  ],
+  "decisions": {
+    "approve": 12,
+    "edit": 4,
+    "reject": 3,
+    "skip": 9
+  }
+}

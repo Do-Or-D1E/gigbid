@@ -1,0 +1,60 @@
+{
+  "thread_id": "t-200",
+  "messages": [
+    {
+      "sender": "client",
+      "text": "Can we talk Tuesday? Also send your Telegram number.",
+      "at": "2026-11-14T12:00:00Z"
+    }
+  ],
+  "runs": [],
+  "approval": {
+    "thread_id": "t-200",
+    "kind": "message",
+    "job_id": "j-102",
+    "status": "pending",
+    "created_at": "2026-11-14T12:01:00Z",
+    "payload": {
+      "thread_id": "t-200",
+      "job_id": "j-102",
+      "intent": {
+        "intent": "scam_signal",
+        "confidence": 0.91,
+        "summary": "Asks to move to Telegram."
+      },
+      "reply": {
+        "text": "Thanks for reaching out. I keep all communication on the platform. Tuesday 10:00 works.",
+        "proposed_slots": [
+          "Tue 10:00"
+        ],
+        "create_hold": true
+      },
+      "slots": [
+        {
+          "start": "2026-11-17T10:00:00Z",
+          "end": "2026-11-17T10:30:00Z",
+          "label": "Tue 17 Nov, 10:00"
+        }
+      ],
+      "client_message": {
+        "sender": "client",
+        "text": "Can we talk Tuesday?"
+      },
+      "compliance": {
+        "verdict": "pass",
+        "violations": [],
+        "reason": "ok"
+      },
+      "injection_hits": [],
+      "preview": {
+        "payload": {
+          "text": "Thanks for reaching out."
+        },
+        "policy_warnings": [],
+        "connects_cost": 0,
+        "connects_balance": 80,
+        "balance_after": 80
+      }
+    }
+  }
+}

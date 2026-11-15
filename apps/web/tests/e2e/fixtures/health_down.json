@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "db": true,
+  "marketplace": "down",
+  "marketplace_detail": "GigSim returned 503 for the last 3 calls.",
+  "model_profile": "dev",
+  "marketplace_mode": "gigsim",
+  "policy_version": 3,
+  "rag_variant": "hybrid",
+  "version": "0.1.0"
+}

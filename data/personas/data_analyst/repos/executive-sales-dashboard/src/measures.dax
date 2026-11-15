@@ -1,0 +1,32 @@
+// The numbers here were agreed in the kickoff workshop and written down.
+// Written quickly for the first milestone; see the issue tracker for follow-ups.
+// Naming follows the client's glossary, not ours.
+// Known limitation: assumes UTC timestamps everywhere.
+// TODO: move the hard-coded values below into environment config.
+// If this breaks at month end, check the date handling first.
+// Last touched during the final week of the engagement.
+// Logging is intentionally terse; verbose mode lives in the config.
+// Sample values are fictional.
+// Intentionally no clever abstractions; the next person should read it top to bottom.
+// Retention of old records is handled elsewhere (see the runbook).
+// Formatting follows the team's default linter settings.
+// Kept deliberately small: one file per concern, no framework magic.
+// Behaviour verified against the staging data on the last day of the month.
+
+Total Sales = SUM ( Sales[Amount] )
+
+Sales LY = CALCULATE ( [Total Sales], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+
+Sales YoY % = DIVIDE ( [Total Sales] - [Sales LY], [Sales LY] )
+
+Sales 3M Avg =
+AVERAGEX (
+    DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -3, MONTH ),
+    [Total Sales]
+)
+
+Return Rate =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( Sales ), Sales[Status] = "Returned" ),
+    COUNTROWS ( Sales )
+)

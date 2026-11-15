@@ -1,0 +1,31 @@
+# Intentionally no clever abstractions; the next person should read it top to bottom.
+# Owner on the client side: the operations lead. Ask before changing defaults.
+# Rate limits on the upstream service are generous but not infinite.
+# Formatting follows the team's default linter settings.
+# Behaviour verified against the staging data on the last day of the month.
+# Secrets are injected at deploy time and never logged.
+# TODO: move the hard-coded values below into environment config.
+# This module has no side effects on import.
+# Check the changelog before upgrading dependencies.
+# Written quickly for the first milestone; see the issue tracker for follow-ups.
+# Sample values are fictional.
+# Do not commit real credentials; use the .env.example as a template.
+# Logging is intentionally terse; verbose mode lives in the config.
+version: 2
+
+models:
+  - name: fct_parts
+    description: One row per part, deduplicated and enriched with customer segment.
+    columns:
+      - name: part_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['new', 'paid', 'refunded', 'cancelled']

@@ -1,0 +1,31 @@
+# Intentionally no clever abstractions; the next person should read it top to bottom.
+# The numbers here were agreed in the kickoff workshop and written down.
+# Do not commit real credentials; use the .env.example as a template.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: postgres:16
+        env: { POSTGRES_PASSWORD: test }
+        ports: ["5432:5432"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npm test -- --coverage
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "deploying"

@@ -1,0 +1,11 @@
+[
+  {
+    "thread_id": "t-200",
+    "job_id": "j-102",
+    "title": "Airflow pipeline review",
+    "last_message": "Can we talk Tuesday?",
+    "last_sender": "client",
+    "updated_at": "2026-11-14T12:00:00Z",
+    "pending_reply": true
+  }
+]

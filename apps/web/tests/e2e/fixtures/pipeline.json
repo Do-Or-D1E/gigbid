@@ -1,0 +1,33 @@
+{
+  "columns": {
+    "drafted": [
+      {
+        "proposal_id": "pr1",
+        "job_id": "j-100",
+        "title": "Migrate billing dashboard to React",
+        "stage": "drafted",
+        "amount": 1800,
+        "connects": 16,
+        "updated_at": "2026-11-14T10:00:00Z",
+        "thread_id": "t-100"
+      }
+    ],
+    "submitted": [
+      {
+        "proposal_id": "pr2",
+        "job_id": "j-102",
+        "title": "Airflow pipeline review",
+        "stage": "submitted",
+        "amount": 60,
+        "connects": 12,
+        "updated_at": "2026-11-13T10:00:00Z",
+        "thread_id": "t-102"
+      }
+    ],
+    "viewed": [],
+    "replied": [],
+    "interview": [],
+    "hired": [],
+    "lost": []
+  }
+}

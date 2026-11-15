@@ -1,0 +1,34 @@
+{
+ "PyTorch": {
+  "category": "ml",
+  "aliases": [
+   "torch",
+   "pytorch lightning"
+  ],
+  "implied_by": [],
+  "personas": [
+   "ai_ml"
+  ]
+ },
+ "Python": {
+  "category": "lang",
+  "aliases": [
+   "python3"
+  ],
+  "implied_by": [],
+  "personas": [
+   "ai_ml"
+  ]
+ },
+ "SQL": {
+  "category": "data",
+  "aliases": [
+   "postgresql",
+   "mysql"
+  ],
+  "implied_by": [],
+  "personas": [
+   "data_analyst"
+  ]
+ }
+}

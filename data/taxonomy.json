@@ -1,0 +1,1927 @@
+{
+  ".NET": {
+    "aliases": [
+      "C#",
+      "ASP.NET",
+      "dotnet"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "enterprise web services built on Microsoft's managed runtime",
+      "a corporate line-of-business app in a statically typed Microsoft stack"
+    ],
+    "personas": []
+  },
+  "A/B testing": {
+    "aliases": [
+      "AB testing",
+      "split testing",
+      "experimentation",
+      "A/B experiments"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "randomised variant comparisons with a pre-agreed success metric",
+      "control-versus-treatment experiments with significance checks",
+      "a landing-page experiment readout"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "AWS": {
+    "aliases": [
+      "Amazon Web Services",
+      "EC2",
+      "S3",
+      "Lambda",
+      "AWS S3"
+    ],
+    "category": "cloud",
+    "implied_by": [
+      "servers, object storage and serverless functions in Amazon's cloud",
+      "presigned uploads to a storage bucket and a managed queue",
+      "infrastructure in a private network with least-privilege roles"
+    ],
+    "personas": [
+      "ai_ml",
+      "fullstack"
+    ]
+  },
+  "AWS SageMaker": {
+    "aliases": [
+      "SageMaker",
+      "Amazon SageMaker"
+    ],
+    "category": "mlops",
+    "implied_by": [
+      "managed training jobs and real-time model endpoints in the client's cloud account",
+      "hosted inference endpoints with autoscaling"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Airflow": {
+    "aliases": [
+      "Apache Airflow",
+      "airflow DAGs"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "scheduled DAGs with dependencies, retries and backfills",
+      "a workflow orchestrator that runs the nightly pipelines in order"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst"
+    ]
+  },
+  "Android development": {
+    "aliases": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Android app",
+      "Android Studio"
+    ],
+    "category": "mobile",
+    "implied_by": [
+      "a native app published on the Google Play store",
+      "activities and view models in a Google-flavoured mobile stack"
+    ],
+    "personas": []
+  },
+  "Angular": {
+    "aliases": [
+      "AngularJS",
+      "Angular 15",
+      "RxJS"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "a batteries-included front-end framework with dependency injection and observables",
+      "enterprise dashboards built on a strongly opinionated framework"
+    ],
+    "personas": []
+  },
+  "Apache Spark": {
+    "aliases": [
+      "Spark",
+      "PySpark",
+      "Databricks"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "distributed tables processed across a cluster",
+      "billion-row transformations on a managed big-data platform"
+    ],
+    "personas": []
+  },
+  "Azure": {
+    "aliases": [
+      "Microsoft Azure",
+      "Azure cloud"
+    ],
+    "category": "cloud",
+    "implied_by": [
+      "workloads deployed on the client's Microsoft tenant",
+      "resources provisioned in a Microsoft-hosted cloud subscription"
+    ],
+    "personas": []
+  },
+  "Bash scripting": {
+    "aliases": [
+      "shell scripting",
+      "bash",
+      "shell scripts"
+    ],
+    "category": "language",
+    "implied_by": [
+      "cron-driven command-line scripts that glue deployment steps together",
+      "terminal automation for repetitive server chores"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "BigQuery": {
+    "aliases": [
+      "big query",
+      "GCP BigQuery",
+      "Google BigQuery"
+    ],
+    "category": "warehouse",
+    "implied_by": [
+      "a serverless columnar warehouse billed per terabyte scanned",
+      "partitioned tables queried at scale in Google's cloud"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Bookkeeping": {
+    "aliases": [
+      "accounting",
+      "QuickBooks",
+      "Xero"
+    ],
+    "category": "finance",
+    "implied_by": [
+      "reconciled monthly books and a tidy chart of accounts",
+      "bank feeds matched to invoices every week"
+    ],
+    "personas": []
+  },
+  "Celery": {
+    "aliases": [
+      "celery",
+      "Celery workers",
+      "distributed task queue"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a broker-backed task queue with retries",
+      "background workers that pull jobs off a queue with backoff",
+      "scheduled, retryable asynchronous jobs"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Copywriting": {
+    "aliases": [
+      "content writing",
+      "blog writing",
+      "ghostwriting",
+      "article writing"
+    ],
+    "category": "content",
+    "implied_by": [
+      "persuasive web copy and long-form articles in the brand's voice",
+      "a month of publish-ready blog posts"
+    ],
+    "personas": []
+  },
+  "Cypress": {
+    "aliases": [
+      "cypress",
+      "Cypress e2e"
+    ],
+    "category": "testing",
+    "implied_by": [
+      "browser tests with time-travel debugging and network stubbing",
+      "component and end-to-end checks authored in an interactive runner"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "DAX": {
+    "aliases": [
+      "DAX measures",
+      "Data Analysis Expressions"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "calculated measures for year-over-year and rolling averages in a tabular model",
+      "time-intelligence calculations inside the semantic model"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Data entry": {
+    "aliases": [
+      "manual data entry",
+      "copy-paste work",
+      "keying",
+      "listing upload"
+    ],
+    "category": "admin",
+    "implied_by": [
+      "manual copy-and-paste of listing details into a spreadsheet",
+      "figures keyed in from scanned pages into a form"
+    ],
+    "personas": []
+  },
+  "Django": {
+    "aliases": [
+      "django",
+      "Django REST Framework",
+      "DRF"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a batteries-included server framework with an ORM, admin and migrations",
+      "a model-driven back office with a generated admin site"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Docker": {
+    "aliases": [
+      "docker",
+      "containerization",
+      "Docker Compose",
+      "containers"
+    ],
+    "category": "devops",
+    "implied_by": [
+      "reproducible container images for every service",
+      "a compose file that brings up the whole stack with one command",
+      "packaged environments that behave identically on laptops and servers"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst",
+      "fullstack"
+    ]
+  },
+  "ETL": {
+    "aliases": [
+      "ETL pipelines",
+      "ELT",
+      "data pipelines",
+      "data ingestion"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "an extract, reshape and load process that gathers several sources into one place",
+      "nightly ingestion jobs that land raw files and publish clean tables"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Elasticsearch": {
+    "aliases": [
+      "elasticsearch",
+      "Elastic",
+      "OpenSearch",
+      "ELK"
+    ],
+    "category": "database",
+    "implied_by": [
+      "full-text search with relevance tuning and faceted filters",
+      "typo-tolerant product search over a large catalogue"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Excel": {
+    "aliases": [
+      "Microsoft Excel",
+      "MS Excel",
+      "VLOOKUP",
+      "Excel formulas"
+    ],
+    "category": "spreadsheet",
+    "implied_by": [
+      "pivot tables and lookup formulas in workbooks",
+      "a macro-free workbook model with named ranges and scenario tabs",
+      "spreadsheet models the finance team opens every Monday"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Express": {
+    "aliases": [
+      "Express.js",
+      "ExpressJS"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a minimal HTTP routing layer with middleware chains",
+      "hand-rolled route handlers with validation middleware"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "FastAPI": {
+    "aliases": [
+      "fastapi",
+      "FastAPI framework"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "an async web service with automatic request validation and generated interactive docs",
+      "typed endpoints that validate payloads against schema models"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Firebase": {
+    "aliases": [
+      "firebase",
+      "Firestore",
+      "Firebase Auth"
+    ],
+    "category": "cloud",
+    "implied_by": [
+      "a hosted backend-as-a-service with a realtime database and push notifications",
+      "serverless data sync for web and phone clients"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Flutter": {
+    "aliases": [
+      "Dart",
+      "Flutter app"
+    ],
+    "category": "mobile",
+    "implied_by": [
+      "a cross-platform widget toolkit compiling one codebase to both phone platforms",
+      "pixel-identical screens on two mobile operating systems"
+    ],
+    "personas": []
+  },
+  "GitHub Actions": {
+    "aliases": [
+      "CI/CD",
+      "CI pipeline",
+      "continuous integration",
+      "GitHub CI"
+    ],
+    "category": "devops",
+    "implied_by": [
+      "automated build, test and deploy workflows triggered on every push",
+      "a pipeline that blocks merges when checks fail"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Go": {
+    "aliases": [
+      "Golang",
+      "go lang"
+    ],
+    "category": "language",
+    "implied_by": [
+      "compiled, concurrent services with goroutines and channels",
+      "a single static binary deployed without a runtime"
+    ],
+    "personas": []
+  },
+  "Google Ads": {
+    "aliases": [
+      "PPC",
+      "Google AdWords",
+      "paid search"
+    ],
+    "category": "marketing",
+    "implied_by": [
+      "search-engine ad campaigns with keyword bids and landing-page tests",
+      "a monthly ad budget optimised for cost per lead"
+    ],
+    "personas": []
+  },
+  "Google Analytics 4": {
+    "aliases": [
+      "GA4",
+      "Google Analytics",
+      "GA4 reporting"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "event-based web and app measurement with conversion tracking",
+      "a tagged website whose sessions, events and audiences are visible in Google's measurement suite"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Google Apps Script": {
+    "aliases": [
+      "Apps Script",
+      "Google Sheets automation",
+      "Sheets macros",
+      "GAS"
+    ],
+    "category": "spreadsheet",
+    "implied_by": [
+      "scripts living inside a shared online spreadsheet that email people and fill tabs automatically",
+      "custom menu items and time-based triggers in a cloud spreadsheet"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "GraphQL": {
+    "aliases": [
+      "graphql",
+      "Apollo",
+      "GraphQL API"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a single typed query endpoint where clients ask for exactly the fields they need",
+      "a schema with resolvers replacing a pile of separate routes"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Graphic design": {
+    "aliases": [
+      "logo design",
+      "Photoshop",
+      "Illustrator",
+      "Figma",
+      "branding"
+    ],
+    "category": "design",
+    "implied_by": [
+      "a brand identity with logo, palette and typography",
+      "polished marketing visuals and social creatives"
+    ],
+    "personas": []
+  },
+  "HTML/CSS": {
+    "aliases": [
+      "HTML",
+      "CSS",
+      "responsive design",
+      "HTML5"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "hand-written semantic markup and responsive layouts",
+      "mobile-first page layouts without a UI kit"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Hugging Face Transformers": {
+    "aliases": [
+      "transformers",
+      "HuggingFace",
+      "HF Transformers",
+      "hugging face"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "pretrained language models pulled from the open model hub",
+      "a BERT-style encoder loaded from a public checkpoint",
+      "tokenizers and model classes from the community model library"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "JWT authentication": {
+    "aliases": [
+      "JWT",
+      "JSON Web Tokens",
+      "token auth"
+    ],
+    "category": "security",
+    "implied_by": [
+      "stateless signed access tokens with short expiry and refresh rotation",
+      "session handling without server-side session storage"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Java Spring": {
+    "aliases": [
+      "Spring Boot",
+      "Spring",
+      "Java"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "enterprise services built with annotation-driven dependency injection on the JVM",
+      "layered controllers and repositories in a corporate-style stack"
+    ],
+    "personas": []
+  },
+  "JavaScript": {
+    "aliases": [
+      "JS",
+      "ES6",
+      "vanilla JS"
+    ],
+    "category": "language",
+    "implied_by": [
+      "browser scripting without a framework",
+      "client-side logic written in modern ECMAScript"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Jest": {
+    "aliases": [
+      "jest",
+      "Vitest",
+      "unit testing"
+    ],
+    "category": "testing",
+    "implied_by": [
+      "unit tests with mocks and snapshot assertions",
+      "a fast test suite guarding the business logic",
+      "coverage gates enforced on every merge"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "KPI definition": {
+    "aliases": [
+      "metric definition",
+      "KPI framework",
+      "metrics design"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "an agreed, written definition of exactly how each headline number is calculated",
+      "a metric dictionary the whole team signs off"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Kafka": {
+    "aliases": [
+      "Apache Kafka",
+      "event streaming",
+      "Kafka Streams"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "partitioned event streams with consumer groups",
+      "a durable log of events consumed by several services"
+    ],
+    "personas": []
+  },
+  "Kubernetes": {
+    "aliases": [
+      "k8s",
+      "K8s",
+      "kube"
+    ],
+    "category": "devops",
+    "implied_by": [
+      "pods, deployments and autoscalers on a container orchestrator",
+      "rolling updates across a managed cluster"
+    ],
+    "personas": []
+  },
+  "LLM evaluation": {
+    "aliases": [
+      "LLM evals",
+      "eval harness",
+      "LLM testing",
+      "model evaluation"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "a regression suite of graded prompts and reference answers",
+      "judge-model scoring with a rubric plus human spot checks",
+      "golden test sets that catch prompt regressions"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "LangChain": {
+    "aliases": [
+      "langchain",
+      "LangChain agents"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "chains of prompts, parsers and tools wired together in an orchestration library",
+      "a composable LLM pipeline with output parsers and retrievers"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "LangGraph": {
+    "aliases": [
+      "langgraph",
+      "LangGraph agents"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "a stateful multi-step agent modelled as a graph of nodes with checkpoints",
+      "an agent workflow with explicit branches, loops and human-approval steps"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Laravel": {
+    "aliases": [
+      "laravel",
+      "Eloquent",
+      "Blade"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "an expressive MVC web framework with templated views and a built-in ORM",
+      "artisan-style scaffolding for quick CRUD apps"
+    ],
+    "personas": []
+  },
+  "Looker": {
+    "aliases": [
+      "Looker Explore",
+      "LookML"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "a governed semantic layer where metrics are defined once in code",
+      "modelled dimensions and measures exposed to non-technical explorers"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Looker Studio": {
+    "aliases": [
+      "Google Data Studio",
+      "Data Studio"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "free browser-based dashboards connected straight to spreadsheets and ad platforms",
+      "shareable marketing report templates that refresh on open"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "MLflow": {
+    "aliases": [
+      "mlflow",
+      "MLflow tracking",
+      "ML experiment tracking"
+    ],
+    "category": "mlops",
+    "implied_by": [
+      "an experiment tracker with a model registry and run comparisons",
+      "logged parameters, metrics and artefacts for every training run"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Mixpanel": {
+    "aliases": [
+      "mixpanel",
+      "product analytics",
+      "Amplitude"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "event-level product usage tracking with user properties",
+      "in-app event streams turned into usage graphs"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "MongoDB": {
+    "aliases": [
+      "Mongo",
+      "mongoose",
+      "MongoDB Atlas"
+    ],
+    "category": "database",
+    "implied_by": [
+      "a document database with flexible schemas and aggregation pipelines",
+      "JSON-shaped records stored without fixed tables"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "NLP": {
+    "aliases": [
+      "natural language processing",
+      "text mining",
+      "text analytics"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "a pipeline that turns free-text tickets and emails into structured fields",
+      "linguistic preprocessing of messy user-written text"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "NestJS": {
+    "aliases": [
+      "Nest.js",
+      "Nest"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a modular server framework with dependency injection and decorators",
+      "controllers, providers and guards organised into feature modules"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Next.js": {
+    "aliases": [
+      "NextJS",
+      "Next.js App Router"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "server-rendered pages with file-based routing and incremental regeneration",
+      "a full-stack web framework with API routes and edge rendering"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Node.js": {
+    "aliases": [
+      "NodeJS",
+      "Node",
+      "node"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "event-driven server code running outside the browser on a non-blocking runtime",
+      "a lightweight service handling many concurrent connections"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "NumPy": {
+    "aliases": [
+      "numpy",
+      "numerical computing"
+    ],
+    "category": "data",
+    "implied_by": [
+      "vectorised array maths in place of slow loops",
+      "matrix operations on large numeric arrays"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "OAuth": {
+    "aliases": [
+      "OAuth2",
+      "Auth0",
+      "social login",
+      "SSO",
+      "OpenID Connect"
+    ],
+    "category": "security",
+    "implied_by": [
+      "sign-in with Google and company single sign-on",
+      "delegated login through an identity provider with scopes and refresh tokens",
+      "hosted identity with social logins and role claims"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "OCR": {
+    "aliases": [
+      "optical character recognition",
+      "document OCR",
+      "Tesseract",
+      "text extraction from scans"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "automatic reading of text from scanned invoices and photographed forms",
+      "digitised paper documents turned into machine-readable fields"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "OpenAI API": {
+    "aliases": [
+      "openai",
+      "GPT-4",
+      "ChatGPT API",
+      "GPT API",
+      "OpenAI GPT"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "calls to a hosted frontier chat-completion model with function calling",
+      "structured JSON output from a commercial language-model endpoint"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "PHP": {
+    "aliases": [
+      "php",
+      "PHP 8",
+      "LAMP stack"
+    ],
+    "category": "language",
+    "implied_by": [
+      "server-rendered pages from classic shared-hosting scripts",
+      "a legacy dynamic-page codebase on cheap hosting"
+    ],
+    "personas": []
+  },
+  "Pinecone": {
+    "aliases": [
+      "pinecone",
+      "Pinecone index"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "a managed hosted vector index with namespaces and metadata filters",
+      "a serverless similarity-search service for high-dimensional points"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Playwright": {
+    "aliases": [
+      "playwright",
+      "Playwright tests"
+    ],
+    "category": "testing",
+    "implied_by": [
+      "cross-browser end-to-end scripts that click through real user journeys on every pull request",
+      "headless browser tests run in the pipeline with traces on failure"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "PostgreSQL": {
+    "aliases": [
+      "Postgres",
+      "psql",
+      "PG"
+    ],
+    "category": "database",
+    "implied_by": [
+      "a relational database with transactions, constraints and JSON columns",
+      "carefully indexed tables with versioned migrations",
+      "foreign keys, partial indexes and constraint-level integrity enforced in the database itself"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst",
+      "fullstack"
+    ]
+  },
+  "Power BI": {
+    "aliases": [
+      "PowerBI",
+      "Microsoft Power BI",
+      "Power BI Desktop"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "interactive reports published to the company's Microsoft analytics workspace",
+      "drill-through dashboards with row-level security"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Prisma": {
+    "aliases": [
+      "Prisma ORM",
+      "prisma"
+    ],
+    "category": "database",
+    "implied_by": [
+      "a type-safe ORM with a declarative schema file and generated client",
+      "schema-first database access with automatic migrations"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "PyTorch": {
+    "aliases": [
+      "torch",
+      "pytorch lightning"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "a deep-learning framework with dynamic computation graphs",
+      "custom neural network layers trained on a single GPU",
+      "hand-written training loops with mixed precision"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "Python": {
+    "aliases": [
+      "python3",
+      "py",
+      "Python scripting"
+    ],
+    "category": "language",
+    "implied_by": [
+      "scripts and services written in a general-purpose scripting language with a deep data ecosystem",
+      "notebooks promoted into packaged, importable modules",
+      "a typed, tested codebase in the language most data teams default to"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst",
+      "fullstack"
+    ]
+  },
+  "Qlik": {
+    "aliases": [
+      "Qlik Sense",
+      "QlikView"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "associative-engine dashboards with a load script behind them",
+      "a legacy corporate reporting portal built on a niche analytics suite"
+    ],
+    "personas": []
+  },
+  "R": {
+    "aliases": [
+      "R language",
+      "RStudio",
+      "tidyverse"
+    ],
+    "category": "language",
+    "implied_by": [
+      "pipe-chained analysis scripts with grammar-of-graphics output",
+      "reproducible statistical notebooks rendered to web reports"
+    ],
+    "personas": []
+  },
+  "RAG": {
+    "aliases": [
+      "retrieval-augmented generation",
+      "retrieval augmented generation",
+      "RAG pipeline",
+      "RAG system"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "an assistant that answers from the client's own documents with cited passages",
+      "document chunking, retrieval and grounded answer generation",
+      "a question-answering bot that looks up source material before replying"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "REST API design": {
+    "aliases": [
+      "REST API",
+      "RESTful API",
+      "API design",
+      "REST"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "resource-oriented HTTP endpoints with versioning and pagination",
+      "consistent error formats and idempotent writes"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "RabbitMQ": {
+    "aliases": [
+      "rabbitmq",
+      "AMQP",
+      "message queue"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "a message broker decoupling the web tier from slow jobs",
+      "durable queues with acknowledgements between services"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "React": {
+    "aliases": [
+      "React.js",
+      "ReactJS",
+      "react"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "component-based user interfaces with hooks and shared state",
+      "a single-page application assembled from reusable view components",
+      "a client-side app that re-renders only what changed"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "React Native": {
+    "aliases": [
+      "RN",
+      "Expo",
+      "React Native app"
+    ],
+    "category": "mobile",
+    "implied_by": [
+      "a cross-platform phone app built from component code and native bridges",
+      "one team shipping to both app stores from shared screens"
+    ],
+    "personas": []
+  },
+  "Redis": {
+    "aliases": [
+      "redis",
+      "Redis cache",
+      "in-memory cache"
+    ],
+    "category": "database",
+    "implied_by": [
+      "an in-memory key-value store for caching and rate limiting",
+      "a low-latency cache in front of the primary database",
+      "ephemeral state and counters held in memory"
+    ],
+    "personas": [
+      "ai_ml",
+      "fullstack"
+    ]
+  },
+  "Redux": {
+    "aliases": [
+      "Redux Toolkit",
+      "redux",
+      "state management"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "a predictable global store with reducers and selectors",
+      "centralised client state with time-travel debugging"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Ruby on Rails": {
+    "aliases": [
+      "Rails",
+      "RoR",
+      "Ruby"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "convention-over-configuration MVC with generators and active-record models",
+      "a rapidly scaffolded monolith with opinionated defaults"
+    ],
+    "personas": []
+  },
+  "SAP": {
+    "aliases": [
+      "SAP ERP",
+      "SAP ABAP",
+      "SAP HANA"
+    ],
+    "category": "erp",
+    "implied_by": [
+      "enterprise resource-planning configuration for finance and procurement modules",
+      "a heavyweight back-office suite used by large manufacturers"
+    ],
+    "personas": []
+  },
+  "SEO": {
+    "aliases": [
+      "search engine optimization",
+      "on-page SEO",
+      "link building"
+    ],
+    "category": "marketing",
+    "implied_by": [
+      "higher search rankings earned through keyword and backlink work",
+      "technical audits of crawlability and metadata"
+    ],
+    "personas": []
+  },
+  "SPSS": {
+    "aliases": [
+      "spss",
+      "SAS",
+      "Stata"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "menu-driven statistical packages favoured by academic researchers",
+      "legacy syntax files from a university stats department"
+    ],
+    "personas": []
+  },
+  "SQL": {
+    "aliases": [
+      "structured query language",
+      "SQL queries",
+      "T-SQL"
+    ],
+    "category": "language",
+    "implied_by": [
+      "hand-written joins and window functions over relational tables",
+      "queries that aggregate millions of rows with common table expressions",
+      "reporting views defined directly in the database"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst",
+      "fullstack"
+    ]
+  },
+  "Salesforce": {
+    "aliases": [
+      "Salesforce Apex",
+      "SFDC",
+      "Salesforce admin"
+    ],
+    "category": "crm",
+    "implied_by": [
+      "a customer-relationship platform with custom objects and automated flows",
+      "lead-routing automations inside a hosted sales system"
+    ],
+    "personas": []
+  },
+  "Shopify": {
+    "aliases": [
+      "Shopify store",
+      "Shopify theme",
+      "Shopify Liquid",
+      "Shopify apps"
+    ],
+    "category": "ecommerce",
+    "implied_by": [
+      "a hosted storefront with custom theme code and app integrations",
+      "theme templates and a custom checkout extension for an online shop",
+      "a merchant-facing store with product and inventory syncing"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Snowflake": {
+    "aliases": [
+      "snowflake",
+      "Snowflake data warehouse",
+      "Snowflake SQL"
+    ],
+    "category": "warehouse",
+    "implied_by": [
+      "a cloud warehouse with separate compute clusters per team",
+      "virtual warehouses that suspend when idle"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Solidity": {
+    "aliases": [
+      "smart contracts",
+      "Ethereum",
+      "Web3",
+      "NFT"
+    ],
+    "category": "blockchain",
+    "implied_by": [
+      "on-chain contracts for token minting and escrow",
+      "a decentralised application with wallet connection"
+    ],
+    "personas": []
+  },
+  "Stripe": {
+    "aliases": [
+      "stripe",
+      "Stripe Checkout",
+      "Stripe Connect",
+      "Stripe payments"
+    ],
+    "category": "payments",
+    "implied_by": [
+      "card payments, subscriptions and webhooks handled by a hosted payments processor",
+      "recurring billing with proration and failed-payment retries",
+      "a checkout flow with signed webhook handlers"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Tableau": {
+    "aliases": [
+      "tableau",
+      "Tableau Desktop",
+      "Tableau Public"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "visual-analytics workbooks with parameters and calculated fields",
+      "a published executive view with filters and action links"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "Tailwind CSS": {
+    "aliases": [
+      "Tailwind",
+      "tailwindcss"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "utility-class styling driven by a design-token config",
+      "a consistent look built from atomic classes instead of custom stylesheets"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "TensorFlow": {
+    "aliases": [
+      "tensorflow",
+      "Keras",
+      "TF",
+      "TFLite"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "layered neural network models exported to a lite format for on-device inference",
+      "a graph-based deep-learning stack with a high-level model API"
+    ],
+    "personas": []
+  },
+  "Translation": {
+    "aliases": [
+      "translator",
+      "localization",
+      "English-Spanish translation",
+      "subtitling"
+    ],
+    "category": "content",
+    "implied_by": [
+      "documents rendered faithfully between two languages",
+      "localised product strings and subtitles"
+    ],
+    "personas": []
+  },
+  "TypeScript": {
+    "aliases": [
+      "TS",
+      "typed JS"
+    ],
+    "category": "language",
+    "implied_by": [
+      "a statically typed layer over browser scripting with shared interfaces",
+      "compile-time checked types across client and server",
+      "strict typing enforced on the whole codebase"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Unity": {
+    "aliases": [
+      "Unity3D",
+      "Unity game",
+      "C# Unity"
+    ],
+    "category": "gamedev",
+    "implied_by": [
+      "a 3D scene with physics, prefabs and a scripted gameplay loop",
+      "a mobile game built in a popular real-time engine"
+    ],
+    "personas": []
+  },
+  "Unreal Engine": {
+    "aliases": [
+      "UE5",
+      "Unreal",
+      "Blueprints"
+    ],
+    "category": "gamedev",
+    "implied_by": [
+      "a photoreal real-time scene with visual scripting graphs",
+      "cinematic game levels with high-end lighting"
+    ],
+    "personas": []
+  },
+  "Vercel": {
+    "aliases": [
+      "vercel",
+      "Vercel deployment"
+    ],
+    "category": "cloud",
+    "implied_by": [
+      "git-push deploys with preview URLs for every branch",
+      "edge-hosted frontend with serverless functions and zero-config builds"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "Video editing": {
+    "aliases": [
+      "Premiere Pro",
+      "After Effects",
+      "video production",
+      "motion graphics"
+    ],
+    "category": "media",
+    "implied_by": [
+      "raw footage cut into a polished edit with titles and sound",
+      "short-form clips with captions and transitions"
+    ],
+    "personas": []
+  },
+  "Vue.js": {
+    "aliases": [
+      "Vue",
+      "VueJS",
+      "Nuxt"
+    ],
+    "category": "frontend",
+    "implied_by": [
+      "a progressive component framework with single-file components",
+      "reactive templates built with a lightweight view library"
+    ],
+    "personas": []
+  },
+  "WebSockets": {
+    "aliases": [
+      "websockets",
+      "Socket.IO",
+      "real-time updates",
+      "websocket"
+    ],
+    "category": "backend",
+    "implied_by": [
+      "live updates pushed to the browser over a persistent connection",
+      "chat and presence features that feel instant",
+      "a bidirectional channel for notifications"
+    ],
+    "personas": [
+      "fullstack"
+    ]
+  },
+  "WordPress": {
+    "aliases": [
+      "wordpress",
+      "WP",
+      "WooCommerce",
+      "Elementor"
+    ],
+    "category": "cms",
+    "implied_by": [
+      "a plugin-driven content site managed from an admin dashboard",
+      "custom theme and plugin work on a popular blogging platform"
+    ],
+    "personas": []
+  },
+  "XGBoost": {
+    "aliases": [
+      "xgb",
+      "gradient boosting",
+      "gradient boosted trees"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "gradient-boosted decision trees tuned on tabular data",
+      "a boosted-tree model that beat the neural baseline on structured features"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "anomaly detection": {
+    "aliases": [
+      "outlier detection",
+      "fraud detection",
+      "anomaly alerts"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "automatic flagging of records that deviate from learned patterns",
+      "an unsupervised detector that surfaces unusual sensor readings"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "churn analysis": {
+    "aliases": [
+      "attrition analysis",
+      "retention drivers",
+      "churn drivers"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "an analysis of which accounts are drifting away and why",
+      "a list of at-risk subscribers with contributing factors"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "cohort analysis": {
+    "aliases": [
+      "cohort retention",
+      "retention analysis",
+      "cohort tables"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "signup-month cohorts tracked for how many users stay active",
+      "a retention triangle that shows when each group drops off"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "computer vision": {
+    "aliases": [
+      "CV",
+      "image recognition",
+      "image classification",
+      "object detection"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "models that inspect photos or video frames for defects",
+      "bounding-box detection on camera images",
+      "pixel-level analysis of product photos"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "customer segmentation": {
+    "aliases": [
+      "RFM analysis",
+      "clustering customers",
+      "audience segmentation",
+      "customer clustering"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "customers grouped by recency, frequency and spend",
+      "distinct behavioural segments for targeted campaigns"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "dashboard design": {
+    "aliases": [
+      "KPI dashboard",
+      "executive dashboard",
+      "dashboarding"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "a one-page view of the numbers leadership checks every morning",
+      "layout and metric hierarchy designed around decisions"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "data cleaning": {
+    "aliases": [
+      "data wrangling",
+      "data preparation",
+      "data quality",
+      "data munging"
+    ],
+    "category": "data",
+    "implied_by": [
+      "deduplication, standardisation and repair of malformed records before any analysis",
+      "reconciling inconsistent exports from several systems"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "data modeling": {
+    "aliases": [
+      "dimensional modelling",
+      "star schema",
+      "data modelling"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "fact and dimension tables arranged so reporting queries stay simple",
+      "a schema designed around the questions the business asks"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "data visualization": {
+    "aliases": [
+      "data viz",
+      "dataviz",
+      "visual analytics"
+    ],
+    "category": "bi",
+    "implied_by": [
+      "clear charts that make a trend obvious at a glance",
+      "annotated visuals prepared for a board pack"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "dbt": {
+    "aliases": [
+      "dbt Core",
+      "dbt Cloud",
+      "data build tool"
+    ],
+    "category": "data_infra",
+    "implied_by": [
+      "version-controlled query models with tests and documentation",
+      "modular warehouse transformations with lineage and automated assertions",
+      "staging, intermediate and mart layers built from plain query files"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "embeddings": {
+    "aliases": [
+      "vector embeddings",
+      "sentence embeddings",
+      "text embeddings"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "dense numeric representations of text for semantic search",
+      "documents and queries mapped into the same numeric space"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "feature engineering": {
+    "aliases": [
+      "feature creation",
+      "feature store",
+      "feature pipelines"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "hand-crafted aggregates and lag columns derived from raw event logs",
+      "derived model inputs built from transactional history"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "fine-tuning": {
+    "aliases": [
+      "fine tuning",
+      "LoRA",
+      "PEFT",
+      "instruction tuning"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "a base language model adapted on a few thousand labelled examples",
+      "low-rank adapters trained on the client's domain data"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "funnel analysis": {
+    "aliases": [
+      "conversion funnel",
+      "funnel optimisation",
+      "drop-off analysis"
+    ],
+    "category": "analytics",
+    "implied_by": [
+      "step-by-step conversion rates from first visit to purchase",
+      "a map of where in the sign-up journey most people abandon"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "iOS development": {
+    "aliases": [
+      "Swift",
+      "SwiftUI",
+      "iPhone app",
+      "Xcode"
+    ],
+    "category": "mobile",
+    "implied_by": [
+      "a native app shipped through Apple's app store",
+      "screens built with Apple's declarative interface toolkit"
+    ],
+    "personas": []
+  },
+  "model deployment": {
+    "aliases": [
+      "model serving",
+      "ML deployment",
+      "MLOps",
+      "productionizing models"
+    ],
+    "category": "mlops",
+    "implied_by": [
+      "a trained model wrapped behind a versioned, monitored HTTP endpoint",
+      "a notebook prototype shipped into a production service with health checks"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "named entity recognition": {
+    "aliases": [
+      "NER",
+      "entity extraction"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "extraction of company names, dates and amounts from unstructured paragraphs",
+      "token-level tagging of people, places and products"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "pandas": {
+    "aliases": [
+      "Pandas",
+      "Python data analysis"
+    ],
+    "category": "data",
+    "implied_by": [
+      "dataframe-based cleaning and reshaping of tabular files",
+      "in-memory tabular transformations with groupby and merge"
+    ],
+    "personas": [
+      "ai_ml",
+      "data_analyst"
+    ]
+  },
+  "pgvector": {
+    "aliases": [
+      "pg_vector",
+      "Postgres vector extension"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "embedding similarity search inside the relational database",
+      "vector columns with an approximate-nearest-neighbour index next to the transactional tables"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "prompt engineering": {
+    "aliases": [
+      "prompting",
+      "prompt design",
+      "prompt templates"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "carefully versioned instruction text with few-shot examples",
+      "systematic wording and structure tweaks to get reliable model output"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "recommendation systems": {
+    "aliases": [
+      "recommender systems",
+      "recommender",
+      "collaborative filtering"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "a customers-also-liked ranking built from interaction history",
+      "personalised suggestions from purchase and click behaviour"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "regression analysis": {
+    "aliases": [
+      "linear regression",
+      "logistic regression",
+      "regression modelling"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "a fitted model that quantifies how much each driver moves the outcome",
+      "coefficient-level explanations of what drives the number"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "reinforcement learning": {
+    "aliases": [
+      "RL",
+      "Q-learning",
+      "reward modelling"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "an agent that learns a policy from rewards in a simulator",
+      "trial-and-error training against a reward signal"
+    ],
+    "personas": []
+  },
+  "sales forecasting": {
+    "aliases": [
+      "revenue forecasting",
+      "budget forecasting",
+      "forecast model"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "revenue projections for the coming quarter with best and worst-case ranges",
+      "a trend-and-seasonality projection reviewed monthly with finance"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "scikit-learn": {
+    "aliases": [
+      "sklearn",
+      "scikit learn"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "classical machine-learning pipelines with cross-validation and grid search",
+      "a reusable preprocessing-plus-estimator pipeline",
+      "baseline classifiers and regressors benchmarked before anything heavier"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "speech recognition": {
+    "aliases": [
+      "ASR",
+      "speech-to-text",
+      "Whisper",
+      "audio transcription"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "automatic transcripts of call recordings",
+      "time-stamped transcripts generated from audio files"
+    ],
+    "personas": []
+  },
+  "statistics": {
+    "aliases": [
+      "statistical analysis",
+      "hypothesis testing",
+      "inferential statistics"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "confidence intervals and significance tests on messy samples",
+      "careful treatment of variance, sample size and bias"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "survey analysis": {
+    "aliases": [
+      "survey data analysis",
+      "questionnaire analysis",
+      "Likert analysis"
+    ],
+    "category": "stats",
+    "implied_by": [
+      "weighted, cross-tabulated responses from a questionnaire",
+      "coded open-ended answers and rating-scale summaries"
+    ],
+    "personas": [
+      "data_analyst"
+    ]
+  },
+  "text classification": {
+    "aliases": [
+      "document classification",
+      "sentiment analysis",
+      "intent classification"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "a labelled-category model for incoming messages",
+      "automatic routing of each inbound message to the right queue by predicted topic"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "time-series forecasting": {
+    "aliases": [
+      "time series forecasting",
+      "demand forecasting",
+      "Prophet",
+      "ARIMA"
+    ],
+    "category": "ml",
+    "implied_by": [
+      "weekly demand projections with seasonality and holiday effects",
+      "a rolling-origin backtested prediction of future volumes"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  },
+  "vector databases": {
+    "aliases": [
+      "vector database",
+      "vector store",
+      "vector DB"
+    ],
+    "category": "llm",
+    "implied_by": [
+      "a store optimised for nearest-neighbour lookups over high-dimensional points",
+      "an index that returns the closest passages for a query vector"
+    ],
+    "personas": [
+      "ai_ml"
+    ]
+  }
+}

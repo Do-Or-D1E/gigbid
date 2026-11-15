@@ -1,0 +1,28 @@
+# Map from GigBid's marketplace port to tools on the official Upwork MCP server.
+# UNVERIFIED: the tool names below are best guesses from Upwork's description of the server
+# (job search, proposals, messaging); no Upwork account was available to list the real tools.
+# Confirm or fix them after OAuth with: uv run python scripts/upwork_discover.py
+search_jobs:
+  tool: search_jobs
+  args: {query: query, limit: limit}
+get_job:
+  tool: get_job_details
+  args: {job_id: job_id}
+get_client_history:
+  tool: get_client_details
+  args: {client_id: client_id}
+get_connects_balance:
+  tool: get_connects_balance
+list_threads:
+  tool: list_rooms
+list_messages:
+  tool: get_room_messages
+  args: {thread_id: room_id}
+list_proposals:
+  tool: list_proposals
+create_proposal_draft:
+  tool: create_proposal_draft
+  args: {job_id: job_id, cover_letter: cover_letter, bid_amount: charge_rate}
+send_message:
+  tool: create_message_draft
+  args: {thread_id: room_id, text: message}

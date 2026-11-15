@@ -1,0 +1,234 @@
+{
+  "ai_ml-p01": {
+    "industry": "fintech",
+    "skills": [
+      "Docker",
+      "FastAPI",
+      "OCR",
+      "Python",
+      "model deployment",
+      "named entity recognition"
+    ],
+    "title": "Invoice field extraction for accounts payable"
+  },
+  "ai_ml-p02": {
+    "industry": "SaaS",
+    "skills": [
+      "NLP",
+      "PostgreSQL",
+      "Python",
+      "feature engineering",
+      "scikit-learn",
+      "text classification"
+    ],
+    "title": "Support ticket triage classifier"
+  },
+  "ai_ml-p03": {
+    "industry": "legal",
+    "skills": [
+      "LangChain",
+      "OpenAI API",
+      "Pinecone",
+      "RAG",
+      "embeddings",
+      "prompt engineering"
+    ],
+    "title": "Contract question-answering assistant"
+  },
+  "ai_ml-p04": {
+    "industry": "logistics",
+    "skills": [
+      "Airflow",
+      "XGBoost",
+      "feature engineering",
+      "model deployment",
+      "pandas",
+      "time-series forecasting"
+    ],
+    "title": "Weekly demand forecasts for regional warehouses"
+  },
+  "ai_ml-p05": {
+    "industry": "manufacturing",
+    "skills": [
+      "Docker",
+      "NumPy",
+      "PyTorch",
+      "computer vision",
+      "model deployment"
+    ],
+    "title": "Surface defect detection on moulded parts"
+  },
+  "ai_ml-p06": {
+    "industry": "fintech",
+    "skills": [
+      "FastAPI",
+      "Redis",
+      "SQL",
+      "XGBoost",
+      "anomaly detection",
+      "feature engineering",
+      "model deployment"
+    ],
+    "title": "Card-not-present fraud scoring service"
+  },
+  "ai_ml-p07": {
+    "industry": "edtech",
+    "skills": [
+      "Hugging Face Transformers",
+      "NLP",
+      "PyTorch",
+      "fine-tuning",
+      "text classification"
+    ],
+    "title": "Essay feedback assistant"
+  },
+  "ai_ml-p08": {
+    "industry": "healthcare",
+    "skills": [
+      "LLM evaluation",
+      "LangGraph",
+      "OpenAI API",
+      "named entity recognition",
+      "prompt engineering"
+    ],
+    "title": "Clinic note summariser"
+  },
+  "ai_ml-p09": {
+    "industry": "e-commerce",
+    "skills": [
+      "Python",
+      "Redis",
+      "embeddings",
+      "feature engineering",
+      "recommendation systems",
+      "scikit-learn"
+    ],
+    "title": "Product recommendations for a home-goods store"
+  },
+  "ai_ml-p10": {
+    "industry": "SaaS",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "MLflow",
+      "feature engineering",
+      "model deployment",
+      "scikit-learn"
+    ],
+    "title": "Nightly model retraining pipeline"
+  },
+  "ai_ml-p11": {
+    "industry": "media",
+    "skills": [
+      "FastAPI",
+      "LLM evaluation",
+      "LangGraph",
+      "RAG",
+      "prompt engineering"
+    ],
+    "title": "Agentic research assistant for a finance newsletter"
+  },
+  "ai_ml-p12": {
+    "industry": "real estate",
+    "skills": [
+      "PostgreSQL",
+      "SQL",
+      "feature engineering",
+      "model deployment",
+      "pandas",
+      "scikit-learn"
+    ],
+    "title": "Listing price estimator"
+  },
+  "ai_ml-p13": {
+    "industry": "travel",
+    "skills": [
+      "Celery",
+      "Hugging Face Transformers",
+      "NLP",
+      "model deployment",
+      "text classification"
+    ],
+    "title": "Call-centre transcript analytics"
+  },
+  "ai_ml-p14": {
+    "industry": "media",
+    "skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "RAG",
+      "embeddings",
+      "pgvector",
+      "vector databases"
+    ],
+    "title": "Semantic search for a video archive"
+  },
+  "ai_ml-p15": {
+    "industry": "nonprofit",
+    "skills": [
+      "NumPy",
+      "PyTorch",
+      "computer vision",
+      "feature engineering",
+      "model deployment"
+    ],
+    "title": "Camera-trap species classifier"
+  },
+  "ai_ml-p16": {
+    "industry": "legal",
+    "skills": [
+      "LLM evaluation",
+      "MLflow",
+      "OpenAI API",
+      "Python",
+      "prompt engineering"
+    ],
+    "title": "Regression harness for an AI drafting tool"
+  },
+  "ai_ml-p17": {
+    "industry": "logistics",
+    "skills": [
+      "Celery",
+      "Redis",
+      "anomaly detection",
+      "scikit-learn",
+      "time-series forecasting"
+    ],
+    "title": "Cold-chain sensor alerts"
+  },
+  "ai_ml-p18": {
+    "industry": "media",
+    "skills": [
+      "AWS SageMaker",
+      "Hugging Face Transformers",
+      "fine-tuning",
+      "model deployment",
+      "named entity recognition"
+    ],
+    "title": "Domain tagger for a news publisher"
+  },
+  "ai_ml-p19": {
+    "industry": "travel",
+    "skills": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "RAG",
+      "model deployment",
+      "prompt engineering"
+    ],
+    "title": "Travel itinerary chatbot with tools"
+  },
+  "ai_ml-p20": {
+    "industry": "energy",
+    "skills": [
+      "AWS",
+      "Docker",
+      "Python",
+      "feature engineering",
+      "pandas",
+      "time-series forecasting"
+    ],
+    "title": "Regional electricity load forecasts"
+  }
+}

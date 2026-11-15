@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "db": true,
+  "marketplace": "up",
+  "marketplace_detail": "",
+  "model_profile": "dev",
+  "marketplace_mode": "gigsim",
+  "policy_version": 3,
+  "rag_variant": "hybrid",
+  "version": "0.1.0"
+}

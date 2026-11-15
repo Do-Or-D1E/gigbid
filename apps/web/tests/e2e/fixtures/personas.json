@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p-fullstack",
+    "name": "Maya Chen",
+    "headline": "Full-stack developer, React and FastAPI",
+    "skills": [
+      "react",
+      "fastapi",
+      "postgres",
+      "stripe"
+    ],
+    "hourly_rate_usd": 65,
+    "min_project_usd": 500,
+    "weekly_connects_budget": 80
+  },
+  {
+    "id": "p-data",
+    "name": "Omar Haddad",
+    "headline": "Data engineer",
+    "skills": [
+      "python",
+      "airflow",
+      "dbt"
+    ],
+    "hourly_rate_usd": 80,
+    "min_project_usd": 800,
+    "weekly_connects_budget": 60
+  }
+]

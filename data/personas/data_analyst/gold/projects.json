@@ -1,0 +1,223 @@
+{
+  "data_analyst-p01": {
+    "industry": "e-commerce",
+    "skills": [
+      "DAX",
+      "KPI definition",
+      "Power BI",
+      "SQL",
+      "dashboard design"
+    ],
+    "title": "Executive sales dashboard"
+  },
+  "data_analyst-p02": {
+    "industry": "SaaS",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "SQL",
+      "data cleaning",
+      "funnel analysis"
+    ],
+    "title": "Marketing attribution cleanup"
+  },
+  "data_analyst-p03": {
+    "industry": "e-commerce",
+    "skills": [
+      "Python",
+      "churn analysis",
+      "cohort analysis",
+      "data visualization",
+      "pandas"
+    ],
+    "title": "Retention study for a meal-kit startup"
+  },
+  "data_analyst-p04": {
+    "industry": "fintech",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "data modeling",
+      "dbt"
+    ],
+    "title": "Warehouse migration to dbt"
+  },
+  "data_analyst-p05": {
+    "industry": "healthcare",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "ETL",
+      "PostgreSQL",
+      "Python",
+      "data cleaning"
+    ],
+    "title": "Nightly clinic metrics pipeline"
+  },
+  "data_analyst-p06": {
+    "industry": "e-commerce",
+    "skills": [
+      "A/B testing",
+      "Python",
+      "funnel analysis",
+      "regression analysis",
+      "statistics"
+    ],
+    "title": "Checkout A/B test programme"
+  },
+  "data_analyst-p07": {
+    "industry": "healthcare",
+    "skills": [
+      "Excel",
+      "data cleaning",
+      "data visualization",
+      "statistics",
+      "survey analysis"
+    ],
+    "title": "Staff engagement survey"
+  },
+  "data_analyst-p08": {
+    "industry": "logistics",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Tableau",
+      "dashboard design",
+      "data visualization"
+    ],
+    "title": "Fleet utilisation workbook"
+  },
+  "data_analyst-p09": {
+    "industry": "SaaS",
+    "skills": [
+      "BigQuery",
+      "KPI definition",
+      "Looker",
+      "SQL",
+      "data modeling"
+    ],
+    "title": "Subscription metrics layer"
+  },
+  "data_analyst-p10": {
+    "industry": "edtech",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization",
+      "regression analysis",
+      "sales forecasting"
+    ],
+    "title": "Tuition revenue forecast"
+  },
+  "data_analyst-p11": {
+    "industry": "travel",
+    "skills": [
+      "SQL",
+      "customer segmentation",
+      "data cleaning",
+      "data visualization",
+      "pandas"
+    ],
+    "title": "Member groups for a travel club"
+  },
+  "data_analyst-p12": {
+    "industry": "nonprofit",
+    "skills": [
+      "ETL",
+      "Google Apps Script",
+      "KPI definition",
+      "Looker Studio",
+      "data cleaning"
+    ],
+    "title": "Sheets automation for an operations team"
+  },
+  "data_analyst-p13": {
+    "industry": "media",
+    "skills": [
+      "A/B testing",
+      "Mixpanel",
+      "SQL",
+      "cohort analysis",
+      "funnel analysis"
+    ],
+    "title": "Product analytics for a mobile app"
+  },
+  "data_analyst-p14": {
+    "industry": "real estate",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization",
+      "regression analysis",
+      "statistics"
+    ],
+    "title": "Pricing analysis for a property agency"
+  },
+  "data_analyst-p15": {
+    "industry": "SaaS",
+    "skills": [
+      "DAX",
+      "Power BI",
+      "SQL",
+      "churn analysis",
+      "regression analysis"
+    ],
+    "title": "Churn drivers for a telecom reseller"
+  },
+  "data_analyst-p16": {
+    "industry": "nonprofit",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "dashboard design",
+      "data cleaning"
+    ],
+    "title": "Donor reporting pack"
+  },
+  "data_analyst-p17": {
+    "industry": "manufacturing",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "ETL",
+      "KPI definition",
+      "data modeling",
+      "dbt"
+    ],
+    "title": "Supply KPI mart"
+  },
+  "data_analyst-p18": {
+    "industry": "travel",
+    "skills": [
+      "Excel",
+      "dashboard design",
+      "data visualization",
+      "statistics",
+      "survey analysis"
+    ],
+    "title": "Guest satisfaction survey redesign"
+  },
+  "data_analyst-p19": {
+    "industry": "SaaS",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Snowflake",
+      "Tableau",
+      "data modeling"
+    ],
+    "title": "Warehouse cost and usage reporting"
+  },
+  "data_analyst-p20": {
+    "industry": "fintech",
+    "skills": [
+      "A/B testing",
+      "Mixpanel",
+      "SQL",
+      "funnel analysis",
+      "statistics"
+    ],
+    "title": "Payment failure funnel"
+  }
+}

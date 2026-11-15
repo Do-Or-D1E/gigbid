@@ -1,0 +1,1660 @@
+{
+  "data_analyst-cs-01": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "SQL",
+      "data cleaning",
+      "funnel analysis"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-02": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "churn analysis",
+      "cohort analysis",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-03": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-04": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "ETL",
+      "PostgreSQL",
+      "Python",
+      "data cleaning"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-05": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Python",
+      "funnel analysis",
+      "regression analysis",
+      "statistics"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-06": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "data cleaning",
+      "data visualization",
+      "statistics",
+      "survey analysis"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-07": {
+    "project_id": "data_analyst-p10",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization",
+      "regression analysis",
+      "sales forecasting"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-08": {
+    "project_id": "data_analyst-p11",
+    "skills": [
+      "SQL",
+      "customer segmentation",
+      "data cleaning",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-09": {
+    "project_id": "data_analyst-p13",
+    "skills": [
+      "A/B testing",
+      "Mixpanel",
+      "SQL",
+      "cohort analysis",
+      "funnel analysis"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-10": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization",
+      "regression analysis",
+      "statistics"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-11": {
+    "project_id": "data_analyst-p16",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "dashboard design",
+      "data cleaning"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-12": {
+    "project_id": "data_analyst-p17",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "ETL",
+      "KPI definition",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-13": {
+    "project_id": "data_analyst-p18",
+    "skills": [
+      "Excel",
+      "dashboard design",
+      "data visualization",
+      "statistics",
+      "survey analysis"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-14": {
+    "project_id": "data_analyst-p19",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Snowflake",
+      "Tableau",
+      "data modeling"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cs-15": {
+    "project_id": "data_analyst-p20",
+    "skills": [
+      "A/B testing",
+      "Mixpanel",
+      "SQL",
+      "funnel analysis",
+      "statistics"
+    ],
+    "type": "case_study"
+  },
+  "data_analyst-cv-01": {
+    "project_id": null,
+    "skills": [
+      "A/B testing",
+      "Airflow",
+      "BigQuery",
+      "DAX",
+      "Docker",
+      "ETL",
+      "Excel",
+      "Google Analytics 4",
+      "Google Apps Script",
+      "KPI definition",
+      "Looker",
+      "Looker Studio",
+      "Mixpanel",
+      "PostgreSQL",
+      "Power BI",
+      "Python",
+      "SQL",
+      "Snowflake",
+      "Tableau",
+      "churn analysis",
+      "cohort analysis",
+      "customer segmentation",
+      "dashboard design",
+      "data cleaning",
+      "data modeling",
+      "data visualization",
+      "dbt",
+      "funnel analysis",
+      "pandas",
+      "regression analysis",
+      "sales forecasting",
+      "statistics",
+      "survey analysis"
+    ],
+    "type": "cv"
+  },
+  "data_analyst-prop-001": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-002": {
+    "project_id": "data_analyst-p16",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-003": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "SQL",
+      "Snowflake",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-004": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "data cleaning",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-005": {
+    "project_id": "data_analyst-p11",
+    "skills": [
+      "SQL",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-006": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-007": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "Power BI",
+      "SQL",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-008": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-009": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-010": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-011": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-012": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-013": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-014": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Excel",
+      "Python",
+      "regression analysis",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-015": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Python",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-016": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-017": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-018": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "churn analysis",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-019": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-020": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-021": {
+    "project_id": null,
+    "skills": [
+      "SQL",
+      "Tableau"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-022": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "Excel",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-023": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-024": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-025": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "Looker",
+      "data modeling"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-026": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-027": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow",
+      "ETL",
+      "PostgreSQL",
+      "Python",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-028": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-029": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Mixpanel",
+      "Python",
+      "SQL",
+      "churn analysis",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-030": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Excel",
+      "Python",
+      "funnel analysis",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-031": {
+    "project_id": "data_analyst-p13",
+    "skills": [
+      "Mixpanel",
+      "SQL",
+      "cohort analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-032": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "churn analysis",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-033": {
+    "project_id": null,
+    "skills": [
+      "churn analysis",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-034": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-035": {
+    "project_id": "data_analyst-p18",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-036": {
+    "project_id": "data_analyst-p18",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-037": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-038": {
+    "project_id": null,
+    "skills": [
+      "A/B testing",
+      "Python",
+      "funnel analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-039": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-040": {
+    "project_id": null,
+    "skills": [
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-041": {
+    "project_id": null,
+    "skills": [
+      "A/B testing",
+      "Python",
+      "regression analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-042": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-043": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-044": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-045": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "statistics",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-046": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-047": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "DAX",
+      "Power BI",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-048": {
+    "project_id": "data_analyst-p10",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-049": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "SQL",
+      "Tableau"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-050": {
+    "project_id": "data_analyst-p07",
+    "skills": [
+      "Excel",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-051": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Google Apps Script",
+      "KPI definition",
+      "Looker Studio"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-052": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-053": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-054": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-055": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow",
+      "ETL",
+      "PostgreSQL",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-056": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-057": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-058": {
+    "project_id": "data_analyst-p16",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-059": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-060": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-061": {
+    "project_id": null,
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "ETL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-062": {
+    "project_id": null,
+    "skills": [
+      "SQL",
+      "churn analysis",
+      "cohort analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-063": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-064": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-065": {
+    "project_id": null,
+    "skills": [
+      "Google Analytics 4",
+      "Looker Studio",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-066": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-067": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "ETL",
+      "Google Apps Script",
+      "Looker Studio"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-068": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-069": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "KPI definition",
+      "Power BI",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-070": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Excel",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-071": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-072": {
+    "project_id": "data_analyst-p15",
+    "skills": [
+      "Power BI",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-073": {
+    "project_id": "data_analyst-p17",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-074": {
+    "project_id": "data_analyst-p17",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "KPI definition",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-075": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-076": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-077": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-078": {
+    "project_id": null,
+    "skills": [
+      "Airflow",
+      "Docker",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-079": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "Mixpanel",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-080": {
+    "project_id": null,
+    "skills": [
+      "Tableau",
+      "dashboard design",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-081": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-082": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-083": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-084": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-085": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "SQL",
+      "Tableau",
+      "dashboard design",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-086": {
+    "project_id": "data_analyst-p11",
+    "skills": [
+      "SQL",
+      "data cleaning",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-087": {
+    "project_id": "data_analyst-p13",
+    "skills": [
+      "Mixpanel",
+      "SQL",
+      "cohort analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-088": {
+    "project_id": null,
+    "skills": [
+      "Airflow",
+      "Docker",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-089": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Excel",
+      "Python",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-090": {
+    "project_id": null,
+    "skills": [
+      "Google Analytics 4",
+      "Looker Studio",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-091": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "funnel analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-092": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-093": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "BigQuery",
+      "Looker",
+      "Looker Studio",
+      "SQL",
+      "Tableau",
+      "dashboard design",
+      "data modeling"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-094": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "SQL",
+      "Tableau",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-095": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-096": {
+    "project_id": null,
+    "skills": [
+      "churn analysis",
+      "cohort analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-097": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "churn analysis",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-098": {
+    "project_id": "data_analyst-p19",
+    "skills": [
+      "SQL",
+      "Snowflake",
+      "Tableau",
+      "data modeling"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-099": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-100": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-101": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "Power BI",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-102": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-103": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-104": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "SQL",
+      "data modeling"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-105": {
+    "project_id": "data_analyst-p18",
+    "skills": [
+      "Excel",
+      "data visualization",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-106": {
+    "project_id": "data_analyst-p18",
+    "skills": [
+      "Excel",
+      "statistics",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-107": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "DAX",
+      "Power BI",
+      "SQL",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-108": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "KPI definition",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-109": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-110": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-111": {
+    "project_id": null,
+    "skills": [
+      "Google Analytics 4",
+      "Looker Studio"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-112": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-113": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "Google Apps Script",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-114": {
+    "project_id": "data_analyst-p17",
+    "skills": [
+      "Airflow",
+      "BigQuery",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-115": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-116": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio",
+      "dashboard design"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-117": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "SQL",
+      "Snowflake",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-118": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "regression analysis",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-119": {
+    "project_id": null,
+    "skills": [
+      "Mixpanel",
+      "cohort analysis",
+      "funnel analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-120": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-121": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "Looker",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-122": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-123": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Tableau"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-124": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-125": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Excel",
+      "Google Apps Script",
+      "Looker Studio",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-126": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Tableau"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-127": {
+    "project_id": null,
+    "skills": [
+      "SQL",
+      "customer segmentation",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-128": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-129": {
+    "project_id": "data_analyst-p06",
+    "skills": [
+      "A/B testing",
+      "Python",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-130": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "PostgreSQL",
+      "Python"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-131": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "Python",
+      "regression analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-132": {
+    "project_id": null,
+    "skills": [
+      "KPI definition",
+      "dashboard design",
+      "data cleaning"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-133": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "BigQuery",
+      "KPI definition",
+      "Looker",
+      "Power BI",
+      "SQL",
+      "data modeling"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-134": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "Excel",
+      "Python",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-135": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "survey analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-136": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "ETL",
+      "SQL",
+      "Snowflake",
+      "dbt"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-137": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "SQL",
+      "pandas"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-138": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "KPI definition",
+      "Looker"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-139": {
+    "project_id": null,
+    "skills": [
+      "Mixpanel",
+      "cohort analysis",
+      "funnel analysis"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-140": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-141": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-142": {
+    "project_id": null,
+    "skills": [
+      "Python",
+      "regression analysis",
+      "statistics"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-143": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-144": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "Power BI",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-145": {
+    "project_id": "data_analyst-p16",
+    "skills": [
+      "Google Apps Script",
+      "Looker Studio"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-146": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "regression analysis",
+      "sales forecasting"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-147": {
+    "project_id": "data_analyst-p02",
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4",
+      "SQL"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-148": {
+    "project_id": null,
+    "skills": [],
+    "type": "proposal"
+  },
+  "data_analyst-prop-149": {
+    "project_id": null,
+    "skills": [
+      "Excel",
+      "Python",
+      "sales forecasting"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-prop-150": {
+    "project_id": null,
+    "skills": [
+      "BigQuery",
+      "Google Analytics 4"
+    ],
+    "type": "proposal"
+  },
+  "data_analyst-repo-01": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "DAX",
+      "KPI definition",
+      "Power BI",
+      "SQL"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-02": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python",
+      "cohort analysis",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-03": {
+    "project_id": "data_analyst-p04",
+    "skills": [
+      "SQL",
+      "Snowflake",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-04": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow",
+      "Docker",
+      "ETL",
+      "PostgreSQL",
+      "Python"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-05": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "BigQuery",
+      "KPI definition",
+      "Looker",
+      "SQL",
+      "data modeling"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-06": {
+    "project_id": "data_analyst-p11",
+    "skills": [
+      "SQL",
+      "data cleaning",
+      "data visualization",
+      "pandas"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-07": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "Google Apps Script",
+      "KPI definition",
+      "Looker Studio"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-08": {
+    "project_id": "data_analyst-p13",
+    "skills": [
+      "A/B testing",
+      "Mixpanel",
+      "SQL",
+      "funnel analysis"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-09": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "Excel",
+      "Python",
+      "data visualization",
+      "statistics"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-10": {
+    "project_id": "data_analyst-p17",
+    "skills": [
+      "Airflow",
+      "KPI definition",
+      "data modeling",
+      "dbt"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-repo-11": {
+    "project_id": "data_analyst-p19",
+    "skills": [
+      "KPI definition",
+      "SQL",
+      "Snowflake",
+      "Tableau",
+      "data modeling"
+    ],
+    "type": "repo"
+  },
+  "data_analyst-rev-01": {
+    "project_id": "data_analyst-p20",
+    "skills": [
+      "funnel analysis"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-02": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "SQL"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-03": {
+    "project_id": "data_analyst-p09",
+    "skills": [
+      "KPI definition"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-04": {
+    "project_id": "data_analyst-p14",
+    "skills": [
+      "statistics"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-05": {
+    "project_id": "data_analyst-p05",
+    "skills": [
+      "Airflow"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-06": {
+    "project_id": "data_analyst-p10",
+    "skills": [
+      "regression analysis"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-07": {
+    "project_id": "data_analyst-p11",
+    "skills": [
+      "data visualization",
+      "pandas"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-08": {
+    "project_id": "data_analyst-p16",
+    "skills": [
+      "Looker Studio",
+      "data cleaning"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-09": {
+    "project_id": "data_analyst-p08",
+    "skills": [
+      "Tableau",
+      "dashboard design"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-10": {
+    "project_id": "data_analyst-p03",
+    "skills": [
+      "Python"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-11": {
+    "project_id": "data_analyst-p01",
+    "skills": [
+      "DAX"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-12": {
+    "project_id": "data_analyst-p12",
+    "skills": [
+      "ETL",
+      "Google Apps Script"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-13": {
+    "project_id": "data_analyst-p19",
+    "skills": [
+      "SQL",
+      "Tableau"
+    ],
+    "type": "review"
+  },
+  "data_analyst-rev-14": {
+    "project_id": "data_analyst-p15",
+    "skills": [
+      "DAX",
+      "SQL"
+    ],
+    "type": "review"
+  }
+}

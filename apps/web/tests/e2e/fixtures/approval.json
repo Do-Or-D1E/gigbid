@@ -1,0 +1,161 @@
+{
+  "thread_id": "t-100",
+  "kind": "proposal",
+  "job_id": "j-100",
+  "status": "pending",
+  "decision": null,
+  "created_at": "2026-11-14T10:00:00Z",
+  "run_id": "r-draft",
+  "payload": {
+    "job": {
+      "job_id": "j-100",
+      "title": "Migrate billing dashboard to React",
+      "category": "web",
+      "budget_type": "fixed",
+      "budget_min": 1500,
+      "budget_max": 2500,
+      "client_id": "c-9"
+    },
+    "draft": {
+      "cover_letter": "Hi Dana, your brief about moving the billing dashboard to React matches work I did last year.\n\nI built a Stripe subscription dashboard in React that cut churn reporting time by 60 percent. I also shipped a FastAPI backend serving 2 million requests a day.\n\nI can start Monday and deliver a first milestone within two weeks.",
+      "screening_answers": [
+        {
+          "question": "Have you used Stripe before?",
+          "answer": "Yes, on two production dashboards."
+        }
+      ],
+      "cited_evidence_ids": [
+        "e1",
+        "e2"
+      ],
+      "version": 1
+    },
+    "claims": [
+      {
+        "claim_id": "c1",
+        "text": "I built a Stripe subscription dashboard in React that cut churn reporting time by 60 percent",
+        "status": "supported",
+        "note": "Matches the case study.",
+        "evidence_ids": [
+          "e1"
+        ],
+        "evidence": [
+          {
+            "item_id": "e1",
+            "title": "Stripe dashboard case study",
+            "snippet": "Reduced churn reporting from 5 hours to 2 hours (60 percent).",
+            "source": "portfolio"
+          }
+        ]
+      },
+      {
+        "claim_id": "c2",
+        "text": "I also shipped a FastAPI backend serving 2 million requests a day",
+        "status": "partly_supported",
+        "note": "The case study says 1.4 million.",
+        "evidence_ids": [
+          "e2"
+        ],
+        "evidence": [
+          {
+            "item_id": "e2",
+            "title": "API platform repo",
+            "snippet": "FastAPI service handling about 1.4M requests per day.",
+            "source": "repo"
+          }
+        ]
+      },
+      {
+        "claim_id": "c3",
+        "text": "won a design award in 2021",
+        "status": "unsupported",
+        "note": "No evidence found.",
+        "evidence_ids": [],
+        "evidence": []
+      }
+    ],
+    "claim_report": {
+      "unsupported_before": 2,
+      "unsupported_after": 1,
+      "rewritten": 1,
+      "unsupported_before_first_draft": 3
+    },
+    "risk": {
+      "risk_score": 12,
+      "client_quality": "good",
+      "is_scam": false,
+      "flags": [],
+      "injected_instructions": [],
+      "summary": "Verified client with a payment history."
+    },
+    "fit": {
+      "fit_score": 0.86,
+      "coverage": 0.9,
+      "matches": [],
+      "missing": [],
+      "reasons": [
+        "Strong React and Stripe evidence."
+      ]
+    },
+    "price": {
+      "bid_type": "fixed",
+      "amount": 1800,
+      "floor": 1200,
+      "market_p25": 1400,
+      "market_p50": 1900,
+      "market_p75": 2400,
+      "connects_cost": 16,
+      "connects_usd": 2.4,
+      "expected_value_usd": 310,
+      "worth_it": true,
+      "rationale": "Below the market median with a high win chance.",
+      "win_probability": 0.31
+    },
+    "critiques": [
+      {
+        "verdict": "revise",
+        "score": 0.7,
+        "round": 1,
+        "issues": [
+          {
+            "kind": "tone",
+            "detail": "The opening is generic. Name the client's problem.",
+            "paragraph": 0
+          },
+          {
+            "kind": "specificity",
+            "detail": "Say which milestone you would deliver first.",
+            "paragraph": 2
+          }
+        ]
+      }
+    ],
+    "compliance": {
+      "verdict": "pass",
+      "violations": [],
+      "reason": "No policy violations."
+    },
+    "preview": {
+      "payload": {
+        "job_id": "j-100",
+        "bid": {
+          "type": "fixed",
+          "amount": 1800
+        },
+        "cover_letter": "Hi Dana, your brief about moving the billing dashboard to React matches work I did last year."
+      },
+      "policy_warnings": [
+        "The proposal names a start date."
+      ],
+      "connects_cost": 16,
+      "connects_balance": 80,
+      "balance_after": 64
+    },
+    "decision": {
+      "action": "bid",
+      "reasons": [
+        "Good fit and low risk."
+      ]
+    }
+  }
+}

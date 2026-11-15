@@ -1,0 +1,242 @@
+{
+ "contracts_hourly_by_category": {
+  "API & Backend Development": {
+   "n": 5022,
+   "p25": 15.0,
+   "p50": 25.0,
+   "p75": 38.89
+  },
+  "Admin & Bookkeeping": {
+   "n": 18717,
+   "p25": 5.0,
+   "p50": 8.0,
+   "p75": 15.0
+  },
+  "Blockchain & Web3": {
+   "n": 2082,
+   "p25": 15.0,
+   "p50": 30.0,
+   "p75": 55.0
+  },
+  "Business Intelligence & Dashboards": {
+   "n": 4868,
+   "p25": 25.0,
+   "p50": 40.0,
+   "p75": 60.0
+  },
+  "Cloud & DevOps Setup": {
+   "n": 9259,
+   "p25": 25.0,
+   "p50": 38.79,
+   "p75": 60.0
+  },
+  "Computer Vision & OCR": {
+   "n": 627,
+   "p25": 20.0,
+   "p50": 30.0,
+   "p75": 45.0
+  },
+  "Data Pipelines & ETL": {
+   "n": 849,
+   "p25": 25.0,
+   "p50": 40.0,
+   "p75": 60.0
+  },
+  "E-commerce Development": {
+   "n": 20518,
+   "p25": 10.0,
+   "p50": 20.0,
+   "p75": 30.0
+  },
+  "Enterprise Software": {
+   "n": 4993,
+   "p25": 20.0,
+   "p50": 30.0,
+   "p75": 50.0
+  },
+  "Forecasting & Anomaly Detection": {
+   "n": 394,
+   "p25": 25.0,
+   "p50": 40.0,
+   "p75": 65.0
+  },
+  "Game Development": {
+   "n": 1893,
+   "p25": 12.0,
+   "p50": 20.0,
+   "p75": 35.0
+  },
+  "Graphic & Brand Design": {
+   "n": 19304,
+   "p25": 12.5,
+   "p50": 20.0,
+   "p75": 35.0
+  },
+  "LLM & RAG Applications": {
+   "n": 2337,
+   "p25": 15.0,
+   "p50": 30.0,
+   "p75": 50.0
+  },
+  "ML Model Development": {
+   "n": 1185,
+   "p25": 20.0,
+   "p50": 35.0,
+   "p75": 55.0
+  },
+  "MLOps & Deployment": {
+   "n": 65,
+   "p25": 30.0,
+   "p50": 45.0,
+   "p75": 60.0
+  },
+  "Marketing & Web Analytics": {
+   "n": 3065,
+   "p25": 25.0,
+   "p50": 45.0,
+   "p75": 75.0
+  },
+  "Mobile App Development": {
+   "n": 6859,
+   "p25": 15.0,
+   "p50": 25.0,
+   "p75": 35.0
+  },
+  "NLP & Text Analytics": {
+   "n": 382,
+   "p25": 25.0,
+   "p50": 40.0,
+   "p75": 60.0
+  },
+  "Real-time & Payments Features": {
+   "n": 1005,
+   "p25": 17.0,
+   "p50": 27.78,
+   "p75": 50.0
+  },
+  "SEO & Digital Marketing": {
+   "n": 28760,
+   "p25": 6.0,
+   "p50": 10.0,
+   "p75": 25.0
+  },
+  "Spreadsheet Automation": {
+   "n": 9113,
+   "p25": 7.67,
+   "p50": 20.0,
+   "p75": 36.5
+  },
+  "Statistical & Experiment Analysis": {
+   "n": 754,
+   "p25": 20.0,
+   "p50": 40.0,
+   "p75": 60.0
+  },
+  "Survey & Research Analysis": {
+   "n": 1915,
+   "p25": 12.0,
+   "p50": 22.22,
+   "p75": 45.0
+  },
+  "Video & Motion": {
+   "n": 8382,
+   "p25": 12.0,
+   "p50": 20.0,
+   "p75": 30.0
+  },
+  "Web App Development": {
+   "n": 17649,
+   "p25": 15.0,
+   "p50": 25.0,
+   "p75": 40.0
+  },
+  "Web Testing & QA": {
+   "n": 2483,
+   "p25": 10.0,
+   "p50": 15.0,
+   "p75": 25.0
+  },
+  "WordPress & CMS": {
+   "n": 24200,
+   "p25": 12.0,
+   "p50": 20.0,
+   "p75": 30.0
+  },
+  "Writing & Translation": {
+   "n": 30000,
+   "p25": 12.0,
+   "p50": 25.0,
+   "p75": 40.0
+  }
+ },
+ "contracts_rows_scanned": 1292791,
+ "freelancer_rates_by_primary_skill_D": {
+  "AI & Machine Learning": {
+   "n": 1316,
+   "p25": 216.18,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Accounting & Finance": {
+   "n": 425,
+   "p25": 222.51,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Content Writing / Copywriting": {
+   "n": 1235,
+   "p25": 206.75,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Data Science & Analytics": {
+   "n": 993,
+   "p25": 216.31,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Digital Marketing": {
+   "n": 1470,
+   "p25": 220.23,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Graphic Design": {
+   "n": 1020,
+   "p25": 213.49,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Mobile App Development": {
+   "n": 1200,
+   "p25": 213.61,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "SEO / SEM": {
+   "n": 216,
+   "p25": 208.81,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Video Editing": {
+   "n": 965,
+   "p25": 208.89,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Virtual Assistant": {
+   "n": 613,
+   "p25": 218.73,
+   "p50": 280.0,
+   "p75": 280.0
+  },
+  "Web Development": {
+   "n": 1721,
+   "p25": 212.4,
+   "p50": 280.0,
+   "p75": 280.0
+  }
+ },
+ "note_D": "Dataset D does not state its licence or collection method; it is used only as a rough rate sanity check."
+}

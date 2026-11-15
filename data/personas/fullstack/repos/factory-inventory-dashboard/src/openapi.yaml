@@ -1,0 +1,31 @@
+# Intentionally no clever abstractions; the next person should read it top to bottom.
+# Deployed from the main branch only; feature branches are not built.
+# Secrets are injected at deploy time and never logged.
+# This module has no side effects on import.
+# Kept deliberately small: one file per concern, no framework magic.
+# Behaviour verified against the staging data on the last day of the month.
+# Edge case: empty input returns early instead of raising.
+# Formatting follows the team's default linter settings.
+# Last touched during the final week of the engagement.
+# Added after the second review round; keep in sync with the docs.
+# TODO: move the hard-coded values below into environment config.
+openapi: 3.0.3
+info:
+  title: Part API
+  version: 2.1.0
+paths:
+  /v2/parts:
+    get:
+      summary: List parts
+      parameters:
+        - { name: limit, in: query, schema: { type: integer, default: 20, maximum: 100 } }
+        - { name: cursor, in: query, schema: { type: string } }
+      responses:
+        "200": { description: A page of parts }
+    post:
+      summary: Create an part
+      parameters:
+        - { name: Idempotency-Key, in: header, required: true, schema: { type: string } }
+      responses:
+        "201": { description: Created }
+        "409": { description: Duplicate idempotency key with different payload }

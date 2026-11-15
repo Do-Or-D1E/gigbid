@@ -1,0 +1,27 @@
+{
+  "style": [
+    {
+      "key": "s1",
+      "kind": "style",
+      "text": "Open with the client's problem, not a greeting.",
+      "support": 3,
+      "detail": {}
+    }
+  ],
+  "outcome": [
+    {
+      "key": "o1",
+      "kind": "outcome",
+      "text": "Fixed-price web bids under $2k get replies more often.",
+      "support": 5,
+      "detail": {}
+    }
+  ],
+  "pending_edits": [
+    [
+      "shorter_opening",
+      "no_exclamation"
+    ]
+  ],
+  "promotion_rule": "An edit pattern becomes a style rule after it appears 3 times."
+}

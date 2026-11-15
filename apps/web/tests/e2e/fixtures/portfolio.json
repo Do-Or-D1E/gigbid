@@ -1,0 +1,16 @@
+[
+  {
+    "item_id": "e1",
+    "type": "case_study",
+    "title": "Stripe dashboard case study",
+    "date": "2025-06-01",
+    "hidden": false
+  },
+  {
+    "item_id": "e2",
+    "type": "repo",
+    "title": "API platform repo",
+    "date": "2025-01-10",
+    "hidden": true
+  }
+]
